@@ -160,6 +160,17 @@ html_use_modindex = False
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'homepage'
 
+html_context = {
+    "site": {"social":
+             {"email": "fred.qi@ieee.org",
+              "facebook": "fredqi.vision",
+              "github": "fredqi/fredqi.github.io",
+              "linkedin": "fei-qi/36/9a1/39a/"},
+             "avatar": "https://avatars.githubusercontent.com/u/1792102?v=3",
+             "name": "Fei Qi",
+             "description": "Associate Professor<br> Xidian University"}
+}
+
 # Add MathJax path
 # mathjax_path = '/faculty/qifei/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
 

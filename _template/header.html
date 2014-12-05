@@ -3,19 +3,22 @@
                 ("research/index", "Research"),
                 ("teaching/index", "Teaching"),
               ] %}
-        <ul>
 {%- for item, label in items %}
   {%- set rlnk = pathto(item)|truncate(2, True, '') %}
-          <li {% if rlnk in ["#", "in"] -%} class="selected" {%- endif %}><a href="{{ pathto(item) }}">{{ label }}</a></li>
+      <a href="{{ pathto(item) }}" {% if rlnk in ["#", "in"] -%} class="active" {%- endif %}>{{ label }}</a>
 {%- endfor %}
-        </ul>
 {%- endmacro %}
     <header>
-	  <h1>Welcome to Fei Qi's homepage</h1>
-      <nav>
-		{%- block navbar %}{{ navbar() }}{% endblock %}
-      </nav>
+	  <a href="{{ site.baseurl }}/"><img src="{{ site.avatar }}" /></a>
+	  <div class="site-info">
+        <h1><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <p>{{ site.description }}</p>
+      </div>
 	</header>
+
+    <nav>
+      {%- block navbar %}{{ navbar() }}{% endblock %}
+    </nav>
 
     {#-
     <!-- Introduction -->
