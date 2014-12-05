@@ -1,0 +1,51 @@
+{%- macro footer() %}
+      <!-- <div> -->
+        <div id="copyright"><ul>
+          {%- if last_updated %}
+          <li>{% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}</li>
+          {%- endif %}
+          {%- if hasdoc('copyright') %}
+          <li>&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.</li>
+          {%- else %}
+          <li>{% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}</li>
+          {%- endif %}
+        </ul></div>
+
+{#
+		<div class="socialnet" align="center">
+{% if site.social.email -%}
+<a href="mailto:{{site.social.email}}">
+{%	include "svg/email.html" %}
+</a>
+{%- endif %}
+{% if site.social.github -%}
+<a href="http://github.com/{{site.social.github}}">
+{%	include "svg/github.html" %}
+</a>
+{%- endif %}
+{% if site.social.linkedin -%}
+<a href="http://linkedin.com/in/{{site.social.linkedin}}">
+{%	include "svg/linkedin.html" %}
+</a>
+{%- endif %}
+{% if site.social.facebook -%}
+<a href="http://facebook.com/{{site.social.facebook}}">
+{% include "svg/facebook.html" %}
+</a>
+{%- endif %}
+       </div>
+#}
+		<div id="poweredtech"><ul>
+			{%- if show_sphinx %}
+			<li>Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.</li>
+			<li><a href="http://www.mathjax.org/">
+				<img title="Powered by MathJax" src="http://www.mathjax.org/badge.gif"
+					 border="0" alt="Powered by MathJax" /></a></li>
+			{%- endif %}
+		</ul></div>
+      <!-- </div> -->
+{%- endmacro %}
+
+    <footer>  
+	  {%- block footer %}{{ footer() }}{% endblock %}
+    </footer>

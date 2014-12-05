@@ -1,0 +1,29 @@
+{%- macro navbar() %}
+{%- set items=[ ("index", "Home"),
+                ("research/index", "Research"),
+                ("teaching/index", "Teaching"),
+              ] %}
+        <ul>
+{%- for item, label in items %}
+  {%- set rlnk = pathto(item)|truncate(2, True, '') %}
+          <li {% if rlnk in ["#", "in"] -%} class="selected" {%- endif %}><a href="{{ pathto(item) }}">{{ label }}</a></li>
+{%- endfor %}
+        </ul>
+{%- endmacro %}
+    <header>
+	  <h1>Welcome to Fei Qi's homepage</h1>
+      <nav>
+		{%- block navbar %}{{ navbar() }}{% endblock %}
+      </nav>
+	</header>
+
+    {#-
+    <!-- Introduction -->
+    <section id="intro">
+       <header>
+         {%- block relbaritems %} {% endblock %}
+		 {%- block header %}{% endblock %}
+       </header>
+    </section>
+    -#}
+

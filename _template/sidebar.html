@@ -1,0 +1,14 @@
+{%- macro relbar() %}
+{%- endmacro %}
+{%- macro sidebar() %} 
+        <section>
+          <header>{{ _( "Quick Links" ) }}</header>
+          {{ toc }}
+        </section>
+{%- endmacro %}
+
+      <aside>
+		{%- block relbar1 %}{{ relbar() }}{% endblock %}
+		{%- block sidebar2 %}{{ sidebar() }}{% endblock %}
+		{%- block relbar2 %}{{ relbar() }}{% endblock %}
+      </aside>

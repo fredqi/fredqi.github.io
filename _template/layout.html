@@ -1,56 +1,9 @@
-<!-- -*- mode: django -*- -->
-{%- block doctype -%}
-<!doctype html>
-{%- endblock %}
-{%- macro relbar() %}
-{%- endmacro %}
-{%- macro navbar() %}
-{%- set items=[ ("index", "Home"),
-                ("research/index", "Research"),
-                ("teaching/index", "Teaching"),
-              ] %}
-      <ul>
-{%- for item, label in items %}
-{%- if pagename == item %}
-        <li class="selected"><a href="{{ pathto(item) }}">{{ label }}</a></li>
-{%- else %}
-        <li><a href="{{ pathto(item) }}">{{ label }}</a></li>
-{%- endif -%}
-{% endfor %}
-      </ul>
-{%- endmacro %}
-{%- macro sidebar() %} 
-        <!-- <section> -->
-          <!-- <header>{{ _( "Quick Links" ) }}</header> -->
-          <!-- {{ toc }} -->
-        <!-- </section> -->
-{%- endmacro %}
-{%- macro footer() %}
-      <div>
-        <div id="copyright"><ul>
-          {%- if last_updated %}
-          <li>{% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}</li>
-          {%- endif %}
-          {%- if hasdoc('copyright') %}
-          <li>&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.</li>
-          {%- else %}
-          <li>{% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}</li>
-          {%- endif %}
-        </ul></div>
-		<div id="poweredtech"><ul>
-			{%- if show_sphinx %}
-			<li>Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.</li>
-			<li><a href="http://www.mathjax.org/">
-				<img title="Powered by MathJax" src="http://www.mathjax.org/badge.gif"
-					 border="0" alt="Powered by MathJax" /></a></li>
-			{%- endif %}
-		</ul></div>
-      </div>
-{%- endmacro %}
+{# -*- mode: django -*- #}
+{%- block doctype -%}<!doctype html>{%- endblock %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Welcome to Fei Qi's homepage - {{ title|striptags }}{{ titlesuffix }}</title>
+    <title>Welcome to Fei Qi's homepage - {{ title|striptags|e }}{{ titlesuffix }}</title>
     <link rel="stylesheet" href="{{ pathto('_static/' + 'screen.css', 1) }}" media="screen" />
     {%- if not embedded %}
     <script type="text/javascript">
@@ -75,42 +28,24 @@
     {%- endif %}
     {%- endif %}
   </head>  
+
   <body>
-
-    <header><h1>Welcome to Fei Qi's homepage</h1></header>    
-
-    <!-- Navigation -->
-    <nav>
-	  {%- block navbar %}{{ navbar() }}{% endblock %}
-    </nav>  
-
-    <!-- Introduction -->
-    <section id="intro">
-       <header>
-         {%- block relbaritems %} {% endblock %}
-		 {%- block header %}{% endblock %}
-       </header>
-    </section>
+    <!-- Header, including navigation bar -->
+	{% include "header.html" %}
 
     <div id="content">
       <!-- Main contents -->
       <div id="mainContent">
+		<p>{{ test }}</p>
         {% block body %} {% endblock %}
       </div>
 
-      <!-- Sidebar -->
-      <aside>
-		{%- block relbar1 %}{{ relbar() }}{% endblock %}
-		{%- block sidebar2 %}{{ sidebar() }}{% endblock %}
-		{%- block relbar2 %}{{ relbar() }}{% endblock %}
-      </aside>
-
+      {#- <!-- Sidebar --> -#}
+	  {#- {% include "sidebar.html" %} #}
     </div>
 
-	<!-- Footer -->  
-    <footer>  
-	  {%- block footer %}{{ footer() }}{% endblock %}
-    </footer>
+	<!-- Footer -->
+	{%- include "footer.html" -%}
 
   </body>
 </html>  
