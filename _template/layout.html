@@ -1,0 +1,116 @@
+<!-- -*- mode: django -*- -->
+{%- block doctype -%}
+<!doctype html>
+{%- endblock %}
+{%- macro relbar() %}
+{%- endmacro %}
+{%- macro navbar() %}
+{%- set items=[ ("index", "Home"),
+                ("research/index", "Research"),
+                ("teaching/index", "Teaching"),
+              ] %}
+      <ul>
+{%- for item, label in items %}
+{%- if pagename == item %}
+        <li class="selected"><a href="{{ pathto(item) }}">{{ label }}</a></li>
+{%- else %}
+        <li><a href="{{ pathto(item) }}">{{ label }}</a></li>
+{%- endif -%}
+{% endfor %}
+      </ul>
+{%- endmacro %}
+{%- macro sidebar() %} 
+        <!-- <section> -->
+          <!-- <header>{{ _( "Quick Links" ) }}</header> -->
+          <!-- {{ toc }} -->
+        <!-- </section> -->
+{%- endmacro %}
+{%- macro footer() %}
+      <div>
+        <div id="copyright"><ul>
+          {%- if last_updated %}
+          <li>{% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}</li>
+          {%- endif %}
+          {%- if hasdoc('copyright') %}
+          <li>&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.</li>
+          {%- else %}
+          <li>{% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}</li>
+          {%- endif %}
+        </ul></div>
+		<div id="poweredtech"><ul>
+			{%- if show_sphinx %}
+			<li>Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.</li>
+			<li><a href="http://www.mathjax.org/">
+				<img title="Powered by MathJax" src="http://www.mathjax.org/badge.gif"
+					 border="0" alt="Powered by MathJax" /></a></li>
+			{%- endif %}
+		</ul></div>
+      </div>
+{%- endmacro %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Fei Qi's homepage - {{ title|striptags }}{{ titlesuffix }}</title>
+    <link rel="stylesheet" href="{{ pathto('_static/' + 'screen.css', 1) }}" media="screen" />
+    {%- if not embedded %}
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '{{ url_root }}',
+        VERSION:     '{{ release|e }}',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+        HAS_SOURCE:  {{ has_source|lower }}
+      };
+    </script>
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+      MMLorHTML: { prefer: { Firefox: "HTML" } }
+	  });
+	</script>
+    {%- for scriptfile in script_files %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+    {%- if favicon %}
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    {%- endif %}
+    {%- endif %}
+  </head>  
+  <body>
+
+    <header><h1>Welcome to Fei Qi's homepage</h1></header>    
+
+    <!-- Navigation -->
+    <nav>
+	  {%- block navbar %}{{ navbar() }}{% endblock %}
+    </nav>  
+
+    <!-- Introduction -->
+    <section id="intro">
+       <header>
+         {%- block relbaritems %} {% endblock %}
+		 {%- block header %}{% endblock %}
+       </header>
+    </section>
+
+    <div id="content">
+      <!-- Main contents -->
+      <div id="mainContent">
+        {% block body %} {% endblock %}
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+		{%- block relbar1 %}{{ relbar() }}{% endblock %}
+		{%- block sidebar2 %}{{ sidebar() }}{% endblock %}
+		{%- block relbar2 %}{{ relbar() }}{% endblock %}
+      </aside>
+
+    </div>
+
+	<!-- Footer -->  
+    <footer>  
+	  {%- block footer %}{{ footer() }}{% endblock %}
+    </footer>
+
+  </body>
+</html>  
