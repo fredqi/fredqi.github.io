@@ -13,6 +13,11 @@ Planned Courses
 Current Courses
 ---------------
 
+.. toctree::
+   :maxdepth: 2
+
+   imgnav/index.rst
+
 - Image Processing (Graduate, 2007--2012)
 
   *32 Hours, Image capturing, filtering, and restoration.*
