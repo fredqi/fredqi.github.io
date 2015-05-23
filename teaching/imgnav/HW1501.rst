@@ -114,7 +114,7 @@
 
 在 ``ipython notebook`` 中可以使用下述代码比较两种直方图计算函数的计算速度。
 
-.. code:: python
+.. code:: ipython
 
     img = np.random.randint(0, 255, size=(512, 512))
     img = np.array(img, dtype=np.ubyte)
@@ -156,8 +156,9 @@ Signal-to-Noise Ratio, PSNR)进行定量化的分析。记大小均为 :math:`N_
 请根据以下指引完成本项练习。
 
   #. 下载 `图像 <HW1501_figs/akiyo-gray.png>`__
-  #. 读入图像，将图像数据转化为浮点数形式 + 使用 ``numpy`` 建立一个 3x3的低通滤
-	 波器，即创建个 3x3 的 ``ndarray`` ，每个元素均为 1.0/9。
+  #. 读入图像，将图像数据转化为浮点数形式
+  #. 使用 ``numpy`` 建立一个 3x3的低通滤波器，即创建个 3x3 的 ``ndarray`` ，每个
+	 元素均为 1.0/9。
   #. 对图像进行低通滤波。可以使用 ``scipy.ndimage.filters.convolve`` 函数。该函数
      首个输入参数为待滤波的图像，第二个输入参数为卷积核，即上一步中创建的卷积核。
      其他参数为关键字参数。比较重要的参数是 ``mode`` ，用于指定进行滤波处理时对原
