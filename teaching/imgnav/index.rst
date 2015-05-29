@@ -12,5 +12,6 @@ includes: image capturing, filtering, and visual tracking.
    :maxdepth: 1
 
    HW1501.rst
+   HW1502.rst
 
 

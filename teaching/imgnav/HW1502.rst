@@ -1,0 +1,9 @@
+
+《图像处理与成像制导》作业(2015-02)
+===================================
+
+下载 :download:`python 代码 <HW1502_files/HW1502-linear-regression.py>` 与
+:download:`数据 <HW1502_files/HW1502-data.txt>` ，补全程序缺失部分，实现线性回归算法
+
+.. literalinclude:: HW1502_files/HW1502-linear-regression.py
+   :language: python
