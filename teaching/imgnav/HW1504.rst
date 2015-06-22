@@ -1,0 +1,60 @@
+==================================
+《图像处理与成像制导》作业(201504)
+==================================
+
+* 本次大作业不提供实现框架，要求自己实现。
+* 本次作业需要提交学院进行备案，需要提交纸质报告
+* 书面报告的电子版本与源代码一并提交至我的电子信箱
+
+视觉目标跟踪
+============
+
+课程介绍的算法中任选一种目标跟踪相关算法进行实现，并在相关的测试库上进行测试，在
+报告中汇报算法性能。
+
+建议优先选择的算法为如下三种：
+
+* 高斯混合模型背景估计 [#f10]_ [#f11]_ [#f12]_
+* 稀疏表示的压缩感知目标跟踪 [#f20]_ [#f21]_ [#f22]_ [#f23]_
+* 跟踪-学习-检测 [#f30]_ [#f31]_ [#f32]_
+
+
+参考文献及资料
+--------------
+
+.. [#f10] C. Stauffer and W. E. L. Grimson, "Adaptive background mixture models
+          for real-time tracking," in IEEE Comp. Soc. Conf. Computer Vision and
+          Pattern Recognition, 1999, vol. 2, pp. 246--252. `<http://dx.doi.org/10.1109/CVPR.1999.784637>`_
+
+.. [#f11] `OpenCV: How to Use Background Subtraction Methods
+          <http://docs.opencv.org/master/d1/dc5/tutorial_background_subtraction.html>`_
+
+.. [#f12] `Background Models Challenge (BMC) website
+          <http://bmc.univ-bpclermont.fr/>`_
+
+.. [#f20] K. Zhang, L. Zhang, and M.-H. Yang, "Fast Compressive Tracking," IEEE
+		  Trans. Pattern Analysis and Machine Intelligence, vol. 36, no. 10, pp.
+		  2002--2015, Oct. 2014. `<http://dx.doi.org/10.1109/TPAMI.2014.2315808>`_
+
+.. [#f21] K. Zhang, L. Zhang, and M.-H. Yang, "Real-Time Compressive Tracking,"
+		  in Computer Vision --- ECCV 2012, A. Fitzgibbon, et al., Eds.
+		  Springer, 2012, pp. 864--877.
+
+.. [#f22] `Real-time Compressive Tracking
+          <http://www4.comp.polyu.edu.hk/~cslzhang/CT/CT.htm>`_
+
+.. [#f23] `GitHub: Compressive Tracking <https://github.com/gnebehay/CT>`_
+
+.. [#f30] Z. Kalal, K. Mikolajczyk, and J. Matas, "Tracking-Learning-Detection,"
+          IEEE Trans. Pattern Analysis and Machine Intelligence, vol. 34, no. 7,
+          pp. 1409--1422, 2012. `<http://dx.doi.org/10.1109/TPAMI.2011.239>`_
+
+.. [#f31] `Tracking-Learning-Detection (TLD)
+		  <http://personal.ee.surrey.ac.uk/Personal/Z.Kalal/tld.html>`_
+
+.. [#f32] `TLD 1.0 (Predator) <https://github.com/zk00006/OpenTLD>`_
+
+
+
+
+
