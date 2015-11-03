@@ -7,31 +7,36 @@ Selected Publications
 International Journal
 ---------------------
 
+#. Chen Xia, Fei Qi, Guangming Shi, "Bottom-up Visual Saliency Estimation with
+   Deep Autoencoder-based Sparse Reconstruction," *IEEE Trans. Neural Netw.
+   Learn. Syst.*, minor revision. `PDF
+   <https://drive.google.com/file/d/0B8r-kC_gs1cGMmwzLVpUbVB4MlE/view?usp=sharing>`__
+
 #. Chen Xia, Fei Qi, Guangming Shi, and Pengjin Wang, "Nonlocal Center-Surround
-   Reconstruction-based Bottom-Up Saliency Estimation," Pattern Recognition. In
-   press, `doi: 10.1016/j.patcog.2014.10.007
-   <http://dx.doi.org/10.1016/j.patcog.2014.10.007>`__ (Accepted Oct. 2014.)
+   Reconstruction-based Bottom-Up Saliency Estimation," *Pattern Recognition*,
+   48(4): 1337--1348, April 2015. `doi: 10.1016/j.patcog.2014.10.007
+   <http://dx.doi.org/10.1016/j.patcog.2014.10.007>`__
 
 #. Chang Wang, Fei Qi, Guangming Shi, and Xiaotian Wang, "Convex Combination
-   Based Target Localization with Noisy Angle of Arrival Measurements," IEEE
-   Wireless Communications Letters, 3(1): 14--17, Feb. 2014. `doi:
+   Based Target Localization with Noisy Angle of Arrival Measurements," *IEEE
+   Wireless Communications Letters*, 3(1): 14--17, Feb. 2014. `doi:
    10.1109/WCL.2013.101613.130587
    <http://dx.doi.org/10.1109/WCL.2013.101613.130587>`__
 
 #. Chang Wang, Fei Qi, Guangming Shi, and Jingbo Ren, "A linear
    combination-based weighted least square approach for target localization with
-   noisy range measurements," Signal Processing, 94(1): 202--211, Jan. 2014.
+   noisy range measurements," *Signal Processing*, 94(1): 202--211, Jan. 2014.
    `doi: 10.1016/j.sigpro.2013.06.005
    <http://dx.doi.org/10.1016/j.sigpro.2013.06.005>`__
 
 #. Jinjian Wu, Guangming Shi, Weisi Lin, Anmin Liu, and Fei Qi, "Just Noticeable
-   Difference Estimation for Images With Free-Energy Principle," IEEE Trans.
-   Multimedia, 15(7): 1705--1710, Nov. 2013. `doi: 10.1109/TMM.2013.2268053
+   Difference Estimation for Images With Free-Energy Principle," *IEEE Trans.
+   Multimedia*, 15(7): 1705--1710, Nov. 2013. `doi: 10.1109/TMM.2013.2268053
    <http://dx.doi.org/10.1109/TMM.2013.2268053>`__
 
 #. Chang Wang, Fei Qi, Guangming Shi, and Xiaotian Wang. "A Sparse
    Representation-Based Deployment Method for Optimizing the Observation Quality
-   of Camera Networks," Sensors, 13(9): 11453--11475, Aug. 2013. `doi:
+   of Camera Networks," *Sensors*, 13(9): 11453--11475, Aug. 2013. `doi:
    10.3390/s130911453 <http://dx.doi.org/10.3390/s130911453>`__
 
 #. Fei Qi, Junyu Han, Pengjin Wang, Guangming Shi, and Fu Li. "Structure Guided

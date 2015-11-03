@@ -20,16 +20,30 @@ Contacts
 Education
 =========
 
-* Ph.D and ME, Jan. 2007, Tsinghua University, Beijing, China.
-* BE, July 2000, Northwestern Polytechnical University, Xi'an, China.
+* Ph.D and ME, January, 2007, Tsinghua University, Beijing, China.
+* BE, July, 2000, Northwestern Polytechnical University, Xi'an, China.
 
+Employment
+==========
+
+* 2013/12 -- 2015/12, Research Fellow, Moscow Institute of Physics and
+  Technology, Moscow, Russia.
+
+* 2008/07 -- now, Associate Professor, School of Electronic Engeering, Xidian
+  University, Xi'an, PR China.
+
+* 2007/03-2008/06, Lecturer, School of Electronic Engeering, Xidian University,
+  Xi'an, PR China.
 
 Projects
 ========
 
-* Tracking and Motion Analysis of Articulated Objects based on Manifold
-  Learning, funded by National Natural Science Foundation of China, from Jan.
-  2009 to Dec. 2011.
+* 2016/01 -- 2019/12, Visual Saliency Analysis for Binocular and Motion Images
+  under the Framework of Solving Inverse Problem, funded by National Natural
+  Science Foundation of China.
+
+* 2009/01 -- 2011/12, Tracking and Motion Analysis of Articulated Objects based
+  on Manifold Learning, funded by National Natural Science Foundation of China.
 
 
 Research Interests
