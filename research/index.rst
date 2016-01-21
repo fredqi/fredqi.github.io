@@ -8,9 +8,11 @@ International Journal
 ---------------------
 
 #. Chen Xia, Fei Qi, Guangming Shi, "Bottom-up Visual Saliency Estimation with
-   Deep Autoencoder-based Sparse Reconstruction," *IEEE Trans. Neural Netw.
-   Learn. Syst.*, minor revision. `PDF
+   Deep Autoencoder-based Sparse Reconstruction," *IEEE Transactions on Neural
+   Networks and Learning Systems*. (In press) `PDF
    <https://drive.google.com/file/d/0B8r-kC_gs1cGMmwzLVpUbVB4MlE/view?usp=sharing>`__
+   | `doi: 10.1109/TNNLS.2015.2512898
+   <http://dx.doi.org/10.1109/TNNLS.2015.2512898>`__
 
 #. Chen Xia, Fei Qi, Guangming Shi, and Pengjin Wang, "Nonlocal Center-Surround
    Reconstruction-based Bottom-Up Saliency Estimation," *Pattern Recognition*,
