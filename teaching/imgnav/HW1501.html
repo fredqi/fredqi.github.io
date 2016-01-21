@@ -143,13 +143,6 @@
 </pre></div>
 </div>
 <p>在 <code class="docutils literal"><span class="pre">ipython</span> <span class="pre">notebook</span></code> 中可以使用下述代码比较两种直方图计算函数的计算速度。</p>
-<div class="code ipython highlight-python"><div class="highlight"><pre>img = np.random.randint(0, 255, size=(512, 512))
-img = np.array(img, dtype=np.ubyte)
-%timeit histogram(img, 0, 255, 32)
-%timeit histogram_naive_loop(img)
-%timeit histogram_bin_loop(img)
-</pre></div>
-</div>
 <p>请完成以下练习。</p>
 <ol class="arabic simple">
 <li>请下载直方图程序并补全，实现直方图的计算。</li>
@@ -209,8 +202,8 @@ Signal-to-Noise Ratio, PSNR)进行定量化的分析。记大小均为 <span cla
 
     <footer>
         <div class="copyright"><ul>
-          <li>Last updated on May 25, 2015.</li>
-          <li>&copy; Copyright 2009-2014, Fei Qi.</li>
+          <li>Last updated on Jan 20, 2016.</li>
+          <li>&copy; Copyright 2009-2016, Fei Qi.</li>
         </ul></div>
 
 		<div class="socialnet">
