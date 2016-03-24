@@ -1,6 +1,14 @@
 
-《图像处理与成像制导》作业(2015-01)
+《图像处理与成像制导》作业(2016-01)
 ===================================
+
+提交作业相关信息
+----------------
+
+- 提交作业截止时间：2016年4月11日 23:59:59
+- 作业提交方式： 发送电子邮件至 fred DOT qi AT ieee DOT org
+- 电子邮件标题格式为 [IMGNAV] HW1601 - 你的学号 - 姓名
+
 
 1. 傅里叶变换
 -------------
@@ -26,7 +34,7 @@
 
 |灰度变换|
 
-.. |灰度变换| image:: HW1501_figs/intensity-trans.png
+.. |灰度变换| image:: HW1601_figs/intensity-trans.png
 
 
 3. 图像的存储空间
@@ -114,7 +122,7 @@
 
 在 ``ipython notebook`` 中可以使用下述代码比较两种直方图计算函数的计算速度。
 
-.. code:: ipython
+.. code:: python
 
     img = np.random.randint(0, 255, size=(512, 512))
     img = np.array(img, dtype=np.ubyte)
@@ -134,6 +142,8 @@
 -----------
 
 尝试编写图像增强（去噪的程序）并使用量化的评估方法评价结果。
+
+|图像增强|
 
 两幅图像之间的差异可以使用均方误差(Mean Squared Error, MSE)与峰值信噪比(Peak
 Signal-to-Noise Ratio, PSNR)进行定量化的分析。记大小均为 :math:`N_1 \times N_2`
@@ -155,7 +165,7 @@ Signal-to-Noise Ratio, PSNR)进行定量化的分析。记大小均为 :math:`N_
 
 请根据以下指引完成本项练习。
 
-  #. 下载 :download:`图像 <HW1501_figs/akiyo-gray.png>`
+  #. 下载 :download:`图像 <HW1601_figs/akiyo-gray.png>`
   #. 读入图像，将图像数据转化为浮点数形式
   #. 使用 ``numpy`` 建立一个 3x3的低通滤波器，即创建个 3x3 的 ``ndarray`` ，每个
 	 元素均为 1.0/9。
@@ -167,3 +177,5 @@ Signal-to-Noise Ratio, PSNR)进行定量化的分析。记大小均为 :math:`N_
   #. 计算并记录滤波后图像相对于原始图像的 PSNR 。 
   #. 使用 :math:`5 \times 5` 的低通滤波器（滤波器系数为1.0/25）重复前面的步骤1-5。计算PSNR 
   #. [可选] 尝试自己实现空域低通滤波，并分析算法的运行时间。
+
+.. |图像增强| image:: HW1601_figs/akiyo-gray.png

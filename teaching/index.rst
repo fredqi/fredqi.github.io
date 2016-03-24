@@ -13,18 +13,21 @@ Planned Courses
 Current Courses
 ---------------
 
-.. 
-  .. toctree::
-	 :maxdepth: 2
-	 imgnav/index.rst
+.. toctree::
+   :maxdepth: 2
 
-- Image Processing (Graduate, 2007--2013, 2015)
+   imgnav/index.rst
+
+- Image Processing (Graduate, 2007--2013, 2015, 2016)
 
   *32 Hours, Image capturing, filtering, and restoration.*
 
-- Automatic Control (2010, 2011, 2013, 2015)
+- Automatic Control (2010, 2011, 2013, 2015, 2016)
 
   *48 Hours, Feedback control system analysis and design, state space model.*
+
+Previous Courses
+----------------
 
 - Automatic Control (in English, 2010, 2012, 2013)
 
@@ -35,10 +38,6 @@ Current Courses
 
   *48 Hours, Background modeling, selected classic and modern visual tracking
   methods.*
-
-
-Previous Courses
-----------------
 
 - Computer Control (2008--2011)
 
