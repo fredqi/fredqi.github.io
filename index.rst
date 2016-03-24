@@ -1,38 +1,21 @@
 .. -*- mode: rst; coding: utf-8 -*-
 
-Contacts
-========
-
-| **Fei Qi**
-|
-| Ph.D, Associate Professor
-|
-| **Contacts**
-| PO Box 134#
-| School of Electronic Engineering,
-| Xidian University,
-| Xi'an, Shaanxi, 710071, P. R. China
-| Tel.: +86-29-88202265
-| Email: fred DOT qi AT ieee DOT org
-| (Please change DOT to '.' and AT to '@'.)
-
-
 Education
 =========
 
-* Ph.D and ME, January, 2007, Tsinghua University, Beijing, China.
-* BE, July, 2000, Northwestern Polytechnical University, Xi'an, China.
+* Ph.D. and M.Eng., January, 2007, Tsinghua University, Beijing, China.
+* B.Eng., July, 2000, Northwestern Polytechnical University, Xi'an, China.
 
 Employment
 ==========
 
+* 2008/07 -- now, Associate Professor, School of Electronic Engineering, Xidian
+  University, Xi'an, PR China.
+
 * 2013/12 -- 2015/12, Research Fellow, Moscow Institute of Physics and
   Technology, Moscow, Russia.
 
-* 2008/07 -- now, Associate Professor, School of Electronic Engeering, Xidian
-  University, Xi'an, PR China.
-
-* 2007/03-2008/06, Lecturer, School of Electronic Engeering, Xidian University,
+* 2007/03-2008/06, Lecturer, School of Electronic Engineering, Xidian University,
   Xi'an, PR China.
 
 Projects
@@ -49,19 +32,37 @@ Projects
 Research Interests
 ==================
 
-* Detection, recognition, tracking, and behavior recognition of visual objects
-   * Applications of manifold learning in articulated objects visual tracking
-   * Low level and high level motion analysis, and applications (e.g. FRUC)
-   * Image and video processing
-
 * Human visual system
-   * Perception imitation and saliency detection
-   * Biology inspired visual recognition
+  
+   * Mechanism and computational modeling (e.g.,  saliency estimation)
+   * Geometry perception
+   * Bio-inspired visual recognition
 
-* Image representation
-   * Sparse domain (compressive sensible or not)
-   * Manifold patches
-   * Bag-of-words
+* Image and video understanding
 
-* Smart embedded surveillance devices
-   * Especially on the TI-DM644x platform
+   * Image representation (e.g. sparse coding, autoencoder, bag-of-words)
+   * Motion estimation, analysis, and applications
+   * Articulated objects tracking
+   * Screen Contents Understanding
+   * Visual Surveillance  
+	
+* Machine Learning and Data Science
+
+   * Kernel methods, Deep Learning, and Reinforcement Learning
+   * Knowledge Discovery
+
+* Optimization and applications
+	   
+.. * Smart embedded surveillance devices
+..   * Especially on the TI-DM644x platform
+
+Contacts
+========
+
+| PO Box 134#
+| School of Electronic Engineering,
+| Xidian University,
+| Xi'an, Shaanxi, 710071, P. R. China
+| Tel.: +86-29-88202265
+| Email: fred DOT qi AT ieee DOT org
+| (Please change DOT to '.' and AT to '@'.)
