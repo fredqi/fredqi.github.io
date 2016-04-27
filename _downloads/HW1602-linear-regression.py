@@ -118,7 +118,7 @@ if __name__ == '__main__':
     print(A)
 
     print('Plotting Data ...\n')
-    data = np.loadtxt('HW1502-data.txt', delimiter=',')
+    data = np.loadtxt('HW1602-data.txt', delimiter=',')
     x, y = data[:, 0], data[:, 1]
     m = len(y)
     plot_data(x, y)
