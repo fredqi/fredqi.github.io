@@ -201,130 +201,129 @@ def check_nn_gradients(lmb=0.0):
     print '(Left-Your Numerical Gradient, Right-Analytical Gradient)'
 
 
-# Parameters
-input_layer_size = 400          # 20x20 大小的输入图像，图像内容为手写数字
-hidden_layer_size = 25          # 25 hidden units
-num_labels = 10                 # 10 类标号 从1到10
+if __name__ == '__main__':
+    
+    # Parameters
+    input_layer_size = 400          # 20x20 大小的输入图像，图像内容为手写数字
+    hidden_layer_size = 25          # 25 hidden units
+    num_labels = 10                 # 10 类标号 从1到10
 
-# =========== 第一部分 ===============
-# 加载训练数据
-print "Loading and Visualizing Data..."
-data = sio.loadmat('HW1503data.mat')
-X, y = data['X'], data['y']
+    # =========== 第一部分 ===============
+    # 加载训练数据
+    print "Loading and Visualizing Data..."
+    data = sio.loadmat('HW1602data.mat')
+    X, y = data['X'], data['y']
 
-m = X.shape[0]
+    m = X.shape[0]
 
-# 随机选取100个数据显示
-rand_indices = range(m)
-np.random.shuffle(rand_indices)
-X_sel = X[rand_indices[:100]]
+    # 随机选取100个数据显示
+    rand_indices = range(m)
+    np.random.shuffle(rand_indices)
+    X_sel = X[rand_indices[:100]]
 
-display_data(X_sel)
+    display_data(X_sel)
 
-# =========== 第二部分 ===============
-print 'Loading Saved Neural Network Parameters ...'
+    # =========== 第二部分 ===============
+    print 'Loading Saved Neural Network Parameters ...'
 
-# Load the weights into variables Theta1 and Theta2
-# Theta1 has size 25 x 401
-# Theta2 has size 10 x 26
-data = sio.loadmat('HW1503weights.mat')
-Theta1, Theta2 = data['Theta1'], data['Theta2']
+    # Load the weights into variables Theta1 and Theta2
+    # Theta1 has size 25 x 401
+    # Theta2 has size 10 x 26
+    data = sio.loadmat('HW1602weights.mat')
+    Theta1, Theta2 = data['Theta1'], data['Theta2']
 
-# print Theta1.shape, (hidden_layer_size, input_layer_size + 1)
-# print Theta2.shape, (num_labels, hidden_layer_size + 1)
+    # print Theta1.shape, (hidden_layer_size, input_layer_size + 1)
+    # print Theta2.shape, (num_labels, hidden_layer_size + 1)
 
-# ================ Part 3: Compute Cost (Feedforward) ================
+    # ================ Part 3: Compute Cost (Feedforward) ================
 
-#  To the neural network, you should first start by implementing the
-#  feedforward part of the neural network that returns the cost only. You
-#  should complete the code in nnCostFunction.m to return cost. After
-#  implementing the feedforward to compute the cost, you can verify that
-#  your implementation is correct by verifying that you get the same cost
-#  as us for the fixed debugging parameters.
-#
-#  We suggest implementing the feedforward cost *without* regularization
-#  first so that it will be easier for you to debug. Later, in part 4, you
-#  will get to implement the regularized cost.
+    #  To the neural network, you should first start by implementing the
+    #  feedforward part of the neural network that returns the cost only. You
+    #  should complete the code in nnCostFunction.m to return cost. After
+    #  implementing the feedforward to compute the cost, you can verify that
+    #  your implementation is correct by verifying that you get the same cost
+    #  as us for the fixed debugging parameters.
+    #
+    #  We suggest implementing the feedforward cost *without* regularization
+    #  first so that it will be easier for you to debug. Later, in part 4, you
+    #  will get to implement the regularized cost.
 
-print 'Feedforward Using Neural Network ...'
+    print 'Feedforward Using Neural Network ...'
 
-# Weight regularization parameter (we set this to 0 here).
-lmb = 0.0
+    # Weight regularization parameter (we set this to 0 here).
+    lmb = 0.0
 
-nn_params = np.hstack((Theta1.flatten(), Theta2.flatten()))
-J = nn_cost_function(nn_params,
-                     input_layer_size, hidden_layer_size,
-                     num_labels, lmb, X, y)
+    nn_params = np.hstack((Theta1.flatten(), Theta2.flatten()))
+    J = nn_cost_function(nn_params,
+                         input_layer_size, hidden_layer_size,
+                         num_labels, lmb, X, y)
 
-print 'Cost at parameters (loaded from ex4weights): %f ' % J
-print '(this value should be about 0.287629)'
+    print 'Cost at parameters (loaded from ex4weights): %f ' % J
+    print '(this value should be about 0.287629)'
 
-# =============== Part 4: Implement Regularization ===============
-print 'Checking Cost Function (w/ Regularization) ... '
-lmb = 1.0
+    # =============== Part 4: Implement Regularization ===============
+    print 'Checking Cost Function (w/ Regularization) ... '
+    lmb = 1.0
 
-J = nn_cost_function(nn_params,
-                     input_layer_size, hidden_layer_size,
-                     num_labels, lmb, X, y)
+    J = nn_cost_function(nn_params,
+                         input_layer_size, hidden_layer_size,
+                         num_labels, lmb, X, y)
 
-print 'Cost at parameters (loaded from ex4weights): %f ' % J
-print '(this value should be about 0.383770)'
-
-
-# ================ Part 5: Sigmoid Gradient  ================
-print 'Evaluating sigmoid gradient...'
-
-g = sigmoid_gradient([1, -0.5, 0, 0.5, 1])
-print 'Sigmoid gradient evaluated at [1 -0.5 0 0.5 1]:  '
-print g
+    print 'Cost at parameters (loaded from ex4weights): %f ' % J
+    print '(this value should be about 0.383770)'
 
 
-#  ================ Part 6: Initializing Pameters ================
-print 'Initializing Neural Network Parameters ...'
-initial_Theta1 = rand_initialize_weigths(input_layer_size, hidden_layer_size)
-initial_Theta2 = rand_initialize_weigths(hidden_layer_size, num_labels)
+    # ================ Part 5: Sigmoid Gradient  ================
+    print 'Evaluating sigmoid gradient...'
 
-# Unroll parameters
-initial_nn_params = np.hstack((initial_Theta1.flatten(),
-                               initial_Theta2.flatten()))
+    g = sigmoid_gradient([1, -0.5, 0, 0.5, 1])
+    print 'Sigmoid gradient evaluated at [1 -0.5 0 0.5 1]:  '
+    print g
 
-# =============== Part 7: Implement Backpropagation ===============
-print 'Checking Backpropagation... '
 
-# Check gradients by running checkNNGradients
-check_nn_gradients()
+    #  ================ Part 6: Initializing Pameters ================
+    print 'Initializing Neural Network Parameters ...'
+    initial_Theta1 = rand_initialize_weigths(input_layer_size, hidden_layer_size)
+    initial_Theta2 = rand_initialize_weigths(hidden_layer_size, num_labels)
 
-# =============== Part 8: Implement Regularization ===============
-print 'Checking Backpropagation (w/ Regularization) ... '
-#  Check gradients by running checkNNGradients
-lmb = 3.0
-check_nn_gradients(lmb)
+    # Unroll parameters
+    initial_nn_params = np.hstack((initial_Theta1.flatten(),
+                                   initial_Theta2.flatten()))
 
-# =================== Part 8: Training NN ===================
-print 'Training Neural Network...'
+    # =============== Part 7: Implement Backpropagation ===============
+    print 'Checking Backpropagation... '
 
-lmb, maxiter = 1.0, 40
-args = (input_layer_size, hidden_layer_size, num_labels, lmb, X, y)
-nn_params, cost_min, _, _, _ = fmin_cg(nn_cost_function,
-                                       initial_nn_params,
-                                       fprime=nn_grad_function,
-                                       args=args,
-                                       maxiter=maxiter,
-                                       full_output=True)
+    # Check gradients by running checkNNGradients
+    check_nn_gradients()
 
-Theta1 = nn_params[:hidden_layer_size*(input_layer_size + 1)]
-Theta1 = Theta1.reshape((hidden_layer_size, input_layer_size + 1))
-Theta2 = nn_params[hidden_layer_size*(input_layer_size + 1):]
-Theta2 = Theta2.reshape((num_labels, hidden_layer_size + 1))
+    # =============== Part 8: Implement Regularization ===============
+    print 'Checking Backpropagation (w/ Regularization) ... '
+    #  Check gradients by running checkNNGradients
+    lmb = 3.0
+    check_nn_gradients(lmb)
 
-# ================= Part 9: Visualize Weights =================
-print 'Visualizing Neural Network... '
-display_data(Theta1[:, 1:])
+    # =================== Part 8: Training NN ===================
+    print 'Training Neural Network...'
 
-# ================= Part 10: Implement Predict =================
+    lmb, maxiter = 1.0, 40
+    args = (input_layer_size, hidden_layer_size, num_labels, lmb, X, y)
+    nn_params, cost_min, _, _, _ = fmin_cg(nn_cost_function,
+                                           initial_nn_params,
+                                           fprime=nn_grad_function,
+                                           args=args,
+                                           maxiter=maxiter,
+                                           full_output=True)
 
-pred = predict(Theta1, Theta2, X)
-print 'Training Set Accuracy:', np.mean(pred == y[:, 0])*100.0
+    Theta1 = nn_params[:hidden_layer_size*(input_layer_size + 1)]
+    Theta1 = Theta1.reshape((hidden_layer_size, input_layer_size + 1))
+    Theta2 = nn_params[hidden_layer_size*(input_layer_size + 1):]
+    Theta2 = Theta2.reshape((num_labels, hidden_layer_size + 1))
 
-#
-# HW1503-neural-networks.py ends here
+    # ================= Part 9: Visualize Weights =================
+    print 'Visualizing Neural Network... '
+    display_data(Theta1[:, 1:])
+
+    # ================= Part 10: Implement Predict =================
+
+    pred = predict(Theta1, Theta2, X)
+    print 'Training Set Accuracy:', np.mean(pred == y[:, 0])*100.0
