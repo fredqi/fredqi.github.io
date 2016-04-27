@@ -14,5 +14,8 @@ before_install:
 install:
     - conda install --yes python="2.7" sphinx
 
+# $HOME is /home/travis
+# `pwd` is /home/travis/build/fredqi/fredqi.github.io
 script:
-    - sphinx-build -b . html 
+    - mkdir html
+    - sphinx-build -b html . html
