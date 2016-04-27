@@ -26,6 +26,16 @@ Current Courses
 
   *48 Hours, Feedback control system analysis and design, state space model.*
 
+  * `第1章 自动控制原理的基本概念 <control/ch01-concepts-in-cybernetics.slides.html>`_
+  * `第2章 线性系统的数学描述 <control/ch02-mathematical-model.slides.html>`_
+  * `第3章 线性系统的时域分析法 <control/ch03-time-domain-analysis.slides.html>`_
+
+.. toctree::
+   :maxdepth: 2
+
+   control/homeworks.rst
+  
+  
 Previous Courses
 ----------------
 
