@@ -429,7 +429,7 @@ $$\int_{-\infty}^{+\infty} \delta(t) dt=1\, \tag{3.6}$$</p>
 $$T \frac{dc(t)}{d t} + c(t) =r(t)\tag{3.9}$$$$\phi(s)=\frac{C(s)}{R(s)}=\frac{1}{Ts+1} \tag{3.10}$$
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -464,7 +464,7 @@ $$c(t) = c_s(t) + c_t(t) = 1-e^{-\frac{t}{T}}(t \geq 0) \tag{3.11}$$
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -478,7 +478,7 @@ $$r(t)=\delta(t),R(s)=1$$<p>输出量的拉氏变换与系统的传递函数相�
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -516,20 +516,56 @@ $$c(t)+c_s(t)+c_t(t)=(t-T)+Te^{-\frac{t}{T}}(t\geq0)$$<br>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="3.3-&#20108;&#38454;&#31995;&#32479;&#30340;&#26102;&#22495;&#20998;&#26512;">3.3 &#20108;&#38454;&#31995;&#32479;&#30340;&#26102;&#22495;&#20998;&#26512;<a class="anchor-link" href="#3.3-&#20108;&#38454;&#31995;&#32479;&#30340;&#26102;&#22495;&#20998;&#26512;">&#182;</a></h2><h3 id="3.3.1-&#20108;&#38454;&#31995;&#32479;&#30340;&#26631;&#20934;&#24418;&#24335;">3.3.1 &#20108;&#38454;&#31995;&#32479;&#30340;&#26631;&#20934;&#24418;&#24335;<a class="anchor-link" href="#3.3.1-&#20108;&#38454;&#31995;&#32479;&#30340;&#26631;&#20934;&#24418;&#24335;">&#182;</a></h3><p><img src="figs-ch03/3-02.png" width="75%" alt="图3-6 二阶系统结构图" align="center"/></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>典型的二阶系统的结构图如图3-6(a)所示, 它是由一个惯性环节和一个积分环节串联组成前向通道的单位负反馈系统。系统的传递函数为<br>
- $$\frac{C(s)}{R(s)}=\frac{K_1k_2}{\tau s^2+s+K_1K_2}$$ 
-令$\omega^{2}_{n}=\frac{K_1K_2}{\tau}$, $\frac{1}{\tau}=2\xi \omega_n$,则可将二阶系统化为如下标准形式:
-$$\frac{C(s)}{R(s)}=-\frac{\omega^{2}_{n}}{s^2+2\xi \omega_n s+\omega^{2}_{n}}\tag{3.15}$$ 
-对应的系统微分方程为$$c(t)+2\xi \omega_n c(t)+\omega^{2}_{n}c(t)=\omega^{2}_{n}r(t)\tag{3.16}$$ 
-式中, $\xi$称为阻尼比, $\omega_{n}$称为无阻尼自振角频率。与式(3.15)对应的系统结构图如图3-6(b)所示。<br>
-二阶系统的动态特性, 可以用$\xi$和$\omega_{n}$这两个参量的形式加以描述。这两个参数是二阶系统的重要结构参数。由式(3.15)可得二阶系统的特征方程为<br>
+ $$\frac{C(s)}{R(s)}=\frac{K_1 K_2}{\tau s^2+s+K_1K_2}$$</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>令$\omega^{2}_{n}=\frac{K_1K_2}{\tau}$, $\frac{1}{\tau}=2\xi \omega_n$,则可将二阶系统化为如下标准形式:
+$$\frac{C(s)}{R(s)}=\frac{\omega^{2}_{n}}{s^2+2\xi \omega_n s+\omega^{2}_{n}}\tag{3.15}$$</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>对应的系统微分方程为$$c''(t)+2\xi \omega_n c'(t)+\omega^{2}_{n}c(t)=\omega^{2}_{n}r(t)\tag{3.16}$$ 
+式中, $\xi$称为阻尼比, $\omega_{n}$称为无阻尼自振角频率。与式(3.15)对应的系统结构图如图3-6(b)所示。</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>二阶系统的动态特性, 可以用$\xi$和$\omega_{n}$这两个参量的形式加以描述。这两个参数是二阶系统的重要结构参数。由式(3.15)可得二阶系统的特征方程为<br>
 $$s^2+2\xi \omega_n s+\omega^{2}_{n}=0\tag{3.17}$$ 
 所以, 系统的两个特征根(极点)为$$s_{1,2}=-\xi \omega_n\pm \omega_n\sqrt{\xi^2-1}\tag{3.18}$$ 
 随着阻尼比$\xi$的不同, 二阶系统特征根(极点)也不相同。</p>
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -538,7 +574,7 @@ $$s^2+2\xi \omega_n s+\omega^{2}_{n}=0\tag{3.17}$$
 <h4>1. 欠阻尼($0 < \xi < 1$)</h4>
 <p>当$0< \xi < 1$时, 两特征根为 $$s_{1,2}=-\xi \omega_n\pm j\omega_n\sqrt{1-\xi^2}$$ 
 这是一对共轭复数根, 如图3-7(a)所示。</p>
-<p><img src="figs-ch03/ch03_29-1.png" align="center" alt="图3-7 (a)" width="45%" /></p>
+<p><img src="figs-ch03/ch03_29-1.png" align="center" alt="图3-7 (a)" width="60%" /></p>
 
 </div>
 </div>
@@ -550,7 +586,7 @@ $$s^2+2\xi \omega_n s+\omega^{2}_{n}=0\tag{3.17}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="2.-&#20020;&#30028;&#38459;&#23612;($\xi=1$)">2. &#20020;&#30028;&#38459;&#23612;($\xi=1$)<a class="anchor-link" href="#2.-&#20020;&#30028;&#38459;&#23612;($\xi=1$)">&#182;</a></h4><p>当$\xi=1$时, 特征方程有两个相同的负实根, 即$$s_{1,2}=-\omega_n$$ 
 此时, $s_1, s_2$ 如图3-7(b)所示。</p>
-<p><img src="figs-ch03/ch03_29-2.png" align="center" alt="图3-7 (b)" width="45%" /></p>
+<p><img src="figs-ch03/ch03_29-2.png" align="center" alt="图3-7 (b)" width="60%" /></p>
 
 </div>
 </div>
@@ -562,7 +598,7 @@ $$s^2+2\xi \omega_n s+\omega^{2}_{n}=0\tag{3.17}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="3.-&#36807;&#38459;&#23612;($\xi-&gt;-1$)">3. &#36807;&#38459;&#23612;($\xi &gt; 1$)<a class="anchor-link" href="#3.-&#36807;&#38459;&#23612;($\xi-&gt;-1$)">&#182;</a></h4><p>当$\xi > 1$时, 两特征根为 $$s_{1,2}=-\xi \omega_n\pm \omega_n\sqrt{\xi^2-1}$$ 
 这是两个不同的实根, 如图3-7(c)所示。</p>
-<p><img src="figs-ch03/ch03_29-3.png" align="center" alt="图3-7 (c)" width="45%" /></p>
+<p><img src="figs-ch03/ch03_29-3.png" align="center" alt="图3-7 (c)" width="60%" /></p>
 
 </div>
 </div>
@@ -574,11 +610,11 @@ $$s^2+2\xi \omega_n s+\omega^{2}_{n}=0\tag{3.17}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="4.-&#26080;&#38459;&#23612;($\xi=0$)">4. &#26080;&#38459;&#23612;($\xi=0$)<a class="anchor-link" href="#4.-&#26080;&#38459;&#23612;($\xi=0$)">&#182;</a></h4><p>当$\xi=0$时, 特征方程具有一对共轭纯虚数根, 即 $$s_{1,2}=\pm j\omega_n$$ 
 此时, $s_1, s_2$如图3-7(d)所示。</p>
-<p><img src="figs-ch03/ch03_29-4.png" align="center" alt="图3-7 (3)" width="45%" /></p>
+<p><img src="figs-ch03/ch03_29-4.png" align="center" alt="图3-7 (3)" width="60%" /></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -747,6 +783,16 @@ $$\begin{split} c(t) = 1 &- \frac{1}{(2\sqrt\xi^2-1)(\xi-\sqrt{\xi^2-1})}e^{-(\x
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="figs-ch03/ch03_41.png" width="75%" align="center" alt="不同阻尼比下二阶系统的阶跃响应" /></p>
+
+</div>
+</div>
 </div><aside class="notes">
 
 <div class="cell border-box-sizing text_cell rendered">
@@ -759,7 +805,7 @@ $$\begin{split} c(t) = 1 &- \frac{1}{(2\sqrt\xi^2-1)(\xi-\sqrt{\xi^2-1})}e^{-(\x
 </div>
 </div>
 </div>
-</aside></section></section><section><section>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -998,7 +1044,7 @@ $${a_0}{s^n} + {a_1}{s^{n - 1}} +  \cdots  + {a_{n - 1}}s + {a_n} = 0$$<p><br>
 </div>
 </div>
 </div>
-</aside></section></section><section><section>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1200,9 +1246,9 @@ $${e_{ss}} = \mathop {\lim }\limits_{t \to \infty } e(t)\tag{3.44}$$<p></p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="3.6.2-&#31995;&#32479;&#30340;&#31867;&#22411;">3.6.2 &#31995;&#32479;&#30340;&#31867;&#22411;<a class="anchor-link" href="#3.6.2-&#31995;&#32479;&#30340;&#31867;&#22411;">&#182;</a></h3><p>稳态误差的计算与系统的类型有关, 而系统的类型是由开环传递函数决定的。一般情况下, 系统的开环传递函数可以表示为</p>
 $${G_o}(s) = \frac{{K\prod\limits_{i = 1}^m {({\tau _i}s + 1)} }}{{{s^\gamma }\prod\limits_{j = 1}^n {({T_j}s + 1)} }}$$<p></p>
-<p>其中K为系统的开环放大倍数; τi和Tj为时间常数; γ为开环传递函数中积分单元的个数, 即开环传递函数在原点处极点的重数。 并且开环放大倍数K可以定义如下:</p>
+<p>其中$K$为系统的开环放大倍数; $\tau_i$和$T_j$为时间常数; $\gamma$为开环传递函数中积分单元的个数, 即开环传递函数在原点处极点的重数。 并且开环放大倍数$K$可以定义如下:</p>
 $$K = \mathop {\lim }\limits_{s \to 0} {s^\gamma }{G_o}(s)$$<p></p>
-<p>γ=0,1和2的系统分别称为0型系统、Ⅰ型系统和Ⅱ型系统。Ⅲ型以上的系统很少见。</p>
+<p>$\gamma = 0, 1$和2的系统分别称为0型系统、I型系统和II型系统。III型以上的系统很少见。</p>
 
 </div>
 </div>
@@ -1217,7 +1263,7 @@ $$E(s) = \frac{1}{{1 + {G_o}(s)}}R(s) - \frac{{{G_2}(s)H(s)}}{{1 + {G_o}(s)}}N(s
 其中,$G_o(s)=G_1(s)G_2(s)H(s)$是系统的开环传递函数, 并具有式(3.45)的形式。 由式(3.47)可知, 系统的误差由两部分组成: 由系统设定输入信号引起的误差为系统误差或原理误差(对应式中第一项), 它反映了系统跟踪输入信号的能力; 由扰动输入信号引起的误差称为扰动误差(对应式中第二项), 它反映了系统抑制扰动的能力。</p>
 <h4 id="1.-&#35774;&#23450;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;">1. &#35774;&#23450;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;<a class="anchor-link" href="#1.-&#35774;&#23450;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;">&#182;</a></h4><p>设定输入作用下的系统误差为
 $$E(s) = \frac{1}{{1 + {G_o}(s)}}R(s)\tag{3.48}$$
-根据稳态误差的定义(式(3.44))和拉氏变换的终值定理(假设E(s)的极点全位于复平面的左半平面), 可得</p>
+根据稳态误差的定义(式(3.44))和拉氏变换的终值定理(假设$E(s)$的极点全位于复平面的左半平面), 可得</p>
 $$\begin{split} {e_{ss}} &= \lim_{t \to \infty} e(t) = \lim_{s \to 0} s E(s)= \lim_{s \to 0} \frac{s}{{1 + {G_o}(s)}}R(s) \\ 
 &= \lim_{s \to 0} \frac{s^{\gamma  + 1}}{s^\gamma + K}R(s)
 = \frac{\lim_{s \to 0} [{s^{\gamma + 1}}R(s)]}{{K + \lim_{s \to 0} {s^\gamma }}} \end{split} \tag{3.49}$$<p></p>
@@ -1230,14 +1276,8 @@ $$\begin{split} {e_{ss}} &= \lim_{t \to \infty} e(t) = \lim_{s \to 0} s E(s)= \l
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>为便于讨论, 定义如下一组静态误差系数。<br>
-静态位置误差系数：</p>
-$${K_p} = \mathop {\lim }\limits_{s \to 0} {G_o}(s) = \mathop {\lim }\limits_{s \to 0} \frac{K}{{{s^\gamma }}}\tag{3.50}$$<p><br>
-静态速度误差系数:</p>
-$${K_v} = \mathop {\lim }\limits_{s \to 0} s{G_o}(s) = \mathop {\lim }\limits_{s \to 0} \frac{K}{{{s^{\gamma  - 1}}}}\tag{3.51}$$<p><br>
-静态加速度误差系数:
-$${K_a} = \mathop {\lim }\limits_{s \to 0} {s^2}{G_o}(s) = \mathop {\lim }\limits_{s \to 0} \frac{K}{{{s^{\gamma  - 1}}}}\tag{3.52}$$</p>
-
+<p>为便于讨论, 定义如下一组静态误差系数。</p>
+<h5 id="&#38745;&#24577;&#20301;&#32622;&#35823;&#24046;&#31995;&#25968;&#65306;">&#38745;&#24577;&#20301;&#32622;&#35823;&#24046;&#31995;&#25968;&#65306;<a class="anchor-link" href="#&#38745;&#24577;&#20301;&#32622;&#35823;&#24046;&#31995;&#25968;&#65306;">&#182;</a></h5>$${K_p} = \mathop {\lim }\limits_{s \to 0} {G_o}(s) = \mathop {\lim }\limits_{s \to 0} \frac{K}{{{s^\gamma }}}\tag{3.50}$$<h5 id="&#38745;&#24577;&#36895;&#24230;&#35823;&#24046;&#31995;&#25968;&#65306;">&#38745;&#24577;&#36895;&#24230;&#35823;&#24046;&#31995;&#25968;&#65306;<a class="anchor-link" href="#&#38745;&#24577;&#36895;&#24230;&#35823;&#24046;&#31995;&#25968;&#65306;">&#182;</a></h5>$${K_v} = \mathop {\lim }\limits_{s \to 0} s{G_o}(s) = \mathop {\lim }\limits_{s \to 0} \frac{K}{{{s^{\gamma  - 1}}}}\tag{3.51}$$<h5 id="&#38745;&#24577;&#21152;&#36895;&#24230;&#35823;&#24046;&#31995;&#25968;&#65306;">&#38745;&#24577;&#21152;&#36895;&#24230;&#35823;&#24046;&#31995;&#25968;&#65306;<a class="anchor-link" href="#&#38745;&#24577;&#21152;&#36895;&#24230;&#35823;&#24046;&#31995;&#25968;&#65306;">&#182;</a></h5>$${K_a} = \mathop {\lim }\limits_{s \to 0} {s^2}{G_o}(s) = \mathop {\lim }\limits_{s \to 0} \frac{K}{{{s^{\gamma  - 1}}}}\tag{3.52}$$
 </div>
 </div>
 </div></section><section>
@@ -1272,29 +1312,29 @@ $${e_{ss}} = \frac{1}{{{K_a}}}\tag{3.55}$$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.-&#25200;&#21160;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;">2. &#25200;&#21160;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;<a class="anchor-link" href="#2.-&#25200;&#21160;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;">&#182;</a></h4><p>对于扰动输入作用下系统稳态误差的计算, 也可以按照类似设定输入情况的方法进行计算。在这种情况下, 稳定误差的计算稍复杂些, 这里就不再加以论述。 感兴趣的读者可以自行推导。 应当指出的是, 对Ⅰ型以上的系统, 由扰动作用引起的稳态误差与扰动作用点之前的系统结构和参数有关。 
+<h4 id="2.-&#25200;&#21160;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;">2. &#25200;&#21160;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;<a class="anchor-link" href="#2.-&#25200;&#21160;&#36755;&#20837;&#20316;&#29992;&#19979;&#31995;&#32479;&#31283;&#24577;&#35823;&#24046;&#30340;&#35745;&#31639;">&#182;</a></h4><p>对于扰动输入作用下系统稳态误差的计算, 也可以按照类似设定输入情况的方法进行计算。在这种情况下, 稳定误差的计算稍复杂些, 这里就不再加以论述。 感兴趣的读者可以自行推导。 应当指出的是, 对I型以上的系统, 由扰动作用引起的稳态误差与扰动作用点之前的系统结构和参数有关。 
 例 3-6  已知某单位负反馈系统的开环传递函数为</p>
-$$G(s) = \frac{5}{{s(s + 1)(s + 2)}}$$<p>试求系统输入分别为1(t), 10t, 3t2时, 系统的稳态误差。<br>
-解 由劳斯稳定判据分析可知, 该系统是闭环稳定的(这里从略)。 由于此系统为Ⅰ型系统, 系统的静态速度误差系数为 
+$$G(s) = \frac{5}{{s(s + 1)(s + 2)}}$$<p>试求系统输入分别为$1(t)$, $10t$, $3t^2$时, 系统的稳态误差。<br>
+解 由劳斯稳定判据分析可知, 该系统是闭环稳定的(这里从略)。 由于此系统为I型系统, 系统的静态速度误差系数为 
 $${K_v} = \mathop {\lim }\limits_{s \to 0} sG(s) = 2.5$$<br>
 <img src="figs-ch03/3-07.png" width="90%" align="center" alt="图 3-13" /></p>
-<p>图3-13(b)为Ⅱ型系统, 开环放大倍数为K=10/4。查表可知, 系统的稳态误差为</p>
+<p>图3-13(b)为II型系统, 开环放大倍数为$K=10/4$。查表可知, 系统的稳态误差为</p>
 $${e_{ss}} = 6 \times \frac{1}{{{K_a}}} = 2.4$$<p></p>
 <p>需要指出的是, 标准的加速度信号为$\frac{t^2}{2}$, 所以本题中的3$t^2$是标准输入的6倍, 因此, 用标准输入下的公式计算稳态误差时要乘上这个倍数。</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="3.6.4-&#31283;&#24577;&#35823;&#24046;&#30340;&#25233;&#21046;&#25514;&#26045;">3.6.4 &#31283;&#24577;&#35823;&#24046;&#30340;&#25233;&#21046;&#25514;&#26045;<a class="anchor-link" href="#3.6.4-&#31283;&#24577;&#35823;&#24046;&#30340;&#25233;&#21046;&#25514;&#26045;">&#182;</a></h3><p><strong>1. 提高系统的开环放大倍数</strong><br>
-从表3-1可以看出: 0型系统跟踪单位阶跃信号、Ⅰ型系统跟踪单位斜坡信号、Ⅱ型系统跟踪恒加速信号时, 其系统的稳态误差均为常值, 且都与开环放大倍数K有关。若增大开环放大倍数K, 则系统的稳态误差可以显著下降。<br>
-提高开环放大倍数K固然可以使稳态误差下降, 但K值取得过大会使系统的稳定性变坏, 甚至造成系统的不稳定。 如何解决这个矛盾, 将是本书以后几章中讨论的中心问题。</p>
+从表3-1可以看出: 0型系统跟踪单位阶跃信号、I型系统跟踪单位斜坡信号、II型系统跟踪恒加速信号时, 其系统的稳态误差均为常值, 且都与开环放大倍数K有关。若增大开环放大倍数K, 则系统的稳态误差可以显著下降。</p>
+<p>提高开环放大倍数K固然可以使稳态误差下降, 但K值取得过大会使系统的稳定性变坏, 甚至造成系统的不稳定。 如何解决这个矛盾, 将是本书以后几章中讨论的中心问题。</p>
 <p><strong>2. 增大系统的类型数</strong><br>
-从表3-1可以看出: 若开环传递函数(H(s)=1时, 开环传递函数就是系统前向通道传递函数)中没有积分环节, 即0型系统时, 跟踪阶跃输入信号引起的稳态误差为常值; 若开环传递函数中含有一个积分环节, 即Ⅰ型系统时, 跟踪阶跃输入信号引起的稳态误差为零; 若开环传递函数中含有两个积分环节, 即Ⅱ型系统时, 则系统跟踪阶跃输入信号、 斜坡输入信号引起的稳态误差为零。</p>
+从表3-1可以看出: 若开环传递函数(H(s)=1时, 开环传递函数就是系统前向通道传递函数)中没有积分环节, 即0型系统时, 跟踪阶跃输入信号引起的稳态误差为常值; 若开环传递函数中含有一个积分环节, 即I型系统时, 跟踪阶跃输入信号引起的稳态误差为零; 若开环传递函数中含有两个积分环节, 即II型系统时, 则系统跟踪阶跃输入信号、 斜坡输入信号引起的稳态误差为零。</p>
 <p><strong>3. 采用复合控制</strong><br>
 采用复合控制, 即在反馈控制基础上引入顺馈(也称前馈)补偿。 这种方法可以在基本不改变系统动态性能的前提下, 有效改善系统的稳态性能。</p>
 
@@ -1306,7 +1346,7 @@ $${e_{ss}} = 6 \times \frac{1}{{{K_a}}} = 2.4$$<p></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.7-&#22522;&#20110;MATLAB&#30340;&#32447;&#24615;&#31995;&#32479;&#26102;&#22495;&#20998;&#26512;">3.7 &#22522;&#20110;MATLAB&#30340;&#32447;&#24615;&#31995;&#32479;&#26102;&#22495;&#20998;&#26512;<a class="anchor-link" href="#3.7-&#22522;&#20110;MATLAB&#30340;&#32447;&#24615;&#31995;&#32479;&#26102;&#22495;&#20998;&#26512;">&#182;</a></h2><h3 id="1.-MATLAB&#24314;&#31435;&#31995;&#32479;&#25968;&#23398;&#27169;&#22411;&#30340;&#26041;&#27861;">1. MATLAB&#24314;&#31435;&#31995;&#32479;&#25968;&#23398;&#27169;&#22411;&#30340;&#26041;&#27861;<a class="anchor-link" href="#1.-MATLAB&#24314;&#31435;&#31995;&#32479;&#25968;&#23398;&#27169;&#22411;&#30340;&#26041;&#27861;">&#182;</a></h3><p>例 2-17 若给定系统的传递函数为<br>
+<h2 id="3.7-&#22522;&#20110;MATLAB&#30340;&#32447;&#24615;&#31995;&#32479;&#26102;&#22495;&#20998;&#26512;">3.7 &#22522;&#20110;MATLAB&#30340;&#32447;&#24615;&#31995;&#32479;&#26102;&#22495;&#20998;&#26512;<a class="anchor-link" href="#3.7-&#22522;&#20110;MATLAB&#30340;&#32447;&#24615;&#31995;&#32479;&#26102;&#22495;&#20998;&#26512;">&#182;</a></h2><h3 id="3.7.1.-MATLAB&#24314;&#31435;&#31995;&#32479;&#25968;&#23398;&#27169;&#22411;&#30340;&#26041;&#27861;">3.7.1. MATLAB&#24314;&#31435;&#31995;&#32479;&#25968;&#23398;&#27169;&#22411;&#30340;&#26041;&#27861;<a class="anchor-link" href="#3.7.1.-MATLAB&#24314;&#31435;&#31995;&#32479;&#25968;&#23398;&#27169;&#22411;&#30340;&#26041;&#27861;">&#182;</a></h3><p>例 2-17 若给定系统的传递函数为<br>
 $$G(s) = \frac{{12{s^3} + 24{s^2} + 12s + 20}}{{2{s^4} + 4{s^3} + 6{s^2} + 2s + 2}}$$
 试用MATLAB语句表示该传递函数。</p>
 <p>解: 输入上述传递函数的MATLAB程序如下:</p>
@@ -1318,9 +1358,13 @@ G=tf(num, den)</code></pre>
 <p>程序第一行是注释语句,不执行;第二、三行分别按降幂顺序输入给定传递函数的分子和分母多项式的系数;第四行建立系统的传递函数模型。</p>
 <p>运行结果显示</p>
 
-<pre><code>Transfer function:   
-12 s^3 + 24 s^2 + 12 s + 20  
-2 s^4 + 4 s^3 + 6 s^2 + 2 s + 2</code></pre>
+<pre><code>G =
+
+    12 s^3 + 24 s^2 + 12 s + 20
+  -------------------------------
+  2 s^4 + 4 s^3 + 6 s^2 + 2 s + 2
+
+Continuous-time transfer function.</code></pre>
 <p>注意，如果给定的分子或分母多项式缺项, 则所缺项的系数用0补充,例如一个分子多项式为3s2＋1,则相应的MATLAB输入为num=[3 0 1];<br>
 如果分子或分母多项式是多个因子的乘积,则可以调用MATLAB提供的多项式乘法处理函数conv( )。</p>
 
@@ -1338,7 +1382,7 @@ $$G(s) = \frac{{4(s + 2){{({s^2} + 6s + 6)}^2}}}{{s{{(s + 1)}^3}({s^3} + 3s + 2s
 
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1353,13 +1397,17 @@ G=tf(num, den)</code></pre>
 <p>程序中的conv( )表示两个多项式的乘法, 并且可以嵌套。</p>
 <p>运行结果为</p>
 
-<pre><code>Transfer function:   
-4 s^5 + 56 s^4 + 288 s^3 + 672 s^2 + 720 s + 288  
-s^7 + 6 s^6 + 14 s^5 + 21 s^4 + 24 s^3 +17 s^2 + 5 s</code></pre>
+<pre><code>G =
+
+    4 s^5 + 56 s^4 + 288 s^3 + 672 s^2 + 720 s + 288
+  -----------------------------------------------------
+  s^7 + 6 s^6 + 14 s^5 + 21 s^4 + 24 s^3 + 17 s^2 + 5 s
+
+Continuous-time transfer function.</code></pre>
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1370,14 +1418,18 @@ s^7 + 6 s^6 + 14 s^5 + 21 s^4 + 24 s^3 +17 s^2 + 5 s</code></pre>
 
 <pre><code>% ex-2-19  
 z=[-2 -3];   
-Vp=[-3 -4+j*5 -4-j*5];   
+p=[-3 -4+j*5 -4-j*5];   
 k=10;   
 G=zpk(z, p, k)</code></pre>
 <p>运行结果显示为</p>
 
-<pre><code>Zero/pole/gain:  
-10 (s+2) (s+3)  
-(s+3)(s^2 + 8s + 41)</code></pre>
+<pre><code>G =
+
+     10 (s+2) (s+3)
+  ---------------------
+  (s+3) (s^2 + 8s + 41)
+
+Continuous-time zero/pole/gain model.</code></pre>
 
 </div>
 </div>
@@ -1387,7 +1439,7 @@ G=zpk(z, p, k)</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-&#27169;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;">2. &#27169;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;<a class="anchor-link" href="#2.-&#27169;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;">&#182;</a></h3><p>为了分析系统的特性,有时需要在不同模型之间进行转换。 MATLAB早期版本中采用<code>tf2ss</code>、<code>ss2tf</code>、<code>tf2zpk</code>等转换函数进行模型转换。这些函数在新版本中仍可使用。新版本采用统一的转换函数,它与模型建立函数具有相同的函数名。</p>
+<h3 id="3.7.2.-&#27169;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;">3.7.2. &#27169;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;<a class="anchor-link" href="#3.7.2.-&#27169;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;">&#182;</a></h3><p>为了分析系统的特性,有时需要在不同模型之间进行转换。 MATLAB早期版本中采用<code>tf2ss</code>、<code>ss2tf</code>、<code>tf2zpk</code>等转换函数进行模型转换。这些函数在新版本中仍可使用。新版本采用统一的转换函数,它与模型建立函数具有相同的函数名。</p>
 <p>例如若将ZPK或SS模型转化为TF模型,函数格式为: <code>m＝tf(sys)</code>。式中<code>sys</code>是ZPK模型或SS模型, <code>m</code>为转换后的TF模型。 其他的转换函数用法与此类似。</p>
 
 </div>
@@ -1439,13 +1491,13 @@ y1  0</code></pre>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.-&#29992;MATLAB&#36827;&#34892;&#21160;&#24577;&#21709;&#24212;&#20998;&#26512;">3. &#29992;MATLAB&#36827;&#34892;&#21160;&#24577;&#21709;&#24212;&#20998;&#26512;<a class="anchor-link" href="#3.-&#29992;MATLAB&#36827;&#34892;&#21160;&#24577;&#21709;&#24212;&#20998;&#26512;">&#182;</a></h3><p>通过MATLAB提供的函数<code>step()</code>和<code>inpulse()</code>, 可以方便地求出各阶系统在阶跃函数和脉冲函数作用下的输出响应。<br>
+<h3 id="3.7.3.-&#29992;MATLAB&#36827;&#34892;&#21160;&#24577;&#21709;&#24212;&#20998;&#26512;">3.7.3. &#29992;MATLAB&#36827;&#34892;&#21160;&#24577;&#21709;&#24212;&#20998;&#26512;<a class="anchor-link" href="#3.7.3.-&#29992;MATLAB&#36827;&#34892;&#21160;&#24577;&#21709;&#24212;&#20998;&#26512;">&#182;</a></h3><p>通过MATLAB提供的函数<code>step()</code>和<code>inpulse()</code>, 可以方便地求出各阶系统在阶跃函数和脉冲函数作用下的输出响应。<br>
 例 3-8 试用MATLAB绘制系统
 $$\begin{array}{l}
 {G_1}(s) = \frac{1}{{2s + 1}}\\
@@ -1496,7 +1548,7 @@ xlabel('时间'); ylabel('输出响应'); title('二阶系统单位阶跃响应'
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.-&#29992;MATLAB&#36827;&#34892;&#31995;&#32479;&#31283;&#23450;&#24615;&#20998;&#26512;">4. &#29992;MATLAB&#36827;&#34892;&#31995;&#32479;&#31283;&#23450;&#24615;&#20998;&#26512;<a class="anchor-link" href="#4.-&#29992;MATLAB&#36827;&#34892;&#31995;&#32479;&#31283;&#23450;&#24615;&#20998;&#26512;">&#182;</a></h3><p>可以利用MATLAB求系统特征方程的根来分析系统稳定性。<br>
+<h3 id="3.7.4.-&#29992;MATLAB&#36827;&#34892;&#31995;&#32479;&#31283;&#23450;&#24615;&#20998;&#26512;">3.7.4. &#29992;MATLAB&#36827;&#34892;&#31995;&#32479;&#31283;&#23450;&#24615;&#20998;&#26512;<a class="anchor-link" href="#3.7.4.-&#29992;MATLAB&#36827;&#34892;&#31995;&#32479;&#31283;&#23450;&#24615;&#20998;&#26512;">&#182;</a></h3><p>可以利用MATLAB求系统特征方程的根来分析系统稳定性。<br>
 例 3-10 设系统是由前向通道传递函数Gp(s)和反馈通道传递函数H(s)组成的负反馈控制系统。其中, 
 $${G_p}(s) = \frac{1}{{{s^2} + 2s + 4}},H(s) = \frac{1}{{s + 1}}$$<br>
 试判别系统的稳定性。<br>
