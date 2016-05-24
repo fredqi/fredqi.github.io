@@ -13,6 +13,7 @@ includes: image capturing, filtering, and visual tracking.
 
    HW1601.rst
    HW1602.rst
+   HW1603.rst
 
 ..   HW1503.rst
 ..   HW1504.rst
