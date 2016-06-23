@@ -183,3 +183,83 @@
   3. :math:`G(s) = \frac{5}{s (s^2 + 4)}`
   4. 用MATLAB编程，画上述系统的奈氏图，并验证结论。
 
+
+第6章 控制系统的补偿与综合
+==========================
+
+* 6-7 已知某单位反馈的控制系统前向通道的传递函数为
+  
+  .. math:: G(s) = \frac{K}{s(1+0.1s)(1+s)}
+
+  试设计一超前校正装置，使校正后系统的相位裕量为
+  :math:`45^\circ` ，增益裕量不小于 :math:`8 \text{ dB}` ，静态速度误差系数
+  :math:`K_v` 不小于 :math:`4.0 \text{ sec}^{-1}` 。
+	  
+
+* 6-8 一单位反馈系统，其前向通道的传递函数为
+
+  .. math:: G(s) = \frac{4}{s(1+2s)}
+
+  要求设计一滞后校正装置，使校正后系统的相位裕量为 :math:`40^{\circ}` ，静态速度误差不变。		  
+
+* 6-15 已知一PID控制器如下图所示。试证明其传递函数由下式表示：
+	
+  .. math::
+     G_c(s) = K_p + \frac{K_i}{s} + 	\frac{K_d s}{1 + \alpha s}, \qquad \alpha > 0
+
+
+第9章 状态空间分析法
+====================
+
+* 9-1 已知 R-L-C电路如下图所示。 (1) 试写出以 :math:`i_L` 和 :math:`u_C` 为状态
+  变量的状态方程； (2) 已知 :math:`i_L(0) = 0` ， :math:`u_C(0) = 0` ，求单位阶
+  跃响应 :math:`u_C(t)` 。
+
+* 9-2 一 R-L-C 电路如下图所示。设状态变量 :math:`x_1 = i_1` ， :math:`x_2 = i_2`
+  ， :math:`x_3 = u_C` 。求电路的状态方程。
+
+
+* 9-4 已知一系统的传递函数为
+
+  .. math:: G(s) = 	\frac{s^2 + 6 + 8}{s^2 + 4s + 3}
+
+  试写出该系统的能控标准形、能观标准形和对角标准形实现。		  
+
+* 9-5 已知某系统的传递函数为
+
+  .. math:: G(s) = \frac{8(s+5)}{s^3 + 12s^2 + 44s + 48}
+
+  试求： (1) 能控标准形实现； (2) 对角标准形实现。
+		  
+* 9-10 已知控制系统的状态方程为
+
+  .. math:: \dot{\mathbf{x}} = \mathbf{A} \mathbf{x}
+
+  其中
+
+  .. math:: \mathbf{A} = \begin{bmatrix} 0 & 6 \\ -1 & -5 \end{bmatrix}
+
+  求： (1) 系统特征方程式的根； (2) 状态转移矩阵。
+
+* 9-11 已知控制系统的状态方程为
+
+  .. math:: \dot{\mathbf{x}} = \mathbf{A} \mathbf{x}
+
+  其中
+
+  .. math:: \mathbf{A} = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}
+
+  (1) 求状态转移矩阵 :math:`\mathbf{\Phi}(t)` ；
+  (2) 若实始状态变量为 :math:`x_1(0) = x_2(0) = 1` ，求 :math:`\mathbf{x}(t)` 。	
+	
+* 9-16 已知某控制系统的动态方程为
+
+  .. math::
+    \begin{split} \dot{\mathbf{x}} &= \begin{bmatrix} -2 & 2 & 1 \\
+      0 & -2 & 0 \\ 1 & -4 & 0 \end{bmatrix} \mathbf{x} +
+	  \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} u \\
+      y &= \begin{bmatrix} 1 & 0 & 0 \end{bmatrix} \mathbf{x} 
+    \end{split}
+
+  (1) 判别该系统的能控性和能观性；
+  (2) 求系统的传递函数。	
