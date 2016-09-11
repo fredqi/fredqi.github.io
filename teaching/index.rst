@@ -11,6 +11,12 @@ Current Courses
 
   *48 Hours, for undergraduate students*
 
+  .. toctree::
+     :maxdepth: 1
+
+     prml/PRML_HW1601.rst
+  
+
 - Image Processing (Graduate, 2007--2013, 2015, 2016)
 
   *32 Hours, Image capturing, filtering, and restoration.*
