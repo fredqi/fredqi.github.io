@@ -1,5 +1,8 @@
 # coding: utf-8
 
+# If you use python 2, uncomment the following line.
+from __future__ import print_function
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -118,7 +121,7 @@ if __name__ == '__main__':
     print(A)
 
     print('Plotting Data ...\n')
-    data = np.loadtxt('HW1602-data.txt', delimiter=',')
+    data = np.loadtxt('HW1601_data.txt', delimiter=',')
     x, y = data[:, 0], data[:, 1]
     m = len(y)
     plot_data(x, y)
