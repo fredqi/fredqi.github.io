@@ -15,6 +15,7 @@ Current Courses
      :maxdepth: 1
 
      prml/PRML_HW1601.rst
+     prml/PRML_Logistic_Regression.rst
   
 
 - Image Processing (Graduate, 2007--2013, 2015, 2016)
