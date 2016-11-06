@@ -16,7 +16,8 @@ Current Courses
 
      prml/PRML_HW1601.rst
      prml/PRML_Logistic_Regression.rst
-  
+     prml/PRML_Neural_Networks.rst   
+
 
 - Image Processing (Graduate, 2007--2013, 2015, 2016)
 
