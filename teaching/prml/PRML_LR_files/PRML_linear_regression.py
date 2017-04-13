@@ -143,7 +143,7 @@ if __name__ == '__main__':
     # compute and display initial cost
     # Expected value 32.07
     J0 = compute_cost(X, y, theta)
-    print J0
+    print(J0)
 
     # run gradient descent
     # Expected value: theta = [-3.630291, 1.166362]

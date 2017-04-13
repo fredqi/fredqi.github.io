@@ -11,17 +11,17 @@ Current Courses
 
   *48 Hours, for undergraduate students*
 
+- Image Processing (Graduate, 2007--2013, 2015--2017)
+
+  *32 Hours, Image capturing, filtering, and restoration.*
+
   .. toctree::
      :maxdepth: 1
 
-     prml/PRML_HW1601.rst
-     prml/PRML_Logistic_Regression.rst
-     prml/PRML_Neural_Networks.rst   
+     prml/PRML_Linear_Regression.rst
 
-
-- Image Processing (Graduate, 2007--2013, 2015, 2016)
-
-  *32 Hours, Image capturing, filtering, and restoration.*
+..   prml/PRML_Logistic_Regression.rst
+..   prml/PRML_Neural_Networks.rst   
 
 - Automatic Control (2010, 2011, 2013, 2015, 2016)
 
