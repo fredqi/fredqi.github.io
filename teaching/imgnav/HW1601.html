@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../../_static/favmark.ico"/>
   </head>  
 
@@ -82,11 +82,11 @@
 <p>一幅图像大小为512x512，图像为8比特灰度图像，试计算该存储该图像（不考虑压缩）
 需要多少内存空间？如果图像为3通道的彩色图像，所需要的存储空间又是多少？</p>
 <p>可以使用下述代码验证你的答案是否正确</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">byte</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+<span class="nb">print</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
 <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">byte</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+<span class="nb">print</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
 </pre></div>
 </div>
 </div>
@@ -94,7 +94,7 @@
 <h2>4. 图像的直方图<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>试补写以下程序，生成有32个分量的直方图。我们默认输入图像类型为 <code class="docutils literal"><span class="pre">np.ubyte</span></code> 。为
 方便你编写程序，这里提供了两种计算直方图的实现框架。</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">histogram_naive_loop</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">32</span><span class="p">):</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">histogram_naive_loop</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">32</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;使用简单循环计算图像的直方图&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="n">img</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">ubyte</span>
     <span class="n">delta</span> <span class="o">=</span> <span class="mi">256</span> <span class="o">//</span> <span class="n">bins</span>
@@ -120,9 +120,9 @@
 </pre></div>
 </div>
 <p>可以使用下列代码验证你的程序是否正确</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.ndimage</span> <span class="kn">import</span> <span class="n">histogram</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.ndimage</span> <span class="k">import</span> <span class="n">histogram</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="c1"># 设置参数，请尝试修改 n_bins</span>
 <span class="n">n_bins</span> <span class="o">=</span> <span class="mi">32</span>
@@ -151,11 +151,11 @@
 </pre></div>
 </div>
 <p>在 <code class="docutils literal"><span class="pre">ipython</span> <span class="pre">notebook</span></code> 中可以使用下述代码比较两种直方图计算函数的计算速度。</p>
-<div class="code python highlight-python"><div class="highlight"><pre>img = np.random.randint(0, 255, size=(512, 512))
-img = np.array(img, dtype=np.ubyte)
-%timeit histogram(img, 0, 255, 32)
-%timeit histogram_naive_loop(img)
-%timeit histogram_bin_loop(img)
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">))</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ubyte</span><span class="p">)</span>
+<span class="o">%</span><span class="n">timeit</span> <span class="n">histogram</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+<span class="o">%</span><span class="n">timeit</span> <span class="n">histogram_naive_loop</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="o">%</span><span class="n">timeit</span> <span class="n">histogram_bin_loop</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>请完成以下练习。</p>
@@ -218,7 +218,7 @@ Signal-to-Noise Ratio, PSNR)进行定量化的分析。记大小均为 <span cla
 
     <footer>
         <div class="copyright"><ul>
-          <li>Last updated on Apr 20, 2016.</li>
+          <li>Last updated on Apr 13, 2017.</li>
           <li>&copy; Copyright 2009-2016, Fei Qi.</li>
         </ul></div>
 

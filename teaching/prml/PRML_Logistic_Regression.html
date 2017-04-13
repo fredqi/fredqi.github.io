@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../../_static/favmark.ico"/>
   </head>  
 
@@ -101,7 +101,7 @@
 坐标轴分别为两次考试的成绩，正负样本分别使用不同的标记显示。</p>
 <img alt="../../_images/LR_data1_visual.png" src="../../_images/LR_data1_visual.png" />
 <p>如果你熟悉绘图程序，可以尝试自己完成框架。下面的代码供你参考：</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">pos</span> <span class="o">=</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">pos</span> <span class="o">=</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span>
 <span class="n">neg</span> <span class="o">=</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">pos</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">pos</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;r+&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Admitted&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">neg</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">neg</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Not admitted&quot;</span><span class="p">)</span>
@@ -136,12 +136,12 @@
 <p>在本次作业中，希望你使用 <code class="docutils literal"><span class="pre">scipy.optimize.fmin_cg</span></code>
 函数实现代价函数 <span class="math">\(J(\theta)\)</span> 的优化，得到最佳参数 <span class="math">\(\theta^{*}\)</span> 。</p>
 <p>使用该优化函数的代码已经在程序中实现，调用方式示例如下：</p>
-<div class="code python highlight-python"><div class="highlight"><pre><span></span><span class="n">ret</span> <span class="o">=</span> <span class="n">op</span><span class="o">.</span><span class="n">fmin_cg</span><span class="p">(</span><span class="n">cost_function</span><span class="p">,</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">ret</span> <span class="o">=</span> <span class="n">op</span><span class="o">.</span><span class="n">fmin_cg</span><span class="p">(</span><span class="n">cost_function</span><span class="p">,</span>
                  <span class="n">theta</span><span class="p">,</span>
                  <span class="n">fprime</span><span class="o">=</span><span class="n">cost_gradient</span><span class="p">,</span>
                  <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
                  <span class="n">maxiter</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
-                 <span class="n">full_output</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+                 <span class="n">full_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">theta_opt</span><span class="p">,</span> <span class="n">cost_min</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">ret</span>
 </pre></div>
 </div>
@@ -208,7 +208,7 @@ x_2^2 \\ x_1^3 \\ \vdots \\ x_1 x_2^5 \\ x_2^6 \end{bmatrix}\end{split}\]</div>
 
     <footer>
         <div class="copyright"><ul>
-          <li>Last updated on Oct 21, 2016.</li>
+          <li>Last updated on Apr 13, 2017.</li>
           <li>&copy; Copyright 2009-2016, Fei Qi.</li>
         </ul></div>
 

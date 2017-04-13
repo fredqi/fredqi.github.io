@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Welcome to Fei Qi's homepage - 《模式识别与应用》作业(2016-01)</title>
+    <title>Welcome to Fei Qi's homepage - 《图像处理与成像制导》作业(2017-01)</title>
     <link rel="stylesheet" href="../../_static/screen.css" media="screen" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,7 +22,7 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="shortcut icon" href="../../_static/favmark.ico"/>
   </head>  
 
@@ -48,14 +48,14 @@
       <div id="mainContent">
         
   <div class="section" id="id1">
-<h1>《模式识别与应用》作业(2016-01)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>《图像处理与成像制导》作业(2017-01)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>提交作业相关信息<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>提交作业截止时间： 2016/09/30 23:59:59 (CST)</li>
+<li>提交作业截止时间： 2017/04/30 23:59:59 (CST)</li>
 <li>作业提交方式：<ul>
 <li>发送电子邮件至 fred DOT qi AT ieee DOT org</li>
-<li>邮件标题格式： [PRML] HW1601-学号-姓名</li>
+<li>邮件标题格式： [IMGNAV] HW1701-学号-姓名</li>
 </ul>
 </li>
 <li>请勿删除作业所提供代码中的注释，将你的代码放入添加代码标志中间；如果中间有注释，
@@ -64,8 +64,8 @@
 </div>
 <div class="section" id="id3">
 <h2>线性回归<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>下载 <a class="reference download internal" href="../../_downloads/HW1601_linear_regression.py" download=""><code class="xref download docutils literal"><span class="pre">python</span> <span class="pre">代码</span></code></a> 与
-<a class="reference download internal" href="../../_downloads/HW1601_data.txt" download=""><code class="xref download docutils literal"><span class="pre">数据</span></code></a> ，补全程序缺失部分，实现线性回归
+<p>下载 <a class="reference download internal" href="../../_downloads/PRML_linear_regression.py" download=""><code class="xref download docutils literal"><span class="pre">python</span> <span class="pre">代码</span></code></a> 与
+<a class="reference download internal" href="../../_downloads/PRML_LR_data.txt" download=""><code class="xref download docutils literal"><span class="pre">数据</span></code></a> ，补全程序缺失部分，实现线性回归
 算法。</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># coding: utf-8</span>
 
@@ -177,13 +177,13 @@
                 <span class="n">levels</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">))</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta_best</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">theta_best</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;rx&#39;</span><span class="p">,</span>
              <span class="n">markersize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">markeredgewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">r&#39;$\theta_0$&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">r&#39;$\theta_1$&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">r&#39;$J(\theta)$&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta_0$&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\theta_1$&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$J(\theta)$&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Running warm-up exercise ... </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s1">&#39;5x5 Identity Matrix: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="n">A</span> <span class="o">=</span> <span class="n">warm_up_exercise</span><span class="p">()</span>
@@ -212,7 +212,7 @@
     <span class="c1"># compute and display initial cost</span>
     <span class="c1"># Expected value 32.07</span>
     <span class="n">J0</span> <span class="o">=</span> <span class="n">compute_cost</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">theta</span><span class="p">)</span>
-    <span class="k">print</span> <span class="n">J0</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">J0</span><span class="p">)</span>
 
     <span class="c1"># run gradient descent</span>
     <span class="c1"># Expected value: theta = [-3.630291, 1.166362]</span>
@@ -238,7 +238,7 @@
 
     <footer>
         <div class="copyright"><ul>
-          <li>Last updated on Sep 28, 2016.</li>
+          <li>Last updated on Apr 13, 2017.</li>
           <li>&copy; Copyright 2009-2016, Fei Qi.</li>
         </ul></div>
 
