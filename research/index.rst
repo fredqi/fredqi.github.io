@@ -125,7 +125,7 @@ Conference
 
 #. Junyu Han, Fei Qi, and Guangming Shi. "Enhancing Gradient Sparsity for
    Parametrized Motion Estimation," in *Proc. British Machine Vision
-   Conference*, **BMVC**, Sep. 2011. Dundee, UK.
+   Conference, BMVC*, Sep. 2011. Dundee, UK.
 
 #. Junyu Han, Fei Qi, and Guangming Shi, "Gradient Sparsity for Piecewise
    Continuous Optical Flow Estimation," in *Proc. IEEE Int'l Conf. Image

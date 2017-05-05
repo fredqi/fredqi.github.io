@@ -19,11 +19,10 @@ Current Courses
      :maxdepth: 1
 
      prml/PRML_Linear_Regression.rst
-
-..   prml/PRML_Logistic_Regression.rst
+     prml/PRML_Logistic_Regression.rst
 ..   prml/PRML_Neural_Networks.rst   
 
-- Automatic Control (2010, 2011, 2013, 2015, 2016)
+- Automatic Control (2010, 2011, 2013, 2015--2017)
 
   *48 Hours, Feedback control system analysis and design, state space model.*
 

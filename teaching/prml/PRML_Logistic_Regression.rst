@@ -1,6 +1,10 @@
 
-《模式识别与应用》作业(2016-02)
-===============================
+..
+   《模式识别与应用》作业(2016-02)
+   ===============================
+
+《图像处理与成像制导》作业(2017-02)
+===================================
 
 介绍
 ----
@@ -10,9 +14,9 @@
 作业提交信息
 ~~~~~~~~~~~~
 
-- 提交作业截止时间： 2016/11/06 23:59:59 (CST)
+- 提交作业截止时间： 2017/05/21 23:59:59 (CST)
+- 邮件标题格式： [IMGNAV] HW1702-学号-姓名
 - 发送电子邮件至 fred DOT qi AT ieee DOT org
-- 邮件标题格式： [PRML] HW1602-学号-姓名
 - 请勿删除作业所提供代码中的注释，将你的代码放入添加代码标志中间。
 
 作业提交内容
@@ -24,9 +28,9 @@
 作业相关文件
 ~~~~~~~~~~~~
 
--  :download:`HW1602_logistic_regression.py <HW1602_files/HW1602_logistic_regression.py>`
--  :download:`LR_data1.txt <HW1602_files/LR_data1.txt>`
--  :download:`LR_data2.txt <HW1602_files/LR_data2.txt>`
+-  :download:`PRML_Logistic_Regression.py <Logistic_files/PRML_Logistic_Regression.py>`
+-  :download:`Logistic_data1.txt <Logistic_files/Logistic_data1.txt>`
+-  :download:`Logistic_data2.txt <Logistic_files/Logistic_data2.txt>`
 
 作业中需要实现的函数
 ~~~~~~~~~~~~~~~~~~~~
@@ -55,7 +59,7 @@
 要实现 ``plot_data`` 函数，用于绘制所给数据的散点图。你绘制的图像应如下图所示，两
 坐标轴分别为两次考试的成绩，正负样本分别使用不同的标记显示。
 
-.. image:: HW1602_files/LR_data1_visual.png
+.. image:: Logistic_files/LR_data1_visual.png
 
 如果你熟悉绘图程序，可以尝试自己完成框架。下面的代码供你参考：
 
@@ -126,7 +130,7 @@
 函数来查看最终得到的分类面。建议你认真阅读 ``plot_decision_boundary``
 的代码。
 
-.. image:: HW1602_files/LR_data1_boundary.png
+.. image:: Logistic_files/LR_data1_boundary.png
 
 评估逻辑回归模型
 ~~~~~~~~~~~~~~~~
@@ -145,7 +149,7 @@
 
 调用函数 ``plot_data`` 可视化第二组数据 ``HW1602_data2.txt`` 。
 
-.. image:: HW1602_files/LR_data2_visual.png
+.. image:: Logistic_files/LR_data2_visual.png
 
 
 特征变换
@@ -185,4 +189,4 @@
 你可以调用 ``plot_decision_boundary`` 函数来查看最终得到的分类面。建议你调整正则
 化项的系数，分析正则化对分类面的影响。
 
-.. image:: HW1602_files/LR_data2_boundary.png
+.. image:: Logistic_files/LR_data2_boundary.png

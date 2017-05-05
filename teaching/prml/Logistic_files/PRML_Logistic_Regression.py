@@ -150,7 +150,7 @@ def logistic_regression():
     """针对第一组数据建立逻辑回归模型。"""
 
     # 加载数据
-    data = np.loadtxt("LR_data1.txt", delimiter=",")
+    data = np.loadtxt("Logistic_data1.txt", delimiter=",")
     X, y = data[:, :2], data[:, 2]
 
     # 可视化数据
@@ -205,7 +205,7 @@ def logistic_regression_reg(lmb=1.0):
     """针对第二组数据建立逻辑回归模型。"""
 
     # 加载数据
-    data = np.loadtxt("LR_data2.txt", delimiter=",")
+    data = np.loadtxt("Logistic_data2.txt", delimiter=",")
     X, y = data[:, :2], data[:, 2]
 
     # 可视化数据
