@@ -1,14 +1,14 @@
 
-===============================
-《模式识别与应用》作业(2016-03)
-===============================
+===================================
+《图像处理与成像制导》作业(2017-03)
+===================================
 
 作业提交信息
 ============
 
-- 提交作业截止时间： 2016/11/22 23:59:59 (CST)
+- 提交作业截止时间： 2017/06/12 23:59:59 (CST)
 - 发送电子邮件至 fred DOT qi AT ieee DOT org
-- 邮件标题格式： [PRML] HW1603-学号-姓名
+- 邮件标题格式： [IMGNAV] HW1703-学号-姓名
 - 请勿删除作业所提供代码中的注释，将你的代码放入添加代码标志中间。
 
 作业提交内容
@@ -20,9 +20,9 @@
 作业相关文件
 ------------
 
--  :download:`PRML_Neural_Networks.py <HW1603_files/PRML_Neural_Networks.py>`
--  :download:`ex3data.mat <HW1603_files/ex3data.mat>`
--  :download:`ex3weights.mat <HW1603_files/ex3weights.mat>`
+-  :download:`PRML_Neural_Networks.py <NN_files/PRML_Neural_Networks.py>`
+-  :download:`PRML_NN_data.mat <NN_files/PRML_NN_data.mat>`
+-  :download:`PRML_NN_weights.mat <NN_files/PRML_NN_weights.mat>`
 
 使用神经网络进行机器学习
 ========================
@@ -51,20 +51,20 @@
 程序的第一部分将加载数据并将其显示为如下图所示的形式。实现这一功能需要你补充完善
 函数 ``display_data`` 。
 
-.. image:: HW1603_files/data-array.png
+.. image:: NN_files/data-array.png
    :width: 500px
 
 模型表示
 ~~~~~~~~
 
-.. image:: HW1603_files/nn-representation.png
+.. image:: NN_files/nn-representation.png
 
 我们准备训练的神经网络是一个三层的结构，一个输入层，一个隐层以及一个输出层。由于
 我们训练样本（图像）是20x20的，所以输入层单元数为400（不考虑额外的偏置项，如果考
 虑单元个数需要+1）。在我们的程序中，数据会被加载到变量 :math:`X` 和 :math:`y` 里。
 
 本项练习提供了一组训练好的网络参数( :math:`\Theta^{(1)}`, :math:`\Theta^{(2)}`
-）。这些数据存储在数据文件 ``ex3weights.mat`` ，在程序中被加载到变量 ``Theta1``
+）。这些数据存储在数据文件 ``PRML_NN_weights.mat`` ，在程序中被加载到变量 ``Theta1``
 与 ``Theta2`` 中。参数的维度对应于第二层有25个单元、10个输出单元（对应于10个数字
 的类别）的网络。
 
@@ -99,7 +99,7 @@
    J(\theta) =& \frac{1}{m} \sum_{i=1}^{m} \sum_{k=1}^{K} \left[
    -y_k^{(i)} \log((h_{\theta}(x^{(i)}))_k) 
    -(1 - y_k^{(i)}) \log(1 - (h_{\theta}(x^{(i)}))_k) 
-   \right] \\ &+ \frac{\lambda}{m} \left[ 
+   \right] \\ &+ \frac{\lambda}{2m} \left[ 
    \sum_{j=1}^{25} \sum_{k=1}^{400} (\Theta_{j,k}^{(1)})^2 +
    \sum_{j=1}^{10} \sum_{k=1}^{25} (\Theta_{j,k}^{(2)})^2 \right]
    \end{split}
@@ -153,10 +153,10 @@ Sigmoid 函数的梯度可以按照下式进行计算
 误差反传训练算法 (Backpropagation)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: HW1603_files/nn-backpropagation.png
+.. image:: NN_files/nn-backpropagation.png
 		
 现在你需要实现误差反传训练算法。误差反传算法的思想大致可以描述如下。对于一个训练
-样本:math:`(x^{(t)}, y^{(t)})` ，我们首先使用前向传播计算网络中所有单元（神经元）
+样本 :math:`(x^{(t)}, y^{(t)})` ，我们首先使用前向传播计算网络中所有单元（神经元）
 的激活值（activation），包括假设输出 :math:`h_{\Theta}(x)` 。那么，对于第
 :math:`l` 层的第 :math:`j` 个节点，我们期望计算出一个“误差项”
 :math:`\delta_{j}^{(l)}` 用于衡量该节点对于输出的误差的“贡献”。

@@ -4,8 +4,8 @@
 # Author: Fred Qi
 # Created: 2015-06-05 15:41:09(+0800)
 #
-# Last-Updated: 2016-11-06 22:36:41(+0800) [by Fred Qi]
-#     Update #: 448
+# Last-Updated: 2017-05-05 21:57:19(+0800) [by Fred Qi]
+#     Update #: 461
 #
 
 # Commentary:
@@ -17,6 +17,7 @@
 #
 #
 #
+from __future__ import print_function
 
 import numpy as np
 import scipy.io as sio
@@ -136,7 +137,7 @@ def sigmoid_gradient(z):
     return g
 
 
-def rand_initialize_weigths(L_in, L_out):
+def rand_initialize_weights(L_in, L_out):
     """Randomly initialize the weights of a layer with L_in incoming
     connections and L_out outgoing connections"""
 
@@ -195,9 +196,9 @@ def check_nn_gradients(lmb=0.0):
                             input_layer_size, hidden_layer_size,
                             num_labels, lmb, X, y)
     numgrad = compute_numerical_gradient(cost_func, nn_params)
-    print np.vstack((numgrad, grad)).T, np.sum(np.abs(numgrad - grad))
-    print 'The above two columns you get should be very similar.'
-    print '(Left-Your Numerical Gradient, Right-Analytical Gradient)'
+    print(np.vstack((numgrad, grad)).T, np.sum(np.abs(numgrad - grad)))
+    print('The above two columns you get should be very similar.')
+    print('(Left-Your Numerical Gradient, Right-Analytical Gradient)')
 
 
 def predict(Theta1, Theta2, X):
@@ -211,7 +212,7 @@ def predict(Theta1, Theta2, X):
     # ====================== YOUR CODE HERE ======================
 
     # ================== END OF YOUR CODE HERE ===================
-    # print h1.shape, h2.shape
+    # print(h1.shape, h2.shape)
     p = np.argmax(h2, axis=1) + 1.0
     return p
 
@@ -223,8 +224,8 @@ num_labels = 10                 # 10 类标号 从1到10
 
 # =========== 第一部分 ===============
 # 加载训练数据
-print "Loading and Visualizing Data..."
-data = sio.loadmat('ex3data.mat')
+print("Loading and Visualizing Data...")
+data = sio.loadmat('PRML_NN_data.mat')
 X, y = data['X'], data['y']
 
 m = X.shape[0]
@@ -237,10 +238,10 @@ X_sel = X[rand_indices[:100]]
 display_data(X_sel)
 
 # =========== 第二部分 ===============
-print 'Loading Saved Neural Network Parameters ...'
+print('Loading Saved Neural Network Parameters ...')
 
 # Load the weights into variables Theta1 and Theta2
-data = sio.loadmat('ex3weights.mat')
+data = sio.loadmat('PRML_NN_weights.mat')
 Theta1, Theta2 = data['Theta1'], data['Theta2']
 
 # print Theta1.shape, (hidden_layer_size, input_layer_size + 1)
@@ -259,7 +260,7 @@ Theta1, Theta2 = data['Theta1'], data['Theta2']
 #  first so that it will be easier for you to debug. Later, in part 4, you
 #  will get to implement the regularized cost.
 
-print 'Feedforward Using Neural Network ...'
+print('Feedforward Using Neural Network ...')
 
 # Weight regularization parameter (we set this to 0 here).
 lmb = 0.0
@@ -269,51 +270,51 @@ J = nn_cost_function(nn_params,
                      input_layer_size, hidden_layer_size,
                      num_labels, lmb, X, y)
 
-print 'Cost at parameters (loaded from ex3weights): %f ' % J
-print '(this value should be about 0.287629)'
+print('Cost at parameters (loaded from PRML_NN_weights): %f ' % J)
+print('(this value should be about 0.287629)')
 
 # =============== Part 4: Implement Regularization ===============
-print 'Checking Cost Function (w/ Regularization) ... '
+print('Checking Cost Function (w/ Regularization) ... ')
 lmb = 1.0
 
 J = nn_cost_function(nn_params,
                      input_layer_size, hidden_layer_size,
                      num_labels, lmb, X, y)
 
-print 'Cost at parameters (loaded from ex3weights): %f ' % J
-print '(this value should be about 0.383770)'
+print('Cost at parameters (loaded from PRML_NN_weights): %f ' % J)
+print('(this value should be about 0.383770)')
 
 
 # ================ Part 5: Sigmoid Gradient  ================
-print 'Evaluating sigmoid gradient...'
+print('Evaluating sigmoid gradient...')
 
 g = sigmoid_gradient([1, -0.5, 0, 0.5, 1])
-print 'Sigmoid gradient evaluated at [1 -0.5 0 0.5 1]:  ', g
+print('Sigmoid gradient evaluated at [1 -0.5 0 0.5 1]:  ', g)
 
 
 #  ================ Part 6: Initializing Pameters ================
-print 'Initializing Neural Network Parameters ...'
-initial_Theta1 = rand_initialize_weigths(input_layer_size, hidden_layer_size)
-initial_Theta2 = rand_initialize_weigths(hidden_layer_size, num_labels)
+print('Initializing Neural Network Parameters ...')
+initial_Theta1 = rand_initialize_weights(input_layer_size, hidden_layer_size)
+initial_Theta2 = rand_initialize_weights(hidden_layer_size, num_labels)
 
 # Unroll parameters
 initial_nn_params = np.hstack((initial_Theta1.flatten(),
                                initial_Theta2.flatten()))
 
 # =============== Part 7: Implement Backpropagation ===============
-print 'Checking Backpropagation... '
+print('Checking Backpropagation... ')
 
 # Check gradients by running checkNNGradients
 check_nn_gradients()
 
 # =============== Part 8: Implement Regularization ===============
-print 'Checking Backpropagation (w/ Regularization) ... '
+print('Checking Backpropagation (w/ Regularization) ... ')
 # Check gradients by running checkNNGradients
 lmb = 3.0
 check_nn_gradients(lmb)
 
 # =================== Part 8: Training NN ===================
-print 'Training Neural Network...'
+print('Training Neural Network...')
 
 lmb, maxiter = 1.0, 500
 args = (input_layer_size, hidden_layer_size, num_labels, lmb, X, y)
@@ -330,16 +331,16 @@ Theta2 = nn_params[hidden_layer_size*(input_layer_size + 1):]
 Theta2 = Theta2.reshape((num_labels, hidden_layer_size + 1))
 
 # ================= Part 9: Visualize Weights =================
-print 'Visualizing Neural Network... '
+print('Visualizing Neural Network... ')
 # display_data(Theta1[:, 1:])
 
 # ================= Part 10: Implement Predict =================
 
 pred = predict(Theta1, Theta2, X)
-# print pred.shape, y.shape
-# print np.hstack((pred, y))
+# print(pred.shape, y.shape)
+# print(np.hstack((pred, y)))
 
-print 'Training Set Accuracy:', np.mean(pred == y[:, 0])*100.0
+print('Training Set Accuracy:', np.mean(pred == y[:, 0])*100.0)
 
 #
 # PRML_Neural_Networks.py ends here

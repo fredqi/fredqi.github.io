@@ -20,7 +20,7 @@ Current Courses
 
      prml/PRML_Linear_Regression.rst
      prml/PRML_Logistic_Regression.rst
-..   prml/PRML_Neural_Networks.rst   
+     prml/PRML_Neural_Networks.rst
 
 - Automatic Control (2010, 2011, 2013, 2015--2017)
 
