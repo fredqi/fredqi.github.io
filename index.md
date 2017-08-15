@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: The essentials
+use-site-title: false
 ---
 
 Education

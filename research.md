@@ -2,6 +2,7 @@
 layout: page
 title: Publications
 subtitle: My research work.
+use-site-title: false
 ---
 
 # International Journal

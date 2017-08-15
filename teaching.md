@@ -2,6 +2,7 @@
 layout: page
 title: Teaching
 subtitle: Courses I am teaching.
+use-site-title: false
 ---
 
 # Planned Course
