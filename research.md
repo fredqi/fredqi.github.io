@@ -33,17 +33,18 @@ use-site-title: false
 
 # Conference
 
-1.  Chen Xia, Pengjin Wang, Fei Qi, and Guangming Shi. "Nonlocal Center-Surround Reconstruction-based Bottom-Up Saliency," Int'l Conf. Image Processing, Sept. 2013. Melbourne, Australia.
-2.  Jinjian Wu, Fei Qi, and Guangming Shi. "Image Quality Assessment based on Improved Structural SIMilarity," Pacific-Rim Conf. Multimedia, PCM, Dec. 2012. Singapore.
-3.  Chang Wang, Fei Qi, and Guangming Shi. "Observation Quality Guaranteed Layout of Camera Networks via Sparse Representation," in *Proc. Visual Communications and Image Processing*, VCIP, Nov. 2011. Tainan, Taiwan.
-4.  Jinjian Wu, Fei Qi, and Guangming Shi. "Unified Spatial Masking for Just-Noticeable Difference Estimation," in *Proc. APSIPA Annual Summit and Conference*, APSIPA ASC, Oct. 2011. Xi'an, China.
-5.  Junyu Han, Fei Qi, and Guangming Shi. "Enhancing Gradient Sparsity for Parametrized Motion Estimation," in *Proc. British Machine Vision Conference, BMVC*, Sep. 2011. Dundee, UK.
-6.  Junyu Han, Fei Qi, and Guangming Shi, "Gradient Sparsity for Piecewise Continuous Optical Flow Estimation," in *Proc. IEEE Int'l Conf. Image Processing*, ICIP, Sep. 2011. Brussels, Belguim: IEEE Press.
-7.  Jinjian Wu, Fei Qi, and Guangming Shi, "An improved model of pixel adaptive just-noticeable difference estimation," in *Proc. IEEE Int'l Conf. Acoustics, Speech, and Signal Processing*, ICASSP, Mar. 2010. Dallas, Texas, USA: IEEE Press.
-8.  Chang Wang, Fei Qi, Guangming Shi, "Nodes placement for optimizing coverage of visual sensor networks," in *Proc. 10th IEEE Pacific-Rim Conf. Multimedia*, PCM, Dec. 2009. Bangkok, Thailand: IEEE Press.
-9.  Fei Qi, Xiaowei Song, and Guangming Shi. "LDA based Color Information Fusion for Visual Objects Tracking", in *Proc. IEEE Int'l Conf. Image Processing*, ICIP, Nov. 2009. Cairo, Egypt: IEEE Press.
-10. Fei Qi, Jinjian Wu, and Guangming Shi. "Extracting Regions of Attention by Imitating the Human Visual System", in Proc. IEEE Int'l Conf. Acoustics, Speech and Signal Processing, ICASSP, Apr. 2009. Taipei, Taiwan: IEEE Press.
-11. Fei Qi, Yupin Luo, and Dongcheng Hu, "Distorted Grid Recognition with Its Application to Microarray Image Analysis", in Proc. Third Int’l Conf. Image and Graphics, Dec. 2004. Hongkong, China: IEEE Computer Society.
-12. Fei Qi, Yupin Luo, and Dongcheng Hu, "Visual Tracking of Players through Occlusions in Low Resolution", in Proc. Sixth IASTED Int’l Conf Signal and Image Processing, pp. 375-380, Aug. 2004. Honolulu, HI, USA: ACTA Press.
-13. Fei Qi and Chengying Hua, "Efficient Automated Microarray Image Analysis", in Proc. Second Int’l Conf. Image and Graphics, *Proceedings of SPIE*, vol. 4875, pp. 567--574, Aug. 2002. Hefei, China: SPIE.
+1. Chen Xia, Fei Qi, Guangming Shi. "An Iterative Representation Learning Framework to Predict the Sequence of Eye Fixations," Int'l Conf. Multimedia & Expo, July 2017. Hongkong.
+2.  Chen Xia, Pengjin Wang, Fei Qi, and Guangming Shi. "Nonlocal Center-Surround Reconstruction-based Bottom-Up Saliency," Int'l Conf. Image Processing, Sept. 2013. Melbourne, Australia.
+3.  Jinjian Wu, Fei Qi, and Guangming Shi. "Image Quality Assessment based on Improved Structural SIMilarity," Pacific-Rim Conf. Multimedia, PCM, Dec. 2012. Singapore.
+4.  Chang Wang, Fei Qi, and Guangming Shi. "Observation Quality Guaranteed Layout of Camera Networks via Sparse Representation," in *Proc. Visual Communications and Image Processing*, VCIP, Nov. 2011. Tainan, Taiwan.
+5.  Jinjian Wu, Fei Qi, and Guangming Shi. "Unified Spatial Masking for Just-Noticeable Difference Estimation," in *Proc. APSIPA Annual Summit and Conference*, APSIPA ASC, Oct. 2011. Xi'an, China.
+6.  Junyu Han, Fei Qi, and Guangming Shi. "Enhancing Gradient Sparsity for Parametrized Motion Estimation," in *Proc. British Machine Vision Conference, BMVC*, Sep. 2011. Dundee, UK.
+7.  Junyu Han, Fei Qi, and Guangming Shi, "Gradient Sparsity for Piecewise Continuous Optical Flow Estimation," in *Proc. IEEE Int'l Conf. Image Processing*, ICIP, Sep. 2011. Brussels, Belguim: IEEE Press.
+8.  Jinjian Wu, Fei Qi, and Guangming Shi, "An improved model of pixel adaptive just-noticeable difference estimation," in *Proc. IEEE Int'l Conf. Acoustics, Speech, and Signal Processing*, ICASSP, Mar. 2010. Dallas, Texas, USA: IEEE Press.
+9.  Chang Wang, Fei Qi, Guangming Shi, "Nodes placement for optimizing coverage of visual sensor networks," in *Proc. 10th IEEE Pacific-Rim Conf. Multimedia*, PCM, Dec. 2009. Bangkok, Thailand: IEEE Press.
+10.  Fei Qi, Xiaowei Song, and Guangming Shi. "LDA based Color Information Fusion for Visual Objects Tracking", in *Proc. IEEE Int'l Conf. Image Processing*, ICIP, Nov. 2009. Cairo, Egypt: IEEE Press.
+11. Fei Qi, Jinjian Wu, and Guangming Shi. "Extracting Regions of Attention by Imitating the Human Visual System", in Proc. IEEE Int'l Conf. Acoustics, Speech and Signal Processing, ICASSP, Apr. 2009. Taipei, Taiwan: IEEE Press.
+12. Fei Qi, Yupin Luo, and Dongcheng Hu, "Distorted Grid Recognition with Its Application to Microarray Image Analysis", in Proc. Third Int’l Conf. Image and Graphics, Dec. 2004. Hongkong, China: IEEE Computer Society.
+13. Fei Qi, Yupin Luo, and Dongcheng Hu, "Visual Tracking of Players through Occlusions in Low Resolution", in Proc. Sixth IASTED Int’l Conf Signal and Image Processing, pp. 375-380, Aug. 2004. Honolulu, HI, USA: ACTA Press.
+14. Fei Qi and Chengying Hua, "Efficient Automated Microarray Image Analysis", in Proc. Second Int’l Conf. Image and Graphics, *Proceedings of SPIE*, vol. 4875, pp. 567--574, Aug. 2002. Hefei, China: SPIE.
 
