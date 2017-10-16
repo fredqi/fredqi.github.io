@@ -15,6 +15,7 @@ use-site-title: false
   + *48 Hours, for undergraduate students*
   + [《模式识别与应用》作业(2017-01)]({{ site.baseurl }}{% link teaching/PRML_Linear_Regression.md %})
   + [《模式识别与应用》作业(2017-02)]({{ site.baseurl }}{% link teaching/PRML_Logistic_Regression.md %})
+  + [《模式识别与应用》作业(2017-03)]({{ site.baseurl }}{% link teaching/PRML_Neural_Networks.md %})
 - Image Processing (Graduate, 2007--2013, 2015--2017)
   + *32 Hours, Image capturing, filtering, and restoration.*
 - Automatic Control (2010, 2011, 2013, 2015--2017)
