@@ -14,7 +14,8 @@ Education
 Employment
 ==========
 
-- 2008/07 -- now, Associate Professor, School of Electronic Engineering, Xidian University, Xi'an, PR China.
+- 2017/11 -- now, Associate Professor, School of Artificial Intelligence, Xidian University, Xi'an, PR China.
+- 2008/07 -- 2017/10, Associate Professor, School of Electronic Engineering, Xidian University, Xi'an, PR China.
 - 2013/12 -- 2015/12, Research Fellow, Moscow Institute of Physics and Technology, Moscow, Russia.
 - 2007/03-2008/06, Lecturer, School of Electronic Engineering, Xidian University, Xi'an, PR China.
 
@@ -31,21 +32,27 @@ Research Interests
   - Mechanism and computational modeling (e.g., saliency estimation)
   - Geometry perception
   - Bio-inspired visual recognition
+- Machine Learning and Data Science
+  - Deep Learning
+  - Evolutionary Automatic Maching Learning
+  - Reinforcement Learning
+  - Power Prediction for New Energy
+  - Knowledge Discovery
 - Image and video understanding
   - Image representation (e.g. sparse coding, autoencoder, bag-of-words)
   - Motion estimation, analysis, and applications
   - Articulated objects tracking
   - Screen Contents Understanding
   - Visual Surveillance
-- Machine Learning and Data Science
-  - Kernel methods, Deep Learning, and Reinforcement Learning
-  - Knowledge Discovery
 - Optimization and applications
 
 Contacts
 ========
-
 PO Box 134\# <br>
-School of Electronic Engineering,<br>
+School of Artificial Intelligence,<br>
 Xidian University,<br>
 Xi'an, Shaanxi, 710071, PR China
+
+Office: RM 128, Main Building
+
+[To prospective students (2018招生信息)]({{ site.baseurl }}{% link misc/graduates.md %})
