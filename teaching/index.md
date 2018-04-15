@@ -19,6 +19,7 @@ use-site-title: false
 - Automatic Control (2010, 2011, 2013, 2015--2018)
   + *48 Hours, Feedback control system analysis and design, state space model.*
   + [《自动控制原理》作业(2018)]({{ site.baseurl }}{% link teaching/CTRL_2018.md %})
+  + [《自动控制原理》第一章讲稿]({{ site.baseurl }}{% link lectures/control/ch01-concepts-in-cybernetics.html %})
 - Visual Objects Tracking (2012, 2013, 2017, 2018)
   + *48 Hours, Background modeling, selected classic and modern visual tracking methods.*
 
