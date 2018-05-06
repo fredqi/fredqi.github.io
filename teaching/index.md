@@ -22,6 +22,7 @@ use-site-title: false
   + [《自动控制原理》第一章讲稿]({{ site.baseurl }}{% link lectures/control/ch01-concepts-in-cybernetics.html %})
   + [《自动控制原理》第二章讲稿]({{ site.baseurl }}{% link lectures/control/ch02-mathematical-model.html %})
   + [《自动控制原理》第三章讲稿]({{ site.baseurl }}{% link lectures/control/ch03-time-domain-analysis.html %})
+  + [《自动控制原理》第四章讲稿]({{ site.baseurl }}{% link lectures/control/ch04-root-locus.html %})
 - Visual Objects Tracking (2012, 2013, 2017, 2018)
   + *48 Hours, Background modeling, selected classic and modern visual tracking methods.*
 
