@@ -7,6 +7,10 @@
 url: "http://fredqi.me"
 baseurl: ""
 
+# How to display the link to the website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "fredqi.me"
+
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
@@ -86,10 +90,6 @@ share-links-active:
   google: true
   linkedin: true
 
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "fredqi.me"
-
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 disqus: "fredqi"
@@ -117,7 +117,7 @@ title-separator: "-"
 timezone: "Asia/Shanghai"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: blogs/:year-:month-:day-:title/
 paginate: 5
 paginate_path: "/blogs/page:num/"
 
@@ -153,6 +153,7 @@ exclude:
   - LICENSE
   - README
   - Vagrantfile
+  - vendor
 
 # prose.io config
 prose:
