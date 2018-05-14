@@ -19,6 +19,7 @@ use-site-title: false
 - Automatic Control (2010, 2011, 2013, 2015--2018)
   + *48 Hours, Feedback control system analysis and design, state space model.*
   + [《自动控制原理》作业(2018)]({{ site.baseurl }}{% link teaching/CTRL_2018.md %})
+  + [《自动控制原理》作业(201802)]({{ site.baseurl }}{% link teaching/CTRL_201802.md %})
   + [《自动控制原理》第一章讲稿]({{ site.baseurl }}{% link lectures/control/ch01-concepts-in-cybernetics.html %})
   + [《自动控制原理》第二章讲稿]({{ site.baseurl }}{% link lectures/control/ch02-mathematical-model.html %})
   + [《自动控制原理》第三章讲稿]({{ site.baseurl }}{% link lectures/control/ch03-time-domain-analysis.html %})
