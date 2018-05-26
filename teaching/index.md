@@ -28,6 +28,8 @@ use-site-title: false
   + [《自动控制原理》第三章讲稿]({{ site.baseurl }}{% link lectures/control/ch03-time-domain-analysis.html %})
   + [《自动控制原理》第四章讲稿]({{ site.baseurl }}{% link lectures/control/ch04-root-locus.html %})
   + [《自动控制原理》第五章讲稿]({{ site.baseurl }}{% link lectures/control/ch05-frequency-response.html %})
+  + [《自动控制原理》第六章讲稿]({{ site.baseurl }}{% link lectures/control/ch06-compensation.html %})
+  + [《自动控制原理》第七章讲稿]({{ site.baseurl }}{% link lectures/control/ch07-state-space-method.html %})
 - Visual Objects Tracking (2012, 2013, 2017, 2018)
   + *48 Hours, Background modeling, selected classic and modern visual tracking methods.*
 
