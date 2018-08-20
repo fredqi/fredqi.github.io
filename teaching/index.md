@@ -1,13 +1,9 @@
 ---
 layout: page
 title: Teaching
-subtitle: Courses I am teaching.
+subtitle: Courses I have taught.
 use-site-title: false
 ---
-
-# Planned Course
-
-- Artificial Intelligence
 
 # Current Courses
 
@@ -15,21 +11,8 @@ use-site-title: false
   + *48 Hours, for undergraduate students*
 - Image Processing (Graduate, 2007--2013, 2015--2018)
   + *32 Hours, Image capturing, filtering, and restoration.*
-  + [《图像处理与成像制导》作业(201801)]({{ site.baseurl }}{% link teaching/IMGNAV_image_rw.md %})
-  + [《图像处理与成像制导》作业(201802)]({{ site.baseurl }}{% link teaching/IMGNAV_Linear_Regression.md %})
-  + [《图像处理与成像制导》作业(201803)]({{ site.baseurl }}{% link teaching/IMGNAV_Logistic_Regression.md %})
-  + [《图像处理与成像制导》作业(201804)]({{ site.baseurl }}{% link teaching/IMGNAV_Neural_Networks.md %})
 - Automatic Control (2010, 2011, 2013, 2015--2018)
   + *48 Hours, Feedback control system analysis and design, state space model.*
-  + [《自动控制原理》作业(2018)]({{ site.baseurl }}{% link teaching/CTRL_2018.md %})
-  + [《自动控制原理》作业(201802)]({{ site.baseurl }}{% link teaching/CTRL_201802.md %})
-  + [《自动控制原理》第一章讲稿]({{ site.baseurl }}{% link lectures/control/ch01-concepts-in-cybernetics.html %})
-  + [《自动控制原理》第二章讲稿]({{ site.baseurl }}{% link lectures/control/ch02-mathematical-model.html %})
-  + [《自动控制原理》第三章讲稿]({{ site.baseurl }}{% link lectures/control/ch03-time-domain-analysis.html %})
-  + [《自动控制原理》第四章讲稿]({{ site.baseurl }}{% link lectures/control/ch04-root-locus.html %})
-  + [《自动控制原理》第五章讲稿]({{ site.baseurl }}{% link lectures/control/ch05-frequency-response.html %})
-  + [《自动控制原理》第六章讲稿]({{ site.baseurl }}{% link lectures/control/ch06-compensation.html %})
-  + [《自动控制原理》第七章讲稿]({{ site.baseurl }}{% link lectures/control/ch07-state-space-method.html %})
 - Visual Objects Tracking (2012, 2013, 2017, 2018)
   + *48 Hours, Background modeling, selected classic and modern visual tracking methods.*
 
