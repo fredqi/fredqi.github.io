@@ -7,7 +7,7 @@ use-site-title: false
 
 # International Journal
 
-1. Chen Xia, Fei Qi, Guangming Shi, and Chunhuan Lin, "Stereoscopic Saliency Estimation with Background Priors Based Deep Reconstruction," *Neurocomputing*. Accepted for publication (September 16, 2018).
+1. Chen Xia, Fei Qi, Guangming Shi, and Chunhuan Lin, "Stereoscopic Saliency Estimation with Background Priors Based Deep Reconstruction," *Neurocomputing*. In press. [doi: 10.1016/j.neucom.2018.09.009](https://doi.org/10.1016/j.neucom.2018.09.009)
 1. Chen Xia, Fei Qi, and Guangming Shi, "Bottom-up Visual Saliency Estimation with Deep Autoencoder-based Sparse Reconstruction," *IEEE Transactions on Neural Networks and Learning Systems*, 27(6): 1227--1240, June 2016. [doi: 10.1109/TNNLS.2015.2512898](http://dx.doi.org/10.1109/TNNLS.2015.2512898)
 2. Chen Xia, Fei Qi, Guangming Shi, and Pengjin Wang, "Nonlocal Center-Surround Reconstruction-based Bottom-Up Saliency Estimation," *Pattern Recognition*, 48(4): 1337--1348, April 2015. [doi: 10.1016/j.patcog.2014.10.007](http://dx.doi.org/10.1016/j.patcog.2014.10.007)
 3. Chang Wang, Fei Qi, Guangming Shi, and Xiaotian Wang, "Convex Combination Based Target Localization with Noisy Angle of Arrival Measurements," *IEEE Wireless Communications Letters*, 3(1): 14--17, Feb. 2014. [doi: 10.1109/WCL.2013.101613.130587](http://dx.doi.org/10.1109/WCL.2013.101613.130587)
