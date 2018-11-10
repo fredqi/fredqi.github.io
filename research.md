@@ -7,6 +7,8 @@ use-site-title: false
 
 # International Journal
 
+1. Xiaohu Yu,  Artem Oganov,  Qiang Zhu,  Fei Qi  and  Guang-Rui Qian, "The
+   stability and unexpected chemistry of oxide clusters," Physical Chemistry Chemical Physics, 2018. Accepted 09 Nov 2018. [doi: 10.1039/C8CP03519A](https://doi.org/10.1039/C8CP03519A) (IF=3.906)
 1. Chen Xia, Fei Qi, Guangming Shi, and Chunhuan Lin, "Stereoscopic Saliency Estimation with Background Priors Based Deep Reconstruction," *Neurocomputing*. 321: 126--138, Dec. 2018. [doi: 10.1016/j.neucom.2018.09.009](https://doi.org/10.1016/j.neucom.2018.09.009) [Limited free access](https://authors.elsevier.com/a/1Xv9I3INuk6Zuj)
 1. Chen Xia, Fei Qi, and Guangming Shi, "Bottom-up Visual Saliency Estimation with Deep Autoencoder-based Sparse Reconstruction," *IEEE Transactions on Neural Networks and Learning Systems*, 27(6): 1227--1240, June 2016. [doi: 10.1109/TNNLS.2015.2512898](http://doi.org/10.1109/TNNLS.2015.2512898)
 2. Chen Xia, Fei Qi, Guangming Shi, and Pengjin Wang, "Nonlocal Center-Surround Reconstruction-based Bottom-Up Saliency Estimation," *Pattern Recognition*, 48(4): 1337--1348, April 2015. [doi: 10.1016/j.patcog.2014.10.007](http://doi.org/10.1016/j.patcog.2014.10.007)
