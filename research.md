@@ -26,6 +26,10 @@ use-site-title: false
 17. Fei Qi, Qihe Li, Yupin Luo, and Dongcheng Hu, "Camera Calibration with One-Dimensional Objects Moving under Gravity", *Pattern Recognition*, 40(1): 343--345, 2007.
 18. Fei Qi, Yupin Luo, and Dongcheng Hu, "Recognition of Perspectively Distorted Planar Grids", *Pattern Recognition Letters*, 27(14): 1725--1731, 2006.
 
+# Preprints
+
+1. Fei Qi, Zhaohui Xia, Gaoyang Tang, Hang Yang, Yu Song, Guangrui Qian, Xiong An, Chunhuan Lin, Guangming Shi, "DarwinML: A Graph-based Evolutionary Algorithm for Automated Machine Learning," [arXiv:1901.08013 [cs.NE]](https://arxiv.org/abs/1901.08013), 2019.
+
 # National Journal
 
 1.  Fu Li, Guangming Shi, Fei Qi, and Li Zhang. "Bandwidth Adaption for Kernel Particle Filter", Journal of Systems Engineering and Electronics, 21(6), 2010.
