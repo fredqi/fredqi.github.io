@@ -7,7 +7,7 @@ use-site-title: false
 
 # International Journal
 
-1. Chen Xia, Junwei Han, Fei Qi, and Guangming Shi, "Predicting Human Saccadic Scanpaths Based on Iterative Representation Learning," *IEEE Transactions on Image Processing*, 2019. (Accepted)
+1. Chen Xia, Junwei Han, Fei Qi, and Guangming Shi, "Predicting Human Saccadic Scanpaths Based on Iterative Representation Learning," *IEEE Transactions on Image Processing*, 2019. (Accepted, IF=5.071) [doi: 10.1109/TIP.2019.2897966](https://doi.org/10.1109/TIP.2019.2897966)
 2. Xiaohu Yu,  Artem Oganov,  Qiang Zhu,  Fei Qi  and  Guang-Rui Qian, "The stability and unexpected chemistry of oxide clusters," *Physical Chemistry Chemical Physics*, 20(48): 30437--30444, 2018. [doi: 10.1039/C8CP03519A](https://doi.org/10.1039/C8CP03519A) (IF=3.906)
 3. Chen Xia, Fei Qi, Guangming Shi, and Chunhuan Lin, "Stereoscopic Saliency Estimation with Background Priors Based Deep Reconstruction," *Neurocomputing*. 321: 126--138, Dec. 2018. [doi: 10.1016/j.neucom.2018.09.009](https://doi.org/10.1016/j.neucom.2018.09.009)
 4. Chen Xia, Fei Qi, and Guangming Shi, "Bottom-up Visual Saliency Estimation with Deep Autoencoder-based Sparse Reconstruction," *IEEE Transactions on Neural Networks and Learning Systems*, 27(6): 1227--1240, June 2016. [doi: 10.1109/TNNLS.2015.2512898](http://doi.org/10.1109/TNNLS.2015.2512898)

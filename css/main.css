@@ -457,7 +457,7 @@ footer .theme-by {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 41px;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
@@ -510,10 +510,10 @@ footer .theme-by {
     padding: 150px 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 50px;
   }
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;
@@ -679,4 +679,10 @@ td.gutter {
 
 #social-share-section {
   margin-bottom: 30px;
+}
+
+/* --- others --- */
+.center {
+  margin: 2px auto;
+  display: block;
 }
