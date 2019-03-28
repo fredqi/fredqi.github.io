@@ -25,3 +25,13 @@ use-site-title: false
 实验结果提交截止时间是 2019/3/14 23:59 (CST)
 
 <img class="center" src="{{ site.baseurl }}{% link /teaching/AIRoad/hw02-coin.png %}" width="192" />
+
+
+## 三、课程报告题目
+
+请队队长点击[课程报告题目汇总链接](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__qywqz5UOThMUE0xQ1hBQ1E0SU03QzZITjc0TUtZSC4u)或
+扫描以下二维码提交课程报告题目。
+
+报告题目提交截止时间是 2019/3/31 23:59 (CST)
+
+<img class="center" src="{{ site.baseurl }}{% link /teaching/AIRoad/report-title.png %}" width="192" />

@@ -6,6 +6,9 @@ use-site-title: false
 ---
 
 # Current Courses
+
+- Machine Learning (2019)
+  + *48 hours*
 - Roadmap of Artificial Intelligence (2019)
   + *16 hours*
   + [《智能之路》作业]({{ site.baseurl }}{% link teaching/AI_roadmap.md %})
