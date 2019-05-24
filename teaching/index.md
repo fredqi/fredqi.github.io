@@ -16,11 +16,11 @@ use-site-title: false
   + *32 Hours, Image capturing, filtering, and restoration.*
 - Automatic Control (2010, 2011, 2013, 2015--2019)
   + *48 Hours, Feedback control system analysis and design, state space model.*
-- Visual Objects Tracking (2012, 2013, 2017, 2018)
-  + *48 Hours, Background modeling, selected classic and modern visual tracking methods.*
 
 # Previous Courses
 
+- Visual Objects Tracking (2012, 2013, 2017, 2018)
+  + *48 Hours, Background modeling, selected classic and modern visual tracking methods.*
 - Pattern Recognition and Applications (2016, 2017)
   + *48 Hours, for undergraduate students*
 - Automatic Control (in English, 2010, 2012, 2013)

@@ -53,6 +53,6 @@ School of Artificial Intelligence,<br>
 Xidian University,<br>
 Xi'an, Shaanxi, 710071, PR China
 
-Office: RM 128, Main Building
+Office: RM II-128, Main Building
 
-[To prospective students (2019年度硕士研究生调剂申请)]({{ site.baseurl }}{% link misc/graduates.md %})
+<!-- [To prospective students (2019年度硕士研究生调剂申请)]({{ site.baseurl }}{% link misc/graduates.md %}) -->
