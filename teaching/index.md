@@ -15,6 +15,7 @@ use-site-title: false
 - Image Processing (Graduate, 2007--2013, 2015--2019)
   + *32 Hours, Image capturing, filtering, and restoration.*
 - Automatic Control (2010, 2011, 2013, 2015--2019)
+  + [《自动控制原理》习题]({{ site.baseurl }}{% link teaching/CTRL_2019.md %})
   + *48 Hours, Feedback control system analysis and design, state space model.*
 
 # Previous Courses
