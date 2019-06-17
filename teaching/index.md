@@ -9,6 +9,7 @@ use-site-title: false
 
 - Machine Learning (2019)
   + *48 hours*
+  + [《机器学习(双语)》提纲]({{ site.baseurl }}{% link teaching/PRML_Guide.md %})
 - Roadmap of Artificial Intelligence (2019)
   + *16 hours*
   + [《智能之路》作业]({{ site.baseurl }}{% link teaching/AI_roadmap.md %})
