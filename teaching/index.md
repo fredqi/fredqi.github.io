@@ -9,14 +9,11 @@ use-site-title: false
 
 - Machine Learning (2019)
   + *48 hours*
-  + [《机器学习(双语)》提纲]({{ site.baseurl }}{% link teaching/PRML_Guide.md %})
 - Roadmap of Artificial Intelligence (2019)
   + *16 hours*
-  + [《智能之路》成绩（草）]({{ site.baseurl }}{% link teaching/AI_scores.md %})
 - Image Processing (Graduate, 2007--2013, 2015--2019)
   + *32 Hours, Image capturing, filtering, and restoration.*
 - Automatic Control (2010, 2011, 2013, 2015--2019)
-  + [《自动控制原理》习题]({{ site.baseurl }}{% link teaching/CTRL_2019.md %})
   + *48 Hours, Feedback control system analysis and design, state space model.*
 
 # Previous Courses
