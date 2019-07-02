@@ -41,8 +41,9 @@ use-site-title: false
 
 # Conference
 
-1. Chen Xia, Fei Qi, Guangming Shi. "An Iterative Representation Learning Framework to Predict the Sequence of Eye Fixations," Int'l Conf. Multimedia & Expo, July 2017. Hongkong.
-2.  Chen Xia, Pengjin Wang, Fei Qi, and Guangming Shi. "Nonlocal Center-Surround Reconstruction-based Bottom-Up Saliency," Int'l Conf. Image Processing, Sept. 2013. Melbourne, Australia.
+1. Pengfei Wang, Chengquan Zhang, Fei Qi, Zuming Huang, Mengyi En, Junyu Han, Jingtuo Liu, Errui Ding, and Guangming Shi, "SAST: A Single-shot Arbitrary-Shaped Text Detector," ACM Multimedia, Oct. 2019. Nice, France. (Accepted)
+2. Chen Xia, Fei Qi, Guangming Shi. "An Iterative Representation Learning Framework to Predict the Sequence of Eye Fixations," Int'l Conf. Multimedia & Expo, July 2017. Hongkong.
+3.  Chen Xia, Pengjin Wang, Fei Qi, and Guangming Shi. "Nonlocal Center-Surround Reconstruction-based Bottom-Up Saliency," Int'l Conf. Image Processing, Sept. 2013. Melbourne, Australia.
 3.  Jinjian Wu, Fei Qi, and Guangming Shi. "Image Quality Assessment based on Improved Structural SIMilarity," Pacific-Rim Conf. Multimedia, PCM, Dec. 2012. Singapore.
 4.  Chang Wang, Fei Qi, and Guangming Shi. "Observation Quality Guaranteed Layout of Camera Networks via Sparse Representation," in *Proc. Visual Communications and Image Processing*, VCIP, Nov. 2011. Tainan, Taiwan.
 5.  Jinjian Wu, Fei Qi, and Guangming Shi. "Unified Spatial Masking for Just-Noticeable Difference Estimation," in *Proc. APSIPA Annual Summit and Conference*, APSIPA ASC, Oct. 2011. Xi'an, China.
