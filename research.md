@@ -7,6 +7,7 @@ use-site-title: false
 
 # International Journal
 
+1. Hao Li, Fei Qi, Guangming Shi, and Chunhuan Lin, "A Multiscale Dilated Dense Convolutional Network for Saliency Prediction with Instance-Level Attention Competition," *Journal of Visual Communication and Image Representation*, Accepted. (Aug. 2019)
 1. Fei Qi, Chunhuan Lin, Guangming Shi, and Hao Li, "A Convolutional Encoder-Decoder Network with Skip Connections for Saliency Prediction," *IEEE Access*, 7: 60428--60438, May 2019. (IF=3.557) [doi: 10.1109/ACCESS.2019.2915630](https://doi.org/10.1109/ACCESS.2019.2915630)
 2. Chen Xia, Junwei Han, Fei Qi, and Guangming Shi, "Predicting Human Saccadic Scanpaths Based on Iterative Representation Learning," *IEEE Transactions on Image Processing*, 28(7): 3502-3515, July 2019. (IF=5.071) [doi: 10.1109/TIP.2019.2897966](https://doi.org/10.1109/TIP.2019.2897966)
 3. Xiaohu Yu,  Artem Oganov,  Qiang Zhu,  Fei Qi  and  Guang-Rui Qian, "The stability and unexpected chemistry of oxide clusters," *Physical Chemistry Chemical Physics*, 20(48): 30437--30444, 2018. [doi: 10.1039/C8CP03519A](https://doi.org/10.1039/C8CP03519A) (IF=3.906)
@@ -41,7 +42,7 @@ use-site-title: false
 
 # Conference
 
-1. Pengfei Wang, Chengquan Zhang, Fei Qi, Zuming Huang, Mengyi En, Junyu Han, Jingtuo Liu, Errui Ding, and Guangming Shi, "SAST: A Single-shot Arbitrary-Shaped Text Detector," ACM Multimedia, Oct. 2019. Nice, France. (Accepted)
+1. Pengfei Wang, Chengquan Zhang, Fei Qi, Zuming Huang, Mengyi En, Junyu Han, Jingtuo Liu, Errui Ding, and Guangming Shi, "A Single-Shot Arbitrarily-Shaped Text Detector based on Context Attended Multi-Task Learning," In *Proceedings of the 27th ACM International Conference on Multimedia (MM '19)*, Oct. 2019. Nice, France. [doi: 10.1145/3343031.3350988](https://doi.org/10.1145/3343031.3350988) [arXiv: 1908.05498[cs.CV]](https://arxiv.org/abs/1908.05498) (Accepted)
 2. Chen Xia, Fei Qi, Guangming Shi. "An Iterative Representation Learning Framework to Predict the Sequence of Eye Fixations," Int'l Conf. Multimedia & Expo, July 2017. Hongkong.
 3.  Chen Xia, Pengjin Wang, Fei Qi, and Guangming Shi. "Nonlocal Center-Surround Reconstruction-based Bottom-Up Saliency," Int'l Conf. Image Processing, Sept. 2013. Melbourne, Australia.
 3.  Jinjian Wu, Fei Qi, and Guangming Shi. "Image Quality Assessment based on Improved Structural SIMilarity," Pacific-Rim Conf. Multimedia, PCM, Dec. 2012. Singapore.
