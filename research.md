@@ -7,7 +7,7 @@ use-site-title: false
 
 # International Journal
 
-1. Hao Li, Fei Qi, Guangming Shi, and Chunhuan Lin, "A Multiscale Dilated Dense Convolutional Network for Saliency Prediction with Instance-Level Attention Competition," *Journal of Visual Communication and Image Representation*, [doi: 10.1016/j.jvcir.2019.102611](https://doi.org/10.1016/j.jvcir.2019.102611). (Inpress)
+1. Hao Li, Fei Qi, Guangming Shi, and Chunhuan Lin, "A Multiscale Dilated Dense Convolutional Network for Saliency Prediction with Instance-Level Attention Competition," *Journal of Visual Communication and Image Representation*, 64: 102611, Oct. 2019. [[doi: 10.1016/j.jvcir.2019.102611](https://doi.org/10.1016/j.jvcir.2019.102611)]. [[50 days' free access](https://authors.elsevier.com/a/1Ziqc3k8X3cHgv)]
 1. Fei Qi, Chunhuan Lin, Guangming Shi, and Hao Li, "A Convolutional Encoder-Decoder Network with Skip Connections for Saliency Prediction," *IEEE Access*, 7: 60428--60438, May 2019. (IF=3.557) [doi: 10.1109/ACCESS.2019.2915630](https://doi.org/10.1109/ACCESS.2019.2915630)
 2. Chen Xia, Junwei Han, Fei Qi, and Guangming Shi, "Predicting Human Saccadic Scanpaths Based on Iterative Representation Learning," *IEEE Transactions on Image Processing*, 28(7): 3502-3515, July 2019. (IF=5.071) [doi: 10.1109/TIP.2019.2897966](https://doi.org/10.1109/TIP.2019.2897966)
 3. Xiaohu Yu,  Artem Oganov,  Qiang Zhu,  Fei Qi  and  Guang-Rui Qian, "The stability and unexpected chemistry of oxide clusters," *Physical Chemistry Chemical Physics*, 20(48): 30437--30444, 2018. [doi: 10.1039/C8CP03519A](https://doi.org/10.1039/C8CP03519A) (IF=3.906)
