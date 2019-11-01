@@ -31,7 +31,7 @@ avatar: "/assets/images/avatar-icon.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+# title-img: "/assets/images/path.jpg"
 
 # --- Background colour/image options --- #
 
@@ -50,9 +50,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+# navbar-img: "/assets/images/path.jpg"
+# footer-img: "/assets/images/path.jpg"
+# page-img: "/assets/images/path.jpg"
 
 # --- Footer options --- #
 
@@ -185,16 +185,20 @@ link-tags: true
 
 # Exclude these files from production site
 exclude:
-  - vendor/bundle
-  - node_modules
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - CNAME
+  - Dockerfile
   - LICENSE
   - README.md
-  - Vagrantfile
 
 # prose.io config
 prose:

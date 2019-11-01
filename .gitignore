@@ -1,6 +1,8 @@
 # project
 _site/
-.sass-cache
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata/
 .vagrant
 
 # general
