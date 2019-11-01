@@ -34,17 +34,3 @@ use-site-title: false
   和`imsave`。
 - 对文件头数据的解析请参考使用 [`struct`库](https://docs.python.org/3/library/struct.html)
 
-大家可以使用[lena图像]({{ site.baseurl }}{% link /teaching/IMGNAV/lena512.bmp %})对程序进行测试。
-![图像文件]({{ site.baseurl }}{% link /teaching/IMGNAV/lena512.bmp %})
-
-## 2. 图像旋转变换
-
-实现函数`imrotate`，该函数具有对图像旋转任意指定角度的功能。如对[lena图
-像]({{ site.baseurl }}{% link /teaching/IMGNAV/lena512.bmp %})旋转65度。
-
-
-## 3. 图像尺度变换
-
-实现函数`imscale`，该函数具有对图像长宽两个方向任意实数倍的缩放功能。如
-对[lena图像]({{ site.baseurl }}{% link /teaching/IMGNAV/lena512.bmp %})缩放`(1.5, 0.7)`倍，即缩放后图像宽度为原来的1.5倍，而高度为原来的
-0.7倍。

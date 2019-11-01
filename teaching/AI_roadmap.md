@@ -15,7 +15,7 @@ use-site-title: false
 
 分组结果提交截止时间是 2019/3/11 23:59 (CST)
 
-<img class="center" src="{{ site.baseurl }}{% link /teaching/AIRoad/groups.png %}" width="192" />
+<img class="center" src="{{ "/teaching/AIRoad/groups.png" | relative_url }}" width="192" />
 
 
 ## 二、抛掷硬币实验
@@ -24,7 +24,7 @@ use-site-title: false
 
 实验结果提交截止时间是 2019/3/14 23:59 (CST)
 
-<img class="center" src="{{ site.baseurl }}{% link /teaching/AIRoad/hw02-coin.png %}" width="192" />
+<img class="center" src="{{ "/teaching/AIRoad/hw02-coin.png" | absolute_url }}" width="192" />
 
 
 ## 三、课程报告题目
@@ -34,4 +34,4 @@ use-site-title: false
 
 报告题目提交截止时间是 2019/3/31 23:59 (CST)
 
-<img class="center" src="{{ site.baseurl }}{% link /teaching/AIRoad/report-title.png %}" width="192" />
+<img class="center" src="{{ "/teaching/AIRoad/report-title.png" |absolute_url }}" width="192" />
