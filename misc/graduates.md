@@ -13,4 +13,4 @@ use-site-title: false
 
 请点击[链接](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__qywqz5UOTVBNTVRN0g5SzJYUVFMNFBLRUFBSTBQVy4u)或扫描下面的二维码填写调剂申请表。
 
-<img class="center" src="/misc/graduates-apply.png" width="192" />
+<img class="center" src="{{ '/misc/graduates-apply.png' | absolute_url }}" width="192" />
