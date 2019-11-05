@@ -1,0 +1,9 @@
+{%- for css in include.stylesheets %}
+{%- if css.sri %}
+  <link rel="stylesheet" href="{{ css.href }}" integrity="{{ css.sri }}" crossorigin="anonymous">
+{%- elsif css.href %}
+  <link rel="stylesheet" href="{{ css.href }}" />
+{%- else %}
+  <link rel="stylesheet" href="{{ css | relative_url }}" />
+{%- endif %}
+{%- endfor -%}

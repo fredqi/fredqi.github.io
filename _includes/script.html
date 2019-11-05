@@ -1,0 +1,11 @@
+{%- for js in include.scripts %}
+{% if js.sri -%}
+<script src="{{ js.href }}"
+        integrity="{{ js.sri }}"
+        crossorigin="anonymous"></script>
+{%- elsif js.href -%}
+<script src="{{ js.href }}"></script>
+{%- else -%}
+<script src="{{ js | relative_url }}"></script>
+{%- endif -%}
+{% endfor %}

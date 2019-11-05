@@ -1,0 +1,20 @@
+{%- for page in include.pages -%}
+{%- capture title -%}
+{%- if page.name %}{{ page.name }}{% elsif page.title %}{{ page.title }}{% endif -%}
+{%- endcapture -%}
+{%- capture subtitle -%}
+{%- if page.position %}{{ page.position }}{% elsif page.subtitle %}{{ page.subtitle }}{% endif -%}
+{%- endcapture -%}
+<div class="card">
+  {% if page.image %}
+  <a href="{{ page.url }}">
+	<img src="{{ page.image }}" class="card-img-top" alt="{{ title }}">
+  </a>
+  {% endif -%}
+  <div class="card-body">
+    <h3 class="card-title">{{ title }}</h3>
+	{% if subtitle %}<h4>{{ subtitle }}</h4>{% endif %}
+	{{ page.excerpt }}<a href="{{ page.url }}">More...</a>
+  </div>
+</div>
+{%- endfor -%}

@@ -1,14 +1,13 @@
 ---
 layout: page
-title: Teaching
-use-site-title: false
+title: 《模式识别与应用》作业(2017-02)
+subtitle: Teaching
+mathjax: true
 ---
-
-# 《模式识别与应用》作业(2017-02)
 
 在本次作业中，你将实现逻辑回归算法，并将之应用于两个数据集。
 
-## 作业提交信息
+# 作业提交信息
 
 - 提交作业截止时间： 2017/11/02 23:59:59 (CST)
 - 作业提交方式:
@@ -16,18 +15,18 @@ use-site-title: false
   + 发送电子邮件至 fred DOT qi AT ieee DOT org
 - 请勿删除作业所提供代码中的注释，将你的代码放入添加代码标志中间。
 
-### 作业提交内容
+## 作业提交内容
 
 - 完善后的程序代码
 - 书面报告
 
-### 作业相关文件
+## 作业相关文件
 
 - [Python 代码](/teaching/PRML/PRML_Logistic_Regression.py)
 - [数据文件1](/teaching/PRML/Logistic_data1.txt)
 - [数据文件2](/teaching/PRML/Logistic_data2.txt)
 
-### 作业中需要实现的函数
+## 作业中需要实现的函数
 
 - `plot_data` 绘制二维的分类数据。
 - `sigmoid` Sigmoid函数
@@ -35,7 +34,7 @@ use-site-title: false
 - `predict` 逻辑回归的预测函数
 - `cost_function_reg` 逻辑回归带正则化项的代价函数
 
-## 逻辑回归
+# 逻辑回归
 
 本次作业的目的是建立一个逻辑回归模型，用于预测一个学生是否应该被大学录取。
 
@@ -43,7 +42,7 @@ use-site-title: false
 
 你的任务是建立一个分类模型，根据两次考试的成绩来估计考生被录取的概率。
 
-### 数据可视化
+## 数据可视化
 
 在实现机器学习算法前，可视化的显示数据以观察其规律通常是有益的。本次作业中，你需要实现 `plot_data` 函数，用于绘制所给数据的散点图。你绘制的图像应如下图所示，两坐标轴分别为两次考试的成绩，正负样本分别使用不同的标记显示。
 
@@ -58,16 +57,16 @@ plt.plot(X[pos, 0], X[pos, 1], 'r+', label="Admitted")
 plt.plot(X[neg, 0], X[neg, 1], 'bo', label="Not admitted")
 ```
 
-### 热身练习：Sigmoid 函数
+## 热身练习：Sigmoid 函数
 
 逻辑回归的假设模型为
 <div> \[h_{\theta}(\pmb{x}) = g(\pmb{\theta}^{\mathrm{T}} \pmb{x})\] </div>
-其中函数 $g(\cdot)$ 是Sigmoid函数，定义为
+其中函数 \\(g(\cdot)\\) 是Sigmoid函数，定义为
 <div> \[g(z) = \frac{1}{1 + \exp(-z)}.\] </div>
 
 本练习中第一步需要你实现 Sigmoid 函数。在实现该函数后，你需要确认其功能正确。对于输入为矩阵和向量的情况，你实现的函数应当对每一个元素执行Sigmoid 函数。
 
-### 代价函数与梯度
+## 代价函数与梯度
 
 现在你需要实现逻辑回归的代价函数及其梯度。补充完整 `cost_function` 函数，使其返回正确的代价。补充完整 `cost_gradient` 函数，使其返回正确的梯度。
 
@@ -78,9 +77,9 @@ plt.plot(X[neg, 0], X[neg, 1], 'bo', label="Not admitted")
 
 传入初始参数， `cost_function` 的代价约为 0.693。
 
-### 使用 `scipy.optimize.fmin_cg` 学习模型参数
+## 使用 `scipy.optimize.fmin_cg` 学习模型参数
 
-在本次作业中，希望你使用 `scipy.optimize.fmin_cg` 函数实现代价函数<span> $J(\theta)$ </span>的优化，得到最佳参数<span> $\theta^{*}$ </span>。
+在本次作业中，希望你使用 `scipy.optimize.fmin_cg` 函数实现代价函数\\(J(\theta)\\)的优化，得到最佳参数\\(\theta^{*}\\)。
 
 使用该优化函数的代码已经在程序中实现，调用方式示例如下：
 
@@ -102,16 +101,15 @@ theta_opt, cost_min, _, _, _ = ret
 
 ![image](/teaching/PRML/LR_data1_boundary.png)
 
-### 评估逻辑回归模型
+## 评估逻辑回归模型
 
 在获得模型参数后，你就可以使用模型预测一个学生能够被大学录取。如果某学生考试一的 成绩为45，考试二的成绩为85，你应该能够得到其录取概率约为0.776。
 
 你需要完成 `predict` 函数，该函数输出“1”或“0”。通过计算分类正确的样本百分数， 我们可以得到训练集上的正确率。
 
-正则化的逻辑回归
-----------------
+# 正则化的逻辑回归
 
-### 数据可视化
+## 数据可视化
 
 调用函数 `plot_data` 可视化第二组数据 `HW1602_data2.txt` 。
 
@@ -125,7 +123,7 @@ theta_opt, cost_min, _, _, _ = ret
     x_2^2 \\ x_1^3 \\ \vdots \\ x_1 x_2^5 \\ x_2^6 \end{bmatrix} \]
 </div>
 
-### 代价函数与梯度
+## 代价函数与梯度
 
 逻辑回归的代价函数为
 <div> \[J(\theta) = \frac{1}{m} \sum_{i=1}^{m} \Big[ -y^{(i)} \log \big( h_{\theta}(x^{(i)}) \big) - (1-y^{(i)}) \log \big( 1-h_{\theta}(x^{(i)}) \big) \Big] + \frac{\lambda}{2m} \sum_{j=1}^{n} \theta_{j}^{2}\] </div>
@@ -136,7 +134,7 @@ theta_opt, cost_min, _, _, _ = ret
 \frac{\partial J(\theta)}{\partial \theta_{j}} &= \frac{1}{m} \sum_{i=1}^{m} \big( h_{\theta}(x^{(i)}) - y^{(i)} \big) x_{j}^{(i)} + \frac{\lambda}{m} \theta_{j} \qquad \text{for } j \geq 1
 \end{split}\]
 </div>
-如果将参数<span> $\theta$ </span>初始化为全零值，相应的代价函数约为 0.693。可以使用与前述无正则化项类似的方法实现梯度下降，获得优化后的参数<span> $\theta^{*}$ </span>。
+如果将参数\\(\theta\\)初始化为全零值，相应的代价函数约为 0.693。可以使用与前述无正则化项类似的方法实现梯度下降，获得优化后的参数\\(\theta^{*}\\)。
 
 你可以调用 `plot_decision_boundary` 函数来查看最终得到的分类面。建议你调整正则化项的系数，分析正则化对分类面的影响。
 

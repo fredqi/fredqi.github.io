@@ -1,0 +1,5 @@
+{%- capture anchorclass -%}
+{%- if include.dropdown %}dropdown-item{% else %}nav-item nav-link{% endif -%}
+{%- if include.url == include.link %} active{% endif -%}
+{%- endcapture -%}
+<a class="{{ anchorclass }}" href="{{ include.link }}">{{ include.name }}</a>
