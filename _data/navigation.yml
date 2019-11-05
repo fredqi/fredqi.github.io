@@ -1,4 +1,15 @@
 # List of links in the navigation bar
-Research: "/research/"
-Teaching: "/teaching/"
-Blogs: "/blogs/"
+- name: Home
+  link: "/"
+- name: Research
+  link: "/research.html"
+- name: Teaching
+  link: "/teaching/"
+# - name: "About Me"
+#   link: "/about/"
+- name: Blog
+  link: "/blog/"
+# - name: About
+#   submenu:
+# - name: Staff
+#   link: /about/staff.html
