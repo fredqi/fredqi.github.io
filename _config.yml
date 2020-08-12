@@ -101,5 +101,9 @@ plugins:
 exclude:
   - README.md
   - LICENSE
+  - lectures/
+  - teaching/PRML*
+  - teaching/IMGNAV*
+  - teaching/CTRL*
   - vendor/
   - node_modules/
