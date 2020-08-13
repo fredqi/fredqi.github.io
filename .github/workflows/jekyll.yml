@@ -1,0 +1,30 @@
+name: Build & deploy GitHub pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.1
+          bundler-cache: true
+          
+      - name: Build Website
+        run: |
+          # bundle install
+          bundle exec jekyll build
+
+      - name: Deploy Website
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          ACCESS_TOKEN: ${{ secrets.JEKYLL_PAT }}
+          BRANCH: gh-pages
+          FOLDER: _site
