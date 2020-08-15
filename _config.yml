@@ -75,14 +75,14 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 #   facebook: "fredqi.vision"
 #   rss: true
 
-# Blog
-blog_name: Geometric Vision
-blog_description: To understand visual perception
-permalink: /blog/:year/:title/
+# # Blog
+# blog_name: Geometric Vision
+# blog_description: To understand visual perception
+# permalink: /blog/:year/:title/
 
 # Pagination Settings
 pagination:
-  enabled: true
+  enabled: false
 
 # paginate: 6
 # paginate_path: "/blog/page:num/"
@@ -160,9 +160,9 @@ scholar:
 
 # Optional Features
 enable_google_analytics:  false
-enable_katex:             true
-enable_mansory:           true
-enable_progressbar:       true
+enable_katex:             false
+enable_mansory:           false
+enable_progressbar:       false
 enable_tooltips:          false
 show_social_icons:        false
 

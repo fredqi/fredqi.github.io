@@ -3,19 +3,21 @@ layout: about
 permalink: /
 title: About Me
 description: >
-  <a href="http://sai.xidian.edu.cn/">School of Artificial Intelligence</a>,<br>
-  <a href="https://www.xidian.edu.cn">Xidian Unviersity</a>,<br>
-  2 S Taibai Road,<br>
-  Xi'An, Shaanxi 710071 PR China<br>
 
-# profile:
-#   align: right
-#   image: profile-fred.jpg
+profile:
+  align: right
+  image: profile-fred.jpg
 
-#   # address: >
-#   #   <p>II-128, Main Bldg</p>
-#   #   <p>Xidian University</p>
-#   #   <p>2 S Taibai RD, Xi'an 710071 China</p>
+  description: >
+    <a href="http://sai.xidian.edu.cn/">School of Artificial Intelligence</a>,<br>
+    <a href="https://www.xidian.edu.cn">Xidian Unviersity</a>,<br>
+    2 S Taibai Road,<br>
+    Xi'An, Shaanxi 710071 PR China<br>
+
+  # address: >
+  #   <p>II-128, Main Bldg</p>
+  #   <p>Xidian University</p>
+  #   <p>2 S Taibai RD, Xi'an 710071 China</p>
 
 news: false
 social: false

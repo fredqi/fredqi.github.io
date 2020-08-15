@@ -1,55 +1,28 @@
----
-css:
-  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    sri: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-  - href: "//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-  - "/assets/css/main.css"
-js:
-  - href: "https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    sri: "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  - href: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    sri: "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-  - href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    sri: "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-deferred_css:
-  - href: "//fonts.googleapis.com/css?family=Lato:300,400,700;"
-  - href: "//fonts.googleapis.com/css?family=Merriweather:300,400,700"
-  - href: "//fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700"
-  - href: "https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    sri: "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
----
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html>
 
-  {%- include head.html -%}
+  <head>
+    {% include head.html %}
+  </head>
 
-  {%- capture layoutclass %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-  <body class="{{ layoutclass }}">
-	
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+
+    <!-- Header -->
+
     {% include header.html %}
 
-    <main class="container" aria-label="Content">
-	  <div class="row justify-content-center">
-		<div class="col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1">
-		  {{ content }}
-		</div>
-	  </div>
-    </main>
+    <!-- Content -->
+
+    <div class="container mt-5">
+      {{ content }}
+    </div>
+
+    <!-- Footer -->
 
     {% include footer.html %}
 
-    {%- if layout.js %}
-	{% include script.html scripts=layout.js %}
-	{% endif -%}
-
-	{%- if page.js -%}
-	{% include script.html scripts=page.js %}
-	{% endif -%}
-
-	{%- if page.mathjax %}
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-	{%- endif %}
   </body>
-  
+
+  {% include hemline.html %}
+
 </html>
