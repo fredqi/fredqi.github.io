@@ -12,72 +12,216 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
 title: Fei Qi
-# email: fred.qi@ieee.org
+email: fred.qi@ieee.org
 description: >- # this means to ignore newlines until "baseurl:"
   Understanding Visual Perception!
+footer_text: >
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fredqi.me" # the base hostname & protocol for your site, e.g. http://example.com
+last_updated: true # set to true if you want to display last updated in the footer
 logo: "/assets/images/logo.png"
+
+# Layout
+navbar_fixed: true
+footer_fixed: true
+
+# Open Graph
+# Display links to the page with a preview object on social media.
+# To achieve this, change serve_og_meta to true and then provide the URL of the
+# preview image as the value of og_image.
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
 
 # permalink: /:title/
 # excerpt_separator: "<!--more-->"
 
-# twitter_username: _fredqi_
-# github_username:  fredqi
-
+# Social integration
 # Select your active Social Network Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
-# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-links:
-  email: "fred.qi@ieee.org"
-  github: "fredqi"
-  linkedin: "fei-qi-39a9a136"
-  twitter: "_fredqi_"
-  facebook: "fredqi.vision"
-  rss: true
+
+github_username:  fredqi
+twitter_username: _fredqi_
+linkedin_username: fei-qi-39a9a136 # your LinkedIn user name
+scholar_userid: # your Google Scholar ID
+orcid_id: # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+research_gate_profile: # your profile on ResearchGate
+blogger_url: # your blogger URL
+
+contact_note: >
+  You can even add a little note about which of these is the best way to reach you.
+
+google_analytics: UA-XXXXXXXXX # out your google-analytics code
+
+# # Uncomment the links you want to show in the footer and add your information to each link.
+# # You can reorder the items to define the link order.
+# # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
+# social-links:
+#   email: "fred.qi@ieee.org"
+#   github: "fredqi"
+#   linkedin: "fei-qi-39a9a136"
+#   twitter: "_fredqi_"
+#   facebook: "fredqi.vision"
+#   rss: true
+
+# Blog
+blog_name: Geometric Vision
+blog_description: To understand visual perception
+permalink: /blog/:year/:title/
 
 # Pagination Settings
-paginate: 6
-paginate_path: "/blog/page:num/"
+pagination:
+  enabled: true
 
-disqus:
-  shortname: fredqi
+# paginate: 6
+# paginate_path: "/blog/page:num/"
 
+# Comments
+disqus_shortname: fredqi
+
+# Collections
+# collections:
+#   authors:
+#     output: true
 collections:
-  authors:
+  news:
+    defaults:
+      layout: post
     output: true
+    permalink: /news/:path/
+  # projects:
+  #   output: false
+  #   permalink: /projects/:path/
 
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+news_limit: 5
 
+# Jekyll settings
+
+# Markdown and syntax highlight
+markdown: kramdown
+highlighter: rouge
+highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+# Includes & excludes
+include: ['_pages']
+exclude:
+  - README.md
+  - LICENSE
+  - jekyll/
+  - lectures/
+  - teaching/
+  - vendor/
+
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+
+  last_name: Qi
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+# Optional Features
+enable_google_analytics:  false
+enable_katex:             true
+enable_mansory:           true
+enable_progressbar:       true
+enable_tooltips:          false
+show_social_icons:        false
+
+# Library versions
+# -----------------------------------------------------------------------------
+
+academicons:
+  version: "1.8.6"
+  integrity: "sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw="
+bootstrap:
+  version: "4.4.1"
+  integrity:
+    css: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    js: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+fontawesome:
+  version: "5.13.0"
+  integrity: "sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+jquery:
+  version: "3.4.1"
+  integrity: "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+katex:
+  version: "0.11.1"
+  integrity:
+    css: "sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung="
+    js: "sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc="
+mansory:
+  version: "4.2.2"
+  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+mdb:
+  version: "4.17.0"
+  integrity:
+    css: "sha256-/SwJ2GDcEt5382i8zqDwl36VJGECxEoIcBIuoLmLR4g="
+    js: "sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0="
+popper:
+  version: "2.4.0"
+  integrity: "sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw="
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "authors"
+#     values:
+#       layout: "author"
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "post"
+#   - scope:
+#       path: ""
+#     values:
+#       layout: "default"
       
-# Build settings
-# theme: jekyll-theme-primer
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
+# # Build settings
+# # theme: jekyll-theme-primer
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+#   - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -98,12 +242,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-exclude:
-  - README.md
-  - LICENSE
-  - lectures/
-  - teaching/PRML*
-  - teaching/IMGNAV*
-  - teaching/CTRL*
-  - vendor/
-  - node_modules/
