@@ -1,8 +1,8 @@
 # List of links in the navigation bar
-- name: Home
+- name: "About Me"
   link: "/"
 - name: Research
-  link: "/research.html"
+  link: "/research/"
 - name: Teaching
   link: "/teaching/"
 # - name: "About Me"

@@ -1,6 +1,9 @@
 ---
 layout: page
+permalink: /teaching/
+nav: true
 title: Teaching
+description: Materials for courses you taught. Replace this text with your description.
 subtitle: Courses I have taught.
 use-site-title: false
 ---
@@ -30,3 +33,16 @@ use-site-title: false
   + *10 Hours, experiments of logic design.*
 
 
+<!--
+---
+layout: page
+permalink: /teaching/
+title: teaching
+description: Materials for courses you taught. Replace this text with your description.
+nav: true
+---
+-->
+
+For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+
+Organize your courses by years, topics, or universities, however you like!
