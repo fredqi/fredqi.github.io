@@ -2,14 +2,15 @@
 layout: about
 permalink: /
 title: About Me
-description: >
+description: To understanding visual perception.
 
 profile:
   align: right
   image: profile-fred.jpg
 
   description: >
-    <a href="http://sai.xidian.edu.cn/">School of Artificial Intelligence</a>,<br>
+    <strong>Associated Professor, Ph.D. Supervisor</strong><br>
+    <a href="http://sai.xidian.edu.cn/">School of Artificial Intelligence</a>,
     <a href="https://www.xidian.edu.cn">Xidian Unviersity</a>,<br>
     2 S Taibai Road,<br>
     Xi'An, Shaanxi 710071 PR China<br>

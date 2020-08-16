@@ -177,10 +177,15 @@ footer.sticky-bottom {
   border-bottom: 0.5px solid $theme-color;
   text-align: center;
   padding-bottom: 0.5rem;
-  margin-bottom: 32px;
+  margin-bottom: 1rem;
   h1 {
     color: $theme-color;
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  p {
+    color: $theme-color;
+    font-size: 1.25rem;
+    margin: 0;
   }
 }
 

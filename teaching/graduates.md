@@ -16,6 +16,6 @@ use-site-title: false
 
 - <https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__qywqz5UOTVBNTVRN0g5SzJYUVFMNFBLRUFBSTBQVy4u>
 
-<img class="center" src="{{ '/misc/graduates-apply.png' | absolute_url }}" width="192" />
+<img class="center" src="{{ '/assets/img/graduates-apply.png' | absolute_url }}" width="192" />
 
 

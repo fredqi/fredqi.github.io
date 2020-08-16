@@ -4,8 +4,8 @@ layout: default
 <div class="post">
 
   <header class="header-bar">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>    
+    {% if page.description -%}<p class="post-description">{{ page.description }}</p>{%- endif %}
   </header>
 
   <article>
