@@ -9,7 +9,7 @@ profile:
   image: profile-fred.jpg
 
   description: >
-    <strong>Associated Professor, Ph.D. Supervisor</strong><br>
+    <em>Associated Professor</em>, <em>Ph.D. Supervisor</em><br>
     <a href="http://sai.xidian.edu.cn/">School of Artificial Intelligence</a>,
     <a href="https://www.xidian.edu.cn">Xidian Unviersity</a>,<br>
     2 S Taibai Road,<br>

@@ -46,34 +46,26 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # excerpt_separator: "<!--more-->"
 
 # Social integration
-# Select your active Social Network Links.
-
-github_username:  fredqi
-twitter_username: _fredqi_
-linkedin_username: fei-qi-39a9a136 # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
+# Uncomment the links you want to show in the footer and add your information to each link.
+# You can reorder the items to define the link order.
+# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
+social-links:
+  email: "fred.qi@ieee.org"
+  scholar: "JGpo5vQAAAAJ"
+  orcid: "0000-0002-2161-1551"
+  github: "fredqi"
+  linkedin: "fei-qi-39a9a136"
+  # research_gate: ""
+  # medium: ""
+  # quora: ""
+  # twitter: "_fredqi_"
+  # facebook: "fredqi.vision"
+  # rss: true
 
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
-
-# # Uncomment the links you want to show in the footer and add your information to each link.
-# # You can reorder the items to define the link order.
-# # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-# social-links:
-#   email: "fred.qi@ieee.org"
-#   github: "fredqi"
-#   linkedin: "fei-qi-39a9a136"
-#   twitter: "_fredqi_"
-#   facebook: "fredqi.vision"
-#   rss: true
 
 # # Blog
 # blog_name: Geometric Vision
@@ -164,7 +156,7 @@ enable_katex:             false
 enable_mansory:           false
 enable_progressbar:       false
 enable_tooltips:          false
-show_social_icons:        false
+show_social_icons:        true
 
 # Library versions
 # -----------------------------------------------------------------------------

@@ -6,6 +6,41 @@
 #            site.social-network-links.<key>
 #   icon: Specify a valid fontawesome icon class
 
+scholar:
+  name: "Google Scholar"
+  baseURL: "https://scholar.google.com/citations?user="
+  icon: "ai ai-google-scholar"
+  
+orcid:
+  name: "ORCID"
+  baseURL: "https://orcid.org/"
+  icon: "ai ai-orcid"
+  
+publons:
+  name: "Publons"
+  baseURL: "https://publons.com/a/"
+  icon: "ai ai-publons"
+  
+research_gate:
+  name: "ResearchGate"
+  baseURL: "https://www.researchgate.net/profile/"
+  icon: "ai ai-researchgate"
+  
+medium:
+  name: "Medium"
+  baseURL: "https://medium.com/@"
+  icon: "fab fa-medium"
+  
+quora:
+  name: "Quora"
+  baseURL: "https://www.quora.com/profile/"
+  icon: "fab fa-quora"
+  
+blogger:
+  name: "Blogger"
+  baseURL: ""
+  icon: "fab fa-blogger-b"
+
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"

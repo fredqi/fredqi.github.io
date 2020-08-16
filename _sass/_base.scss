@@ -73,7 +73,7 @@ a, table.table a {
       }
   }
   .contact-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     a {
       color: $grey-color-dark;
       &:hover {
@@ -133,6 +133,7 @@ a, table.table a {
   .contact-icon {
     font-size: 2rem;
     a {
+      color: $grey-color-dark;
       &:hover {
         color: $theme-color;
       }
@@ -140,6 +141,7 @@ a, table.table a {
   }
   .contact-note {
     font-size: 0.8rem;
+    color: $grey-color-dark;
   }
 }
 
