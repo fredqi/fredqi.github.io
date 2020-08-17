@@ -1,0 +1,10 @@
+<span class="author">
+  {%- for author in entry.author_array -%}
+    {%- unless forloop.last -%}
+      {{ author.first }} {{ author.last }}{{ ", " }}
+    {%- else -%}
+      <!-- {%- if forloop.length > 1 -%}{{ "and " }}{%- endif -%} -->
+      {{- author.first }} {{ author.last }}{{ "." }}
+    {%- endunless -%}
+  {%- endfor -%}
+</span>

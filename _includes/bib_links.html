@@ -1,0 +1,42 @@
+<button class="btn-bibtex" onclick="toggleTextblock('bib-{{entry.key}}')">BibTeX</button>
+{% if entry.abstract -%}
+<button class="btn-abs" onclick="toggleTextblock('abs-{{entry.key}}')">Abs</button>
+{%- endif -%}
+{% if entry.doi -%}
+<a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank">
+  <button class="btn-doi"><i class="ai ai-doi"></i> DOI</button></a>
+{%- endif -%}
+{% if entry.eprinttype == "arxiv" -%}
+<a href="http://arxiv.org/abs/{{ entry.eprint }}" target="_blank">
+  <button class="btn-arxiv"><i class="ai ai-arxiv"></i> arXiv: {{ entry.eprint }}</button></a>
+{%- endif -%}
+{% if entry.preprint -%}
+<a href="{{ entry.preprint }}" target="_blank">
+  <button class="btn-preprint">prePrint</button></a>
+{%- endif -%}
+{% if entry.url %}
+<a href="{{ entry.url }}" target="_blank">
+  <button class="btn-link"><i class="fa fa-link"></i> URL</button></a>
+{%- endif -%}
+{% if entry.pdf -%}
+<a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">
+  <button class="btn-pdf fa-hover"><i class="fa fa-file-pdf"></i> PDF</button></a>
+{%- endif -%}
+{% if entry.code %}
+<a href="{{ entry.code }}" target="_blank"><button class="btn-code">
+    <i class="fa fa-file-code"></i> Codes</button></a>
+{%- endif %}
+<!-- Hidden BibTeX block -->
+<div id="bib-{{entry.key}}" style="display: none;">
+  <span class="bibtex hidden">
+    <pre>{{ entry.bibtex }}</pre>
+  </span>
+</div>
+{% if entry.abstract -%}
+<!-- Hidden abstract block -->
+<div id="abs-{{entry.key}}" style="display: none;">
+  <span class="abstract hidden">
+    <p>{{ entry.abstract }}</p>
+  </span>
+</div>
+{%- endif %}

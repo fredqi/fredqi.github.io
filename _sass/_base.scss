@@ -262,7 +262,7 @@ footer.sticky-bottom {
   button, input.button {
       color: $theme-color;
       border: 0.5px solid $theme-color;
-      font-size: 0.875rem;
+      font-size: 0.875rem;      
   }
 
   h2.year {
@@ -279,7 +279,8 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.25rem;
+	
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -294,22 +295,22 @@ footer.sticky-bottom {
         // display: inline;
       }
       .title {
-        display: block;
+        display: inline;
         font-weight: bolder;
       }
       .author {
-	display: block;
-        a {
-          border-bottom: 1px dashed $theme-color;
-          &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
-          }
-        }
-        > em {
-          border-bottom: 1px solid;
-          font-style: normal;
-        }
+	display: inline;
+        // a {
+        //   border-bottom: 1px dashed $theme-color;
+        //   &:hover {
+        //       border-bottom-style: solid;
+        //       text-decoration: none;
+        //   }
+        // }
+        // > em {
+        //   border-bottom: 1px solid;
+        //   font-style: normal;
+        // }
       }
       em.star {
         border-bottom: none;

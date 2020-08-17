@@ -1,0 +1,10 @@
+<span class="periodical">
+  {%- if entry.type == "article" -%}
+  <em>{{entry.journal}},</em>{% if entry.volume %} {{entry.volume}}{% if entry.number %}({{ entry.number }}){% endif %}: {{ entry.pages }},{% endif %}
+  {%- elsif entry.type == "inproceedings" or entry.type == "incollection" -%}
+  <em>In {{entry.booktitle}},</em>{% if entry.pages %} {{ entry.pages }}, {% endif %}
+  {%- endif -%}
+</span>
+<span class="date">
+  {%- if entry.month %} {{entry.month}}{% endif %} {% if entry.year %}{{entry.year}}.{% endif -%}
+</span>
