@@ -1,0 +1,73 @@
+---
+---
+<div class="row">
+  <div class="col">
+<span class="title">{{ entry.title }}</span>
+<span class="author">
+  {%- for author in entry.author_array -%}
+    {%- unless forloop.last -%}
+      {{ author.first }} {{ author.last }}{{ ", " }}
+    {%- else -%}
+      <!-- {%- if forloop.length > 1 -%}{{ "and " }}{%- endif -%} -->
+      {{- author.first }} {{ author.last -}}
+    {%- endunless -%}
+  {%- endfor -%}
+</span>
+<span class="periodical">
+  {%- if entry.type == "article" -%}
+  <em>{{entry.journal}},</em>{% if entry.volume %} {{entry.volume}}{% if entry.number %}({{ entry.number }}){% endif %}: {{ entry.pages }},{% endif %}
+  {%- elsif entry.type == "inproceedings" or entry.type == "incollection" -%}
+  <em>In {{entry.booktitle}},</em>{% if entry.pages %} {{ entry.pages }}, {% endif %}
+  {%- endif -%}
+</span>
+<span class="date">
+  {% if entry.month %} {{entry.month}}{% endif %} {% if entry.year %}{{entry.year}}.{% endif %}
+</span>
+<br />
+
+<button class="btn-bibtex" onclick="toggleBibTeX('bib-{{entry.key}}')">BibTeX</button>
+{% if entry.abstract -%}
+<button class="btn-abs" onclick="toggleBibTeX('abs-{{entry.key}}')">Abs</button>
+{%- endif %}
+{% if entry.doi -%}
+<a href="{{ entry.doi | prepend: 'http://doi.org/' }}" target="_blank">
+  <button class="btn-doi"><i class="ai ai-doi"></i>{{ entry.doi }}</button></a>
+{%- endif %}
+{% if entry.eprinttype == "arxiv" -%}
+<a href="http://arxiv.org/abs/{{ entry.eprint }}" target="_blank">
+  <button class="btn-arxiv"><i class="ai ai-arxiv"></i>
+    arXiv: {{ entry.eprint }}</button></a>
+{%- endif %}
+{% if entry.preprint -%}
+<a href="{{ entry.preprint }}" target="_blank"><button class="btn-preprint">prePrint</button></a>
+{%- endif %}
+{% if entry.link -%}
+<a href="{{ entry.link }}" target="_blank"><button class="btn-link">link</button></a>
+{%- endif %}
+{% if entry.html -%}
+<a href="{{ entry.html }}" target="_blank"><button class="btn-html">HTML</button></a>
+{%- endif %}
+{% if entry.pdf -%}
+<a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank"><button class="btn-pdf">PDF</button></a>
+{%- endif %}
+{% if entry.code -%}
+<a href="{{ entry.code }}" target="_blank"><button class="btn-code">code</button></a>
+{%- endif %}
+
+<!-- Hidden BibTeX block -->
+<div id="bib-{{entry.key}}" style="display: none;">
+  <span class="bibtex hidden">
+    <pre>{{ entry.bibtex }}</pre>
+  </span>
+</div>
+
+<!-- Hidden abstract block -->
+{% if entry.abstract -%}
+<div id="abs-{{entry.key}}" style="display: none;">
+  <span class="abstract hidden">
+  <p>{{ entry.abstract }}</p>
+  </span>
+</div>
+{%- endif %}
+  </div>
+</div>

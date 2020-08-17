@@ -75,8 +75,12 @@ title: Publications
 
 # Journal Papers
 
+<div class="publications">
 {% bibliography --query @article -f papers %}
+</div>
 
 # Conference Papers
 
+<div class="publications">
 {% bibliography --query @inproceedings @incollection -f papers %}
+</div>

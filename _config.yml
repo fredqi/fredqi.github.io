@@ -143,8 +143,8 @@ scholar:
 
   source: _refs
   bibliography: papers.bib
-  bibliography_template: "{{reference}}"
-  # bibliography_template: bibentry
+  # bibliography_template: "{{reference}}"
+  bibliography_template: bibentry
 
   replace_strings: true
   join_strings: true
