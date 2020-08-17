@@ -117,12 +117,16 @@ kramdown:
 # Includes & excludes
 include: ['_pages']
 exclude:
+  - .git/
+  - .github/
+  - .config/
+  - vendor/
   - README.md
   - LICENSE
   - jekyll/
   - lectures/
   - teaching/
-  - vendor/
+
 
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
@@ -131,20 +135,21 @@ scholar:
 
   last_name: Qi
 
-  style: apa
+  style: _refs/ieee-custom
   locale: en
 
   sort_by: year
   order: descending
 
-  source: /_bibliography/
+  source: _refs
   bibliography: papers.bib
-  bibliography_template: bib
+  bibliography_template: "{{reference}}"
+  # bibliography_template: bibentry
 
   replace_strings: true
   join_strings: true
 
-  details_dir: bibliography
+  details_dir: refs
   details_layout: bibtex.html
   details_link: Details
 
@@ -207,30 +212,4 @@ popper:
 #       path: ""
 #     values:
 #       layout: "default"
-      
-# # Build settings
-# # theme: jekyll-theme-primer
-# plugins:
-#   - jekyll-feed
-#   - jekyll-seo-tag
-#   - jekyll-paginate
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+   
