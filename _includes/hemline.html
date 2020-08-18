@@ -12,9 +12,16 @@
 
 {% if site.enable_katex %}
 <!-- Load KaTeX -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex.version }}/katex.min.css" integrity="{{ site.katex.integrity.css }}" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/{{ site.katex.version }}/katex.min.js" integrity="{{ site.katex.integrity.js }}" crossorigin="anonymous"></script>
-<script src="{{ '/assets/js/katex.js' | relative_url }}"></script>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@{{ site.katex.version }}/dist/katex.min.css"
+      integrity="{{ site.katex.integrity.cs }}" crossorigin="anonymous">
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script src="https://cdn.jsdelivr.net/npm/katex@{{ site.katex.version }}/dist/katex.min.js"
+	integrity="{{ site.katex.integrity.js }}" crossorigin="anonymous"></script>
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script src="https://cdn.jsdelivr.net/npm/katex@{{ site.katex.version }}/dist/contrib/auto-render.min.js"
+	integrity="{{ site.katex.integrity.jsr }}" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 {% endif %}
 
 {% if site.enable_mansory %}

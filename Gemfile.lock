@@ -275,8 +275,11 @@ DEPENDENCIES
   github-pages
   jekyll
   jekyll-email-protect
+  jekyll-feed
   jekyll-paginate-v2
   jekyll-scholar
+  jekyll-seo-tag
+  jekyll-sitemap
   jemoji
   tzinfo
   tzinfo-data

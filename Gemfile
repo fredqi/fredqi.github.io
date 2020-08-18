@@ -20,8 +20,9 @@ group :jekyll_plugins do
   gem 'jekyll-email-protect'
   gem 'jekyll-paginate-v2'
   gem 'jekyll-scholar'
-  # gem "jekyll-feed"
-  # gem "jekyll-seo-tag"
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
   gem 'jemoji'
   gem 'unicode_utils'
 end

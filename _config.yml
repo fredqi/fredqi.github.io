@@ -50,17 +50,17 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-links:
-  email: "fred.qi@ieee.org"
   scholar: "JGpo5vQAAAAJ"
   orcid: "0000-0002-2161-1551"
   github: "fredqi"
   linkedin: "fei-qi-39a9a136"
+  email: "fred.qi@ieee.org"
+  rss: true
   # research_gate: ""
   # medium: ""
   # quora: ""
   # twitter: "_fredqi_"
   # facebook: "fredqi.vision"
-  # rss: true
 
 contact_note: >
   Contacting me via e-mail is preferred.
@@ -131,6 +131,9 @@ plugins:
   - jekyll-email-protect
   - jekyll-paginate-v2
   - jekyll/scholar
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
   # - jemoji
 
 # Jekyll Scholar
@@ -162,7 +165,7 @@ scholar:
 
 # Optional Features
 enable_google_analytics:  false
-enable_katex:             false
+enable_katex:             true
 enable_mansory:           false
 enable_progressbar:       false
 enable_tooltips:          false
@@ -186,10 +189,11 @@ jquery:
   version: "3.4.1"
   integrity: "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 katex:
-  version: "0.11.1"
+  version: "0.12.0"
   integrity:
-    css: "sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung="
-    js: "sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc="
+    css: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+    js:  "sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+    jsr: "sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
 mansory:
   version: "4.2.2"
   integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
