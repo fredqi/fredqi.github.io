@@ -111,6 +111,9 @@ kramdown:
       line_numbers: false
       start_line: 1
 
+sass:
+  style: compressed
+  
 # Includes & excludes
 include:
   - '_pages'
