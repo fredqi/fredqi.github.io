@@ -1,0 +1,16 @@
+version: '2.0'
+services:
+  web:
+    image: "nginx:latest"
+    container_name: web
+    ports:
+    - "80:80"
+    volumes:
+    - ../gh-pages-fredqi:/usr/share/nginx/html
+  # jekyll:
+  #   image: "jekyll/jekyll:latest"
+  #   container_name: myjekyll
+  #   volumes:
+  #   - .:/srv/jekyll
+  #   - ../gh-pages-fredqi:/srv/www
+

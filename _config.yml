@@ -112,12 +112,12 @@ kramdown:
       start_line: 1
 
 sass:
+  sass_dir: assets/_sass
   style: compressed
   
 # Includes & excludes
 include:
   - '_pages'
-  - '_posts'
 
 exclude:
   - .git/
@@ -126,7 +126,6 @@ exclude:
   - vendor/
   - README.md
   - LICENSE
-  - jekyll/
   - lectures/
   - teaching/
 
@@ -146,13 +145,13 @@ scholar:
 
   last_name: Qi
 
-  style: _refs/ieee-custom
+  style: _data/ieee-custom
   locale: en
 
   sort_by: year
   order: descending
 
-  source: _refs
+  source: _data
   bibliography: papers.bib
   # bibliography_template: "{{reference}}"
   bibliography_template: bibentry
