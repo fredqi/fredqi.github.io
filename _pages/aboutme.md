@@ -20,7 +20,7 @@ profile:
   #   <p>Xidian University</p>
   #   <p>2 S Taibai RD, Xi'an 710071 China</p>
 
-news: false
+news: true
 social: false
 ---
 

@@ -121,9 +121,26 @@ a, table.table a {
 
 // News
 
-.news table td {
-  font-size: 1rem;
+.news {
+  table td { font-size: 1rem; }
+  ul { padding: 0px; margin: 0px; }
+  ul li { font-size: 1rem; }
+  .icon {
+    margin-right: 2px;
+    color: $theme-color;
+    font-size: 1.25rem;
+  }
+  .date {
+    padding: 0px;
+    display: inline-block;  
+    text-align: center;
+    // border: 1px solid $grey-color;
+  }
+  .news-title {
+    font-weight: bolder;
+  }
 }
+
 
 
 // Social (bottom)

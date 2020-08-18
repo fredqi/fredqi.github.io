@@ -1,22 +1,32 @@
 ---
 layout: default
-title: Blog Posts
-subtitle: The essentials
+pagination:
+  enabled: true
+  collection: posts
+
+  permalink: /page/:num/
+  per_page: 7
+  sort_field: date
+  sort_reverse: true
 ---
 
-<!-- Featured Posts -->
-<section class="featured-posts">
-  {% assign featured = site.posts | where: "featured", "true" %}
-  {% include carousel.html pages=featured title=page.title %}  
-</section>
+<div class="post">
 
-<div class="row justify-content-center title">
-  <h1>{{ page.title }}</h1>
+  <div class="header-bar">
+    <h1>{{ site.blog_name }}</h1>
+    <h2>{{ site.blog_description }}</h2>
+  </div>
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+    <li>
+      <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
+      <p>{{ post.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% include pagination.html %}
+
 </div>
-
-{%- if paginator.posts %}
-<section class="card-columns">
-  {% assign pages = paginator.posts | where_exp: "item", "item.featured == nil" %}
-  {% include card.html pages=pages %}
-</section>
-{% endif -%}

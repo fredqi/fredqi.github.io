@@ -32,9 +32,9 @@ layout: default
   </header>
 
   <article>
-    {% if page.news %}
-      {% include news.html %}
-    {% endif %}
+    {%- if page.news -%}
+      {%- include news.html -%}
+    {%- endif -%}
 
     <div class="row">
       <div class="col">
@@ -42,12 +42,12 @@ layout: default
       </div>
     </div>
 
-    {% if page.social %}
+    {%- if page.social -%}
     <div class="social">
       {% include social.html %}
     </div>
     <!-- <div class="contact-note">{{ site.contact_note }}</div> -->
-    {% endif %}
+    {%- endif -%}
   </article>
 
 </div>

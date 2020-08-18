@@ -1,0 +1,19 @@
+{% if site.news and site.news.size > 0 %}
+<div class="news">
+  <h1>News</h1>
+  {%- assign news_all = site.news | reverse -%}
+  <ul class="fa-ul">
+    {%- for item in news_all limit: site.news_limit -%}
+    <li><span class="date col-2">{{ item.date | date: "%b %-d, %Y" }}</span>
+      <span class="icon">{%- if item.icon -%}<i class="{{item.icon}} "></i>
+	{%- else %}<i class="fa fa-square fa-inverse"></i>{%- endif -%}</span>
+      <span class="news-title">{% if item.inline -%}
+	{{ item.title | remove: '<p>' | remove: '</p>' | emojify }}
+	{%- else -%}
+	<a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {%- endif -%}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+{% endif %}

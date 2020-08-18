@@ -63,21 +63,18 @@ social-links:
   # rss: true
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Contacting me via e-mail is preferred.
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+# google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
-# # Blog
-# blog_name: Geometric Vision
-# blog_description: To understand visual perception
-# permalink: /blog/:year/:title/
+# Blog
+blog_name: Visual Perception
+blog_description: To understand the secrets of human vision
+permalink: /blog/:year/:title/
 
 # Pagination Settings
 pagination:
-  enabled: false
-
-# paginate: 6
-# paginate_path: "/blog/page:num/"
+  enabled: true
 
 # Comments
 disqus_shortname: fredqi
@@ -115,7 +112,10 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include:
+  - '_pages'
+  - '_posts'
+
 exclude:
   - .git/
   - .github/
@@ -127,6 +127,11 @@ exclude:
   - lectures/
   - teaching/
 
+plugins:
+  - jekyll-email-protect
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  # - jemoji
 
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
@@ -196,20 +201,3 @@ mdb:
 popper:
   version: "2.4.0"
   integrity: "sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw="
-
-# defaults:
-#   - scope:
-#       path: ""
-#       type: "authors"
-#     values:
-#       layout: "author"
-#   - scope:
-#       path: ""
-#       type: "posts"
-#     values:
-#       layout: "post"
-#   - scope:
-#       path: ""
-#     values:
-#       layout: "default"
-   
