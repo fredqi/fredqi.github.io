@@ -12,7 +12,7 @@ profile:
     <em>Associated Professor</em>, <em>Ph.D. Supervisor</em><br>
     <a href="http://sai.xidian.edu.cn/">School of Artificial Intelligence</a>,
     <a href="https://www.xidian.edu.cn">Xidian Unviersity</a>,<br>
-    2 S Taibai Road,<br>
+    PO Box 134#, 2 S Taibai Road,<br>
     Xi'An, Shaanxi 710071 PR China<br>
 
   # address: >
@@ -24,6 +24,7 @@ news: true
 social: false
 ---
 
+<!-- # <i class="fa fa-graduation-cap"></i> Education -->
 # Education
 
 - Ph.D. and M.Eng., January, 2007, Tsinghua University, Beijing, China.

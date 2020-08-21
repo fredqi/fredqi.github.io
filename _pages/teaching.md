@@ -3,20 +3,19 @@ layout: page
 permalink: /teaching/
 nav: true
 title: Teaching
-# description: Materials for courses you taught. Replace this text with your description.
-# subtitle: Courses I have taught.
-# use-site-title: false
 ---
 
 # Current Courses
 
-- Machine Learning (2019)
+- Machine Learning (2019, 2020)
   + *48 hours*
-- Roadmap of Artificial Intelligence (2019)
+- Roadmap of Artificial Intelligence (2019, 2020)
   + *16 hours*
-- Image Processing (Graduate, 2007--2013, 2015--2019)
++ Intelligent Control (2019)
+  + *16 hours, Optimal control and reinforcement learning*
+- Image Processing (Graduate, 2007--2013, 2015--2020)
   + *32 Hours, Image capturing, filtering, and restoration.*
-- Automatic Control (2010, 2011, 2013, 2015--2019)
+- Automatic Control (2010, 2011, 2013, 2015--2020)
   + *48 Hours, Feedback control system analysis and design, state space model.*
 
 # Previous Courses

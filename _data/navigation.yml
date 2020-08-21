@@ -1,15 +1,27 @@
 # List of links in the navigation bar
 - name: "About Me"
+  icon: "fas fa-home"
   link: "/"
-- name: Research
+- name: Publications
+  icon: "fa fa-lightbulb"
   link: "/research/"
+  # submenu:
+  #   - name: Overview
+  #     link: "/research/"
+  #   - name: Saliency
+  #     link: "/research/"
+  #   - name: Localization
+  #     link: "/research/"
 - name: Teaching
+  icon: "fa fa-tasks"
   link: "/teaching/"
-# - name: "About Me"
-#   link: "/about/"
 - name: Blog
-  link: "/blog/"
+  icon: "fa fa-rss-square"
+  link: "/blog/index.html"
+- name: ""
+  icon: "fas fa-sitemap"
+  link: "/sitemap.xml"
 # - name: About
 #   submenu:
-# - name: Staff
-#   link: /about/staff.html
+#   - name: Staff
+#     link: /about/staff.html

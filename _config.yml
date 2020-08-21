@@ -52,6 +52,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 social-links:
   scholar: "JGpo5vQAAAAJ"
   orcid: "0000-0002-2161-1551"
+  publons: "2635660"
   github: "fredqi"
   linkedin: "fei-qi-39a9a136"
   email: "fred.qi@ieee.org"
