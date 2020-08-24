@@ -1,29 +1,3 @@
-<!-- Load Core and Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-{{ site.jquery.version }}.slim.min.js" integrity="{{ site.jquery.integrity }}" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/{{ site.popper.version }}/umd/popper.min.js" integrity="{{ site.popper.integrity }}" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/{{ site.bootstrap.version }}/js/bootstrap.min.js" integrity="{{ site.bootstrap.integrity.js }}" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/{{ site.mdb.version }}/js/mdb.min.js"  integrity="{{ site.bootstrap.integrity.js }}" crossorigin="anonymous"></script>
-
-<!-- Load Common JS -->
-<script src="{{ '/assets/js/common.js' | relative_url }}"></script>
-
-<!-- Code Syntax Highlighting -->
-<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/{{ site.highlight_theme }}.css" />
-
-{% if site.enable_katex %}
-<!-- Load KaTeX -->
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@{{ site.katex.version }}/dist/katex.min.css"
-      integrity="{{ site.katex.integrity.cs }}" crossorigin="anonymous">
-<!-- The loading of KaTeX is deferred to speed up page rendering -->
-<script src="https://cdn.jsdelivr.net/npm/katex@{{ site.katex.version }}/dist/katex.min.js"
-	integrity="{{ site.katex.integrity.js }}" crossorigin="anonymous"></script>
-<!-- To automatically render math in text elements, include the auto-render extension: -->
-<script src="https://cdn.jsdelivr.net/npm/katex@{{ site.katex.version }}/dist/contrib/auto-render.min.js"
-	integrity="{{ site.katex.integrity.jsr }}" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-{% endif %}
-
 {% if site.enable_mansory %}
 <!-- Load Mansory & imagesLoaded -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/{{ site.mansory.version }}/masonry.pkgd.min.js" integrity="{{ site.masonry.integrity }}" crossorigin="anonymous"></script>

@@ -1,9 +1,11 @@
-{%- for css in include.stylesheets %}
+{%- for item in include.stylesheets -%}
+{%- assign css = item[1] %}
+{% if css.name %}<!-- {{ css.name }} {{ css.version }}-->{% endif %}
 {%- if css.sri %}
-  <link rel="stylesheet" href="{{ css.href }}" integrity="{{ css.sri }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ css.href }}" integrity="{{ css.sri }}" crossorigin="anonymous">
 {%- elsif css.href %}
-  <link rel="stylesheet" href="{{ css.href }}" />
+<link rel="stylesheet" href="{{ css.href }}" />
 {%- else %}
-  <link rel="stylesheet" href="{{ css | relative_url }}" />
+<link rel="stylesheet" href="{{ css.file | relative_url }}" />
 {%- endif %}
 {%- endfor -%}

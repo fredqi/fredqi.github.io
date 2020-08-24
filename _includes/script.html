@@ -1,11 +1,14 @@
-{%- for js in include.scripts %}
+{%- for item in include.scripts -%}
+{%- assign js = item[1] %}
+{% if js.name %}<!-- {{ js.name }} {{ js.version }} -->{% endif %}
 {% if js.sri -%}
 <script src="{{ js.href }}"
-        integrity="{{ js.sri }}"
-        crossorigin="anonymous"></script>
+	integrity="{{ js.sri }}"
+	{%- if js.defer %} defer{%- endif -%}
+	{%- if js.onload %} onload="{{ js.onload }}" {% endif %} crossorigin="anonymous"></script>
 {%- elsif js.href -%}
 <script src="{{ js.href }}"></script>
 {%- else -%}
-<script src="{{ js | relative_url }}"></script>
+<script src="{{ js.file | relative_url }}"></script>
 {%- endif -%}
 {% endfor %}
