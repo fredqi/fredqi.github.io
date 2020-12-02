@@ -569,3 +569,13 @@ Target localization based on range measurements from a set of anchors plays an i
 }
 
 
+@inproceedings{wang_pgnet_2021,
+  title = {{{PGNet}}: Real-Time Arbitrarily-Shaped Text Spotting with Point Gathering Network},
+  booktitle = {Thirty-Fifth AAAI Conference on Artificial Intelligence ({{AAAI}})},
+  author = {Wang, Pengfei and Zhang, Chengquan and Qi, Fei and Liu, Shanshan and Zhang, Xiaoqiang and Lyu, Pengyuan and Han, Junyu and Liu, Jingtuo and Ding, Errui and Shi, Guangming},
+  year = {2021},
+  month = feb,
+  abstract = {The reading of arbitrarily-shaped text has received increasing research attention, but existing text spotters are mostly built on two-stage frameworks or character-based methods, which may suffer from character-level annotations, Non-Maximum Suppression (NMS) and Region-of-Interest (RoI) operations. In this paper, we attempt to address those problems and propose a novel point gathering network for reading arbitrarily-shaped text in real-time, named PGNet, and it is a single-shot text spotter in fully convolutional manner, and the pixel-level character classification map is learned with proposed PG-CTC loss avoiding using character-level annotations. With PG-CTC decoder, we gather high-level character classification vectors from two dimensional space and decode them into text symbols without NMS and RoI operations involved, which guarantees the great efficiency. Additionally, reasoning the relations between each character and its neighbors, a graph refinement module (GRM) is proposed to optimize the coarse recognition and further improve the end-to-end performance. Experiments demonstrate that the proposed method achieves state-of-the-art or competitive accuracy, meanwhile significantly improving the running speed. In particular, on Total-Text, it runs at 46.7 FPS, surpassing the previous spotters with a large margin.}
+}
+
+
