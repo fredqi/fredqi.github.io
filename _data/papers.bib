@@ -578,4 +578,16 @@ Target localization based on range measurements from a set of anchors plays an i
   abstract = {The reading of arbitrarily-shaped text has received increasing research attention, but existing text spotters are mostly built on two-stage frameworks or character-based methods, which may suffer from character-level annotations, Non-Maximum Suppression (NMS) and Region-of-Interest (RoI) operations. In this paper, we attempt to address those problems and propose a novel point gathering network for reading arbitrarily-shaped text in real-time, named PGNet, and it is a single-shot text spotter in fully convolutional manner, and the pixel-level character classification map is learned with proposed PG-CTC loss avoiding using character-level annotations. With PG-CTC decoder, we gather high-level character classification vectors from two dimensional space and decode them into text symbols without NMS and RoI operations involved, which guarantees the great efficiency. Additionally, reasoning the relations between each character and its neighbors, a graph refinement module (GRM) is proposed to optimize the coarse recognition and further improve the end-to-end performance. Experiments demonstrate that the proposed method achieves state-of-the-art or competitive accuracy, meanwhile significantly improving the running speed. In particular, on Total-Text, it runs at 46.7 FPS, surpassing the previous spotters with a large margin.}
 }
 
+@article{li_novel_2021,
+  title = {A Novel Spatio-Temporal 3D Convolutional Encoder-Decoder Network for Dynamic Saliency Prediction},
+  author = {Li, Hao and Qi, Fei and Shi, Guangming},
+  year = {2021},
+  month = mar,
+  volume = {9},
+  abstract = {As human beings are living in an always changing environment, predicting saliency maps from dynamic visual stimulus is of importance for modeling human visual system. Compared with human behavior, recent models based on LSTM and 3DCNN are still not good enough due to the limitation in spatio-temporal feature representation. In this paper, a novel 3D convolutional encoder-decoder architecture is proposed for saliency prediction on dynamic scenes. The encoder consists of two subnetworks to extract both spatial and temporal features in parallel with intermediate fusion, respectively. The saliency map is produced in decoder by firstly enlarging features in spatial dimensions and then aggregating temporal information. Specially designed structures can transfer pooling indices from encoder to decoder, which helps the generation of location-aware saliency maps. The proposed network can be trained and inferred in an end-to-end manner. Experimental results on benchmark DHF1K show that the proposed model achieves the state-of-the-art performance on key metrics including both normalized scanpath saliency and Pearson's correlation coefficient.},
+  annotation = {Accepted},
+  journal = {IEEE Access}
+}
+
+
 
