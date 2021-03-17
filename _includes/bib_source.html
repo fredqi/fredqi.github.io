@@ -8,3 +8,4 @@
 <span class="date">
   {%- if entry.month %} {{ entry.month | capitalize }}{% endif %} {% if entry.year %}{{entry.year}}.{% endif -%}
 </span>
+<span>{% if entry.annotation %} ({{entry.annotation}}){% endif %}</span>
