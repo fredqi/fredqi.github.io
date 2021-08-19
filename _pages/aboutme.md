@@ -32,13 +32,14 @@ social: false
 
 # Employment
 
-- 2017/11 -- now, Associate Professor, School of Artificial Intelligence, Xidian University, Xi'an, PR China.
+- 2018/01 -- now, Associate Professor, School of Artificial Intelligence, Xidian University, Xi'an, PR China.
 - 2008/07 -- 2017/10, Associate Professor, School of Electronic Engineering, Xidian University, Xi'an, PR China.
 - 2013/12 -- 2015/12, Research Fellow, Moscow Institute of Physics and Technology, Moscow, Russia.
 - 2007/03-2008/06, Lecturer, School of Electronic Engineering, Xidian University, Xi'an, PR China.
 
 # Projects
 
+- 2022/01 -- 2025/12, Weakly Supervised Representation Learning for CMC Defects Detection, funded by National Natural Science Foundation of China.
 - 2016/01 -- 2019/12, Visual Saliency Analysis for Binocular and Motion Images under the Framework of Solving Inverse Problem, funded by National Natural Science Foundation of China.
 - 2009/01 -- 2011/12, Tracking and Motion Analysis of Articulated Objects based on Manifold Learning, funded by National Natural Science Foundation of China.
 
