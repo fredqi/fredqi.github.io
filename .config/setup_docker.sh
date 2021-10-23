@@ -5,8 +5,8 @@
 ## Author: Fred Qi
 ## Created: 2020-08-16 11:17:34(+0800)
 ##
-## Last-Updated: 2020-08-16 11:23:48(+0800) [by Fred Qi]
-##     Update #: 16
+## Last-Updated: 2021-10-23 20:19:32(+0800) [by Fred Qi]
+##     Update #: 20
 ######################################################################
 ##
 ### Commentary:
@@ -36,6 +36,9 @@ docker exec jb bundle config --local mirror.https://rubygems.org https://gems.ru
 docker exec jb bundle config --local development true
 docker exec jb bundle config --local path vendor/bundle
 
+## run one of following two commands to build website with jekyll
+# docker exec jb jekyll build -s /srv/jekyll -d /srv/www
+# docker exec jb bundle exec jekyll build -s /srv/jekyll -d /srv/www
 
 ######################################################################
 ### setup_docker.sh ends here

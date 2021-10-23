@@ -7,19 +7,19 @@ title: Teaching
 
 # Current Courses
 
-- Machine Learning (2019, 2020)
+- Machine Learning (2019--2021)
   + *48 hours*
-- Roadmap of Artificial Intelligence (2019, 2020)
-  + *16 hours*
-+ Intelligent Control (2019)
++ Intelligent Control (2019--2021)
   + *16 hours, Optimal control and reinforcement learning*
-- Image Processing (Graduate, 2007--2013, 2015--2020)
+- Image Processing (Graduate, 2007--2013, 2015--2021)
   + *32 Hours, Image capturing, filtering, and restoration.*
-- Automatic Control (2010, 2011, 2013, 2015--2020)
-  + *48 Hours, Feedback control system analysis and design, state space model.*
 
 # Previous Courses
 
+- Roadmap of Artificial Intelligence (2019--2021)
+  + *16 hours*
+- Automatic Control (2010, 2011, 2013, 2015--2020)
+  + *48 Hours, Feedback control system analysis and design, state space model.*
 - Visual Objects Tracking (2012, 2013, 2017, 2018)
   + *48 Hours, Background modeling, selected classic and modern visual tracking methods.*
 - Pattern Recognition and Applications (2016, 2017)

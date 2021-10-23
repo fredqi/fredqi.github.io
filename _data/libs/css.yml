@@ -1,23 +1,23 @@
 bootstrap:
   name: Bootstrap CSS
-  version: 4.4.1
-  href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  sri: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  version: 4.6.0
+  href: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"
+  sri: "sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
 
 katex:
   name: KaTeX
   version: 0.12.0
-  href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
-  sri: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+  href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css"
+  sri: "sha512-nii0D5CrWiLjtPcfU3pQJifaRLxKKVut/hbsazsodCcIOERZbwLH7dQxzOKy3Ey/Fv8fXCA9+Rf+wQzqklbEJQ=="
 
-pygemnt:
-  href: "https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css"
+# pygemnt:
+#   href: "https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css"
 
 fontawesome:
   name: Font Awesome CSS
-  version: 5.13.1
-  href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-  sri: "sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+  version: 5.15.4
+  href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  sri: "sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
 
 academicons:
   name: Academicons
