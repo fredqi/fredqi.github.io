@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Image Semantic Segmentation | Fei Qi</title>
+<title>Redesigning Upsampling in Decoders with Aligned Feature Aggregation for Semantic Segmentation | Fei Qi</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Image Semantic Segmentation" />
+<meta property="og:title" content="Redesigning Upsampling in Decoders with Aligned Feature Aggregation for Semantic Segmentation" />
 <meta name="author" content="Qinjie Hu" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="ICME 2025, Nantes, France" />
@@ -18,7 +18,7 @@
 <meta property="og:url" content="/segmentation/" />
 <meta property="og:site_name" content="Fei Qi" />
 <script type="application/ld+json">
-{"headline":"Image Semantic Segmentation","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"},"name":"Qinjie Hu"},"url":"/segmentation/","author":{"@type":"Person","name":"Qinjie Hu"},"description":"ICME 2025, Nantes, France","@context":"https://schema.org"}</script>
+{"headline":"Redesigning Upsampling in Decoders with Aligned Feature Aggregation for Semantic Segmentation","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"},"name":"Qinjie Hu"},"url":"/segmentation/","author":{"@type":"Person","name":"Qinjie Hu"},"description":"ICME 2025, Nantes, France","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Fei Qi" />
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
@@ -95,44 +95,44 @@
       <div class="post">
 
   <header class="header-bar">
-    <h1 class="post-title">Image Semantic Segmentation</h1>    
+    <h1 class="post-title">Redesigning Upsampling in Decoders with Aligned Feature Aggregation for Semantic Segmentation</h1>    
     <p class="post-description">ICME 2025, Nantes, France</p>
     
     
     <div class="post-authors">
       <strong>By: </strong>
       
-            
+      Qinjie Hu
       
       , 
       
       
-            
+      Fei Qi
       
       , 
       
       
-            
+      Kaiwen Fu
       
       , 
       
       
-            
+      Chengyuan Chang
       
       , 
       
       
-            
+      Xiaotian Wang
       
       , 
       
       
-            
+      Kun Liu
       
       , 
       
       
-            
+      Guangming Shi
       
       
        and 
@@ -142,15 +142,17 @@
   </header>
 
   <article>
-    <h1 id="redesigning-upsampling-in-decoders-with-aligned-feature-aggregation-for-semantic-segmentation">Redesigning Upsampling in Decoders with Aligned Feature Aggregation for Semantic Segmentation</h1>
-
-<h2 id="abstract">Abstract</h2>
+    <h1 id="abstract">Abstract</h1>
 
 <p>Hierarchical decoders are widely employed in semantic segmentation architectures, where feature upsampling and fusion are critical at each layer. However, inaccuracies in feature position restoration during upsampling and misalignments in multi-scale feature fusion limit model performance. To address these issues, we propose the Aligned Feature Aggregation Upsampler (AFAU), a novel upsampling module. AFAU consists of two types of Aligned Feature Aggregation Modules (AFAM), which partition feature maps from both the encoder and decoder into multiple aligned patches. By applying attention mechanisms between corresponding patches, AFAM facilitates more effective contextual information fusion. Additionally, AFAM corrects feature position inaccuracies by calculating the similarity between linear embeddings of low-level (query) features and high-level features. This process allows semantic information aggregation guided by fine-grained high-resolution features. We conducted extensive experiments across multiple advanced semantic segmentation frameworks, demonstrating the universality and efficiency of AFAU. Notably, our results indicate that decoders incorporating AFAU significantly outperform SegFormer across all sizes of MiT encoders on the ADE20K and Cityscapes datasets.</p>
 
-<h2 id="model-architecture">Model Architecture</h2>
+<h1 id="model-architecture">Model Architecture</h1>
 
 <p><img src="/assets/images/AFAU-Decoder-framework.png" alt="Model Architecture" width="100%" /></p>
+
+<h1 id="performance">Performance</h1>
+
+<p><img src="/assets/images/perf-Cityscapes-ADE20k.png" alt="Performance vs Complexity" width="100%" /></p>
 
   </article>
 
