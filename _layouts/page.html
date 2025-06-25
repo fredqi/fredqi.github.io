@@ -5,6 +5,12 @@ layout: default
 
   <header class="header-bar">
     <h1 class="post-title">{{ page.title }}</h1>    
+    {% if page.authors %}
+    {% assign author_count = page.authors | size %}
+    <div class="post-authors">
+      <strong>{{ page.authors | join: ", " }} </strong>
+    </div>
+    {% endif %}
     {% if page.description -%}<p class="post-description">{{ page.description }}</p>{%- endif %}
   </header>
 
